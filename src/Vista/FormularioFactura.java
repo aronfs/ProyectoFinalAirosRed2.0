@@ -5,6 +5,13 @@
  */
 package Vista;
 
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
 /**
  *
  * @author aaron
@@ -18,6 +25,96 @@ public class FormularioFactura extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JTable getFormulariofacturaTabla_Factura() {
+        return formulariofacturaTabla_Factura;
+    }
+
+    public void setFormulariofacturaTabla_Factura(JTable formulariofacturaTabla_Factura) {
+        this.formulariofacturaTabla_Factura = formulariofacturaTabla_Factura;
+    }
+
+    public JComboBox<String> getFormulariofacturacombobox_Anulada() {
+        return formulariofacturacombobox_Anulada;
+    }
+
+    public void setFormulariofacturacombobox_Anulada(JComboBox<String> formulariofacturacombobox_Anulada) {
+        this.formulariofacturacombobox_Anulada = formulariofacturacombobox_Anulada;
+    }
+
+    public JComboBox<String> getFormulariofacturacombobox_bodega() {
+        return formulariofacturacombobox_bodega;
+    }
+
+    public void setFormulariofacturacombobox_bodega(JComboBox<String> formulariofacturacombobox_bodega) {
+        this.formulariofacturacombobox_bodega = formulariofacturacombobox_bodega;
+    }
+
+    public JTable getFormulariofacturatabla_contratoservicioI() {
+        return formulariofacturatabla_contratoservicioI;
+    }
+
+    public void setFormulariofacturatabla_contratoservicioI(JTable formulariofacturatabla_contratoservicioI) {
+        this.formulariofacturatabla_contratoservicioI = formulariofacturatabla_contratoservicioI;
+    }
+
+    public JTextField getFormulariofacturatxt_cliente() {
+        return formulariofacturatxt_cliente;
+    }
+
+    public void setFormulariofacturatxt_cliente(JTextField formulariofacturatxt_cliente) {
+        this.formulariofacturatxt_cliente = formulariofacturatxt_cliente;
+    }
+
+    public JLabel getFormulariofacturatxt_fecha() {
+        return formulariofacturatxt_fecha;
+    }
+
+    public void setFormulariofacturatxt_fecha(JLabel formulariofacturatxt_fecha) {
+        this.formulariofacturatxt_fecha = formulariofacturatxt_fecha;
+    }
+
+    public JLabel getFormulariofacturatxt_numerodedocumento() {
+        return formulariofacturatxt_numerodedocumento;
+    }
+
+    public void setFormulariofacturatxt_numerodedocumento(JLabel formulariofacturatxt_numerodedocumento) {
+        this.formulariofacturatxt_numerodedocumento = formulariofacturatxt_numerodedocumento;
+    }
+
+    public JTextArea getFormulariofacturatxt_observaciones() {
+        return formulariofacturatxt_observaciones;
+    }
+
+    public void setFormulariofacturatxt_observaciones(JTextArea formulariofacturatxt_observaciones) {
+        this.formulariofacturatxt_observaciones = formulariofacturatxt_observaciones;
+    }
+
+    public JPanel getFormulariofacturaPane_tablacontratosl() {
+        return formulariofacturaPane_tablacontratosl;
+    }
+
+    public void setFormulariofacturaPane_tablacontratosl(JPanel formulariofacturaPane_tablacontratosl) {
+        this.formulariofacturaPane_tablacontratosl = formulariofacturaPane_tablacontratosl;
+    }
+
+    public JPanel getFormulariofacturaPanel() {
+        return formulariofacturaPanel;
+    }
+
+    public void setFormulariofacturaPanel(JPanel formulariofacturaPanel) {
+        this.formulariofacturaPanel = formulariofacturaPanel;
+    }
+
+    public JLabel getFormulariofactura_txt() {
+        return formulariofactura_txt;
+    }
+
+    public void setFormulariofactura_txt(JLabel formulariofactura_txt) {
+        this.formulariofactura_txt = formulariofactura_txt;
+    }
+    
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,26 +127,26 @@ public class FormularioFactura extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        formulariofacturaPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        formulariofacturacombobox_bodega = new javax.swing.JComboBox<String>();
+        formulariofacturacombobox_Anulada = new javax.swing.JComboBox<String>();
+        formulariofacturatxt_numerodedocumento = new javax.swing.JLabel();
+        formulariofacturatxt_fecha = new javax.swing.JLabel();
+        formulariofacturatxt_cliente = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jPanel3 = new javax.swing.JPanel();
+        formulariofacturatxt_observaciones = new javax.swing.JTextArea();
+        formulariofacturaPane_tablacontratosl = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        formulariofacturatabla_contratoservicioI = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jLabel9 = new javax.swing.JLabel();
+        formulariofacturaTabla_Factura = new javax.swing.JTable();
+        formulariofactura_txt = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -70,71 +167,53 @@ public class FormularioFactura extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Factura", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        formulariofacturaPanel.setBackground(new java.awt.Color(255, 255, 255));
+        formulariofacturaPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Factura"));
+        formulariofacturaPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Numero de Documento:");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
+        formulariofacturaPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Cliente:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, 30));
+        formulariofacturaPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, 30));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Observaciones:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
+        formulariofacturaPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Fecha:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, -1, -1));
+        formulariofacturaPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, -1, -1));
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Bodega:");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, -1, 20));
+        formulariofacturaPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, -1, 20));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Anulada:");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
+        formulariofacturaPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
-        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, 160, -1));
+        formulariofacturacombobox_bodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
+        formulariofacturaPanel.add(formulariofacturacombobox_bodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, 160, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
-        jPanel2.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 160, -1));
+        formulariofacturacombobox_Anulada.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        formulariofacturaPanel.add(formulariofacturacombobox_Anulada, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 160, -1));
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setText("---------------------------------------");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 160, -1));
+        formulariofacturatxt_numerodedocumento.setText("---------------------------------------");
+        formulariofacturaPanel.add(formulariofacturatxt_numerodedocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 160, -1));
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setText("------------------");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, -1, -1));
-
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, 170, -1));
+        formulariofacturatxt_fecha.setText("------------------");
+        formulariofacturaPanel.add(formulariofacturatxt_fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, -1, -1));
+        formulariofacturaPanel.add(formulariofacturatxt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, 170, -1));
 
         jScrollPane3.setBackground(new java.awt.Color(255, 255, 255));
-        jScrollPane3.setForeground(new java.awt.Color(0, 0, 0));
 
-        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setRows(5);
-        jScrollPane3.setViewportView(jTextArea1);
+        formulariofacturatxt_observaciones.setColumns(20);
+        formulariofacturatxt_observaciones.setRows(5);
+        jScrollPane3.setViewportView(formulariofacturatxt_observaciones);
 
-        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+        formulariofacturaPanel.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Contrato Servicio de Internet", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        formulariofacturaPane_tablacontratosl.setBackground(new java.awt.Color(255, 255, 255));
+        formulariofacturaPane_tablacontratosl.setBorder(javax.swing.BorderFactory.createTitledBorder("Contrato Servicio de Internet"));
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        formulariofacturatabla_contratoservicioI.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -145,30 +224,30 @@ public class FormularioFactura extends javax.swing.JFrame {
                 "Contrato de servicio de Internet", "Fecha Contratacion"
             }
         ));
-        jScrollPane4.setViewportView(jTable3);
+        jScrollPane4.setViewportView(formulariofacturatabla_contratoservicioI);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout formulariofacturaPane_tablacontratoslLayout = new javax.swing.GroupLayout(formulariofacturaPane_tablacontratosl);
+        formulariofacturaPane_tablacontratosl.setLayout(formulariofacturaPane_tablacontratoslLayout);
+        formulariofacturaPane_tablacontratoslLayout.setHorizontalGroup(
+            formulariofacturaPane_tablacontratoslLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formulariofacturaPane_tablacontratoslLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 827, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(31, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        formulariofacturaPane_tablacontratoslLayout.setVerticalGroup(
+            formulariofacturaPane_tablacontratoslLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formulariofacturaPane_tablacontratoslLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 890, 130));
+        formulariofacturaPanel.add(formulariofacturaPane_tablacontratosl, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 890, 130));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 980, 340));
+        jPanel1.add(formulariofacturaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 980, 340));
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        formulariofacturaTabla_Factura.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -179,14 +258,13 @@ public class FormularioFactura extends javax.swing.JFrame {
                 "Codigo", "Item", "Aplica IVA", "Cantidad", "Precio", "Subtotal"
             }
         ));
-        jScrollPane2.setViewportView(jTable2);
+        jScrollPane2.setViewportView(formulariofacturaTabla_Factura);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 980, 140));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 980, 140));
 
-        jLabel9.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel9.setText("Factura -------------------");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        formulariofactura_txt.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        formulariofactura_txt.setText("Factura -------------------");
+        jPanel1.add(formulariofactura_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
         jButton1.setText("Guardar");
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 540, -1, -1));
@@ -205,65 +283,65 @@ public class FormularioFactura extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FormularioFactura().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(FormularioFactura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new FormularioFactura().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel formulariofacturaPane_tablacontratosl;
+    private javax.swing.JPanel formulariofacturaPanel;
+    private javax.swing.JTable formulariofacturaTabla_Factura;
+    private javax.swing.JLabel formulariofactura_txt;
+    private javax.swing.JComboBox<String> formulariofacturacombobox_Anulada;
+    private javax.swing.JComboBox<String> formulariofacturacombobox_bodega;
+    private javax.swing.JTable formulariofacturatabla_contratoservicioI;
+    private javax.swing.JTextField formulariofacturatxt_cliente;
+    private javax.swing.JLabel formulariofacturatxt_fecha;
+    private javax.swing.JLabel formulariofacturatxt_numerodedocumento;
+    private javax.swing.JTextArea formulariofacturatxt_observaciones;
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

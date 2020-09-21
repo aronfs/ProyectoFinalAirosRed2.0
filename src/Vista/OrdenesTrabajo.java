@@ -5,6 +5,13 @@
  */
 package Vista;
 
+import com.toedter.calendar.JDateChooser;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author aaron
@@ -18,6 +25,151 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getOrdenesTrabajoBtnActualizar() {
+        return OrdenesTrabajoBtnActualizar;
+    }
+
+    public void setOrdenesTrabajoBtnActualizar(JButton OrdenesTrabajoBtnActualizar) {
+        this.OrdenesTrabajoBtnActualizar = OrdenesTrabajoBtnActualizar;
+    }
+
+    public JButton getOrdenesTrabajoBtnAnular() {
+        return OrdenesTrabajoBtnAnular;
+    }
+
+    public void setOrdenesTrabajoBtnAnular(JButton OrdenesTrabajoBtnAnular) {
+        this.OrdenesTrabajoBtnAnular = OrdenesTrabajoBtnAnular;
+    }
+
+    public JButton getOrdenesTrabajoBtnAplicarFiltro() {
+        return OrdenesTrabajoBtnAplicarFiltro;
+    }
+
+    public void setOrdenesTrabajoBtnAplicarFiltro(JButton OrdenesTrabajoBtnAplicarFiltro) {
+        this.OrdenesTrabajoBtnAplicarFiltro = OrdenesTrabajoBtnAplicarFiltro;
+    }
+
+    public JButton getOrdenesTrabajoBtnEditar() {
+        return OrdenesTrabajoBtnEditar;
+    }
+
+    public void setOrdenesTrabajoBtnEditar(JButton OrdenesTrabajoBtnEditar) {
+        this.OrdenesTrabajoBtnEditar = OrdenesTrabajoBtnEditar;
+    }
+
+    public JButton getOrdenesTrabajoBtnNuevo() {
+        return OrdenesTrabajoBtnNuevo;
+    }
+
+    public void setOrdenesTrabajoBtnNuevo(JButton OrdenesTrabajoBtnNuevo) {
+        this.OrdenesTrabajoBtnNuevo = OrdenesTrabajoBtnNuevo;
+    }
+
+    public JButton getOrdenesTrabajoBtnRestablecerFiltros() {
+        return OrdenesTrabajoBtnRestablecerFiltros;
+    }
+
+    public void setOrdenesTrabajoBtnRestablecerFiltros(JButton OrdenesTrabajoBtnRestablecerFiltros) {
+        this.OrdenesTrabajoBtnRestablecerFiltros = OrdenesTrabajoBtnRestablecerFiltros;
+    }
+
+    public JButton getOrdenesTrabajoBtnSolicitudServicio() {
+        return OrdenesTrabajoBtnSolicitudServicio;
+    }
+
+    public void setOrdenesTrabajoBtnSolicitudServicio(JButton OrdenesTrabajoBtnSolicitudServicio) {
+        this.OrdenesTrabajoBtnSolicitudServicio = OrdenesTrabajoBtnSolicitudServicio;
+    }
+
+    public JComboBox<String> getOrdenesTrabajoComboEstado() {
+        return OrdenesTrabajoComboEstado;
+    }
+
+    public void setOrdenesTrabajoComboEstado(JComboBox<String> OrdenesTrabajoComboEstado) {
+        this.OrdenesTrabajoComboEstado = OrdenesTrabajoComboEstado;
+    }
+
+    public JDateChooser getOrdenesTrabajoComboFechaDesde() {
+        return OrdenesTrabajoComboFechaDesde;
+    }
+
+    public void setOrdenesTrabajoComboFechaDesde(JDateChooser OrdenesTrabajoComboFechaDesde) {
+        this.OrdenesTrabajoComboFechaDesde = OrdenesTrabajoComboFechaDesde;
+    }
+
+    public JDateChooser getOrdenesTrabajoComboFechaHasta() {
+        return OrdenesTrabajoComboFechaHasta;
+    }
+
+    public void setOrdenesTrabajoComboFechaHasta(JDateChooser OrdenesTrabajoComboFechaHasta) {
+        this.OrdenesTrabajoComboFechaHasta = OrdenesTrabajoComboFechaHasta;
+    }
+
+    public JComboBox<String> getOrdenesTrabajoComboTipo() {
+        return OrdenesTrabajoComboTipo;
+    }
+
+    public void setOrdenesTrabajoComboTipo(JComboBox<String> OrdenesTrabajoComboTipo) {
+        this.OrdenesTrabajoComboTipo = OrdenesTrabajoComboTipo;
+    }
+
+    public JPanel getOrdenesTrabajoPanel() {
+        return OrdenesTrabajoPanel;
+    }
+
+    public void setOrdenesTrabajoPanel(JPanel OrdenesTrabajoPanel) {
+        this.OrdenesTrabajoPanel = OrdenesTrabajoPanel;
+    }
+
+    public JTable getOrdenesTrabajoTabla_General() {
+        return OrdenesTrabajoTabla_General;
+    }
+
+    public void setOrdenesTrabajoTabla_General(JTable OrdenesTrabajoTabla_General) {
+        this.OrdenesTrabajoTabla_General = OrdenesTrabajoTabla_General;
+    }
+
+    public JDateChooser getOrdenesTrabajocombofecha() {
+        return OrdenesTrabajocombofecha;
+    }
+
+    public void setOrdenesTrabajocombofecha(JDateChooser OrdenesTrabajocombofecha) {
+        this.OrdenesTrabajocombofecha = OrdenesTrabajocombofecha;
+    }
+
+    public JPanel getOrdenesTrabajopanelfecha() {
+        return OrdenesTrabajopanelfecha;
+    }
+
+    public void setOrdenesTrabajopanelfecha(JPanel OrdenesTrabajopanelfecha) {
+        this.OrdenesTrabajopanelfecha = OrdenesTrabajopanelfecha;
+    }
+
+    public JTextField getOrdenesTrabajotxt_Ejecutadopor() {
+        return OrdenesTrabajotxt_Ejecutadopor;
+    }
+
+    public void setOrdenesTrabajotxt_Ejecutadopor(JTextField OrdenesTrabajotxt_Ejecutadopor) {
+        this.OrdenesTrabajotxt_Ejecutadopor = OrdenesTrabajotxt_Ejecutadopor;
+    }
+
+    public JTextField getOrdenesTrabajotxt_asignadoA() {
+        return OrdenesTrabajotxt_asignadoA;
+    }
+
+    public void setOrdenesTrabajotxt_asignadoA(JTextField OrdenesTrabajotxt_asignadoA) {
+        this.OrdenesTrabajotxt_asignadoA = OrdenesTrabajotxt_asignadoA;
+    }
+
+    public JTextField getOrdenesTrabajotxt_cliente() {
+        return OrdenesTrabajotxt_cliente;
+    }
+
+    public void setOrdenesTrabajotxt_cliente(JTextField OrdenesTrabajotxt_cliente) {
+        this.OrdenesTrabajotxt_cliente = OrdenesTrabajotxt_cliente;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,35 +181,35 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        OrdenesTrabajoBtnNuevo = new javax.swing.JButton();
+        OrdenesTrabajoBtnEditar = new javax.swing.JButton();
+        OrdenesTrabajoBtnAnular = new javax.swing.JButton();
+        OrdenesTrabajoBtnSolicitudServicio = new javax.swing.JButton();
+        OrdenesTrabajoPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        OrdenesTrabajopanelfecha = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jDateChooser4 = new com.toedter.calendar.JDateChooser();
-        jTextField1 = new javax.swing.JTextField();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        OrdenesTrabajocombofecha = new com.toedter.calendar.JDateChooser();
+        OrdenesTrabajoComboFechaDesde = new com.toedter.calendar.JDateChooser();
+        OrdenesTrabajoComboFechaHasta = new com.toedter.calendar.JDateChooser();
+        OrdenesTrabajotxt_cliente = new javax.swing.JTextField();
+        OrdenesTrabajoComboTipo = new javax.swing.JComboBox<String>();
+        OrdenesTrabajoComboEstado = new javax.swing.JComboBox<String>();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        OrdenesTrabajotxt_asignadoA = new javax.swing.JTextField();
+        OrdenesTrabajotxt_Ejecutadopor = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        OrdenesTrabajoBtnAplicarFiltro = new javax.swing.JButton();
+        OrdenesTrabajoBtnActualizar = new javax.swing.JButton();
+        OrdenesTrabajoBtnRestablecerFiltros = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        OrdenesTrabajoTabla_General = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -67,18 +219,18 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton1.setText("Nuevo");
+        OrdenesTrabajoBtnNuevo.setText("Nuevo");
 
-        jButton2.setText("Editar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        OrdenesTrabajoBtnEditar.setText("Editar");
+        OrdenesTrabajoBtnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                OrdenesTrabajoBtnEditarActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Anular");
+        OrdenesTrabajoBtnAnular.setText("Anular");
 
-        jButton4.setText("Solicitud de Servicio");
+        OrdenesTrabajoBtnSolicitudServicio.setText("Solicitud de Servicio");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -86,13 +238,13 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(jButton1)
+                .addComponent(OrdenesTrabajoBtnNuevo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
+                .addComponent(OrdenesTrabajoBtnEditar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
+                .addComponent(OrdenesTrabajoBtnAnular)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4)
+                .addComponent(OrdenesTrabajoBtnSolicitudServicio)
                 .addContainerGap(575, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -100,101 +252,77 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(OrdenesTrabajoBtnNuevo)
+                    .addComponent(OrdenesTrabajoBtnEditar)
+                    .addComponent(OrdenesTrabajoBtnAnular)
+                    .addComponent(OrdenesTrabajoBtnSolicitudServicio))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 970, 50));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ordenes de Trabajo", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        OrdenesTrabajoPanel.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajoPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Ordenes de Trabajo"));
+        OrdenesTrabajoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cliente:");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 50, -1));
+        OrdenesTrabajoPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 50, -1));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Tipo:");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, -1, -1));
+        OrdenesTrabajoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Estado:");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 60, 20));
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, -1));
+        OrdenesTrabajoPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 60, 60, 20));
+        OrdenesTrabajoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, -1));
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        OrdenesTrabajopanelfecha.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajopanelfecha.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha "));
+        OrdenesTrabajopanelfecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Fecha :");
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 24, -1, -1));
+        OrdenesTrabajopanelfecha.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 24, -1, -1));
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Desde:");
-        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+        OrdenesTrabajopanelfecha.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Hasta:");
-        jPanel5.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, -1));
+        OrdenesTrabajopanelfecha.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, -1));
 
-        jDateChooser2.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 180, 20));
+        OrdenesTrabajocombofecha.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajopanelfecha.add(OrdenesTrabajocombofecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 180, 20));
 
-        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 170, 20));
+        OrdenesTrabajoComboFechaDesde.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajopanelfecha.add(OrdenesTrabajoComboFechaDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 170, 20));
 
-        jDateChooser4.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 130, 20));
+        OrdenesTrabajoComboFechaHasta.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajopanelfecha.add(OrdenesTrabajoComboFechaHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 130, 20));
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 450, 100));
+        OrdenesTrabajoPanel.add(OrdenesTrabajopanelfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 450, 100));
+        OrdenesTrabajoPanel.add(OrdenesTrabajotxt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
+        OrdenesTrabajoComboTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "INSTALACION", "SUSPENSION", "CANCELACION", "REACTIVACION", "CAMBIO DE DIRECCION", "VISITA TECNICA", "CANCELACION INICIADA POR EMPRESA" }));
+        OrdenesTrabajoPanel.add(OrdenesTrabajoComboTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 30, 320, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "INSTALACION", "SUSPENSION", "CANCELACION", "REACTIVACION", "CAMBIO DE DIRECCION", "VISITA TECNICA", "CANCELACION INICIADA POR EMPRESA" }));
-        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 30, 320, -1));
+        OrdenesTrabajoComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "EMITIDA", "INICIADA", "EJECUTADA", "FACTURADA" }));
+        OrdenesTrabajoPanel.add(OrdenesTrabajoComboEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 320, -1));
 
-        jComboBox3.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox3.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "EMITIDA", "INICIADA", "EJECUTADA", "FACTURADA" }));
-        jPanel3.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 320, -1));
-
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Ejecutada por:");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, -1, -1));
+        OrdenesTrabajoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, -1, -1));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Asignada a:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+        OrdenesTrabajoPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+        OrdenesTrabajoPanel.add(OrdenesTrabajotxt_asignadoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 320, -1));
+        OrdenesTrabajoPanel.add(OrdenesTrabajotxt_Ejecutadopor, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 320, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 320, -1));
-
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 320, -1));
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
+        jPanel1.add(OrdenesTrabajoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
 
         jPanel4.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton5.setText("Aplicar Filtros");
+        OrdenesTrabajoBtnAplicarFiltro.setText("Aplicar Filtros");
 
-        jButton6.setText("Actualizar");
+        OrdenesTrabajoBtnActualizar.setText("Actualizar");
 
-        jButton7.setText("Restablecer Filtros");
+        OrdenesTrabajoBtnRestablecerFiltros.setText("Restablecer Filtros");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -202,11 +330,11 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton5)
+                .addComponent(OrdenesTrabajoBtnAplicarFiltro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(OrdenesTrabajoBtnActualizar)
                 .addGap(18, 18, 18)
-                .addComponent(jButton7)
+                .addComponent(OrdenesTrabajoBtnRestablecerFiltros)
                 .addContainerGap(596, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -214,15 +342,15 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7))
+                    .addComponent(OrdenesTrabajoBtnAplicarFiltro)
+                    .addComponent(OrdenesTrabajoBtnActualizar)
+                    .addComponent(OrdenesTrabajoBtnRestablecerFiltros))
                 .addContainerGap())
         );
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 970, 50));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        OrdenesTrabajoTabla_General.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -233,7 +361,7 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
                 "Numero", "Centro de Costos", "Cedula", "Cliente", "Contrato", "Fecha", "Tipo", "Estado", "Asignada a", "Ejecutada por", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(OrdenesTrabajoTabla_General);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 970, 220));
 
@@ -253,58 +381,64 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void OrdenesTrabajoBtnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrdenesTrabajoBtnEditarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_OrdenesTrabajoBtnEditarActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new OrdenesTrabajo().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        <editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(OrdenesTrabajo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        </editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new OrdenesTrabajo().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
-    private com.toedter.calendar.JDateChooser jDateChooser4;
+    private javax.swing.JButton OrdenesTrabajoBtnActualizar;
+    private javax.swing.JButton OrdenesTrabajoBtnAnular;
+    private javax.swing.JButton OrdenesTrabajoBtnAplicarFiltro;
+    private javax.swing.JButton OrdenesTrabajoBtnEditar;
+    private javax.swing.JButton OrdenesTrabajoBtnNuevo;
+    private javax.swing.JButton OrdenesTrabajoBtnRestablecerFiltros;
+    private javax.swing.JButton OrdenesTrabajoBtnSolicitudServicio;
+    private javax.swing.JComboBox<String> OrdenesTrabajoComboEstado;
+    private com.toedter.calendar.JDateChooser OrdenesTrabajoComboFechaDesde;
+    private com.toedter.calendar.JDateChooser OrdenesTrabajoComboFechaHasta;
+    private javax.swing.JComboBox<String> OrdenesTrabajoComboTipo;
+    private javax.swing.JPanel OrdenesTrabajoPanel;
+    private javax.swing.JTable OrdenesTrabajoTabla_General;
+    private com.toedter.calendar.JDateChooser OrdenesTrabajocombofecha;
+    private javax.swing.JPanel OrdenesTrabajopanelfecha;
+    private javax.swing.JTextField OrdenesTrabajotxt_Ejecutadopor;
+    private javax.swing.JTextField OrdenesTrabajotxt_asignadoA;
+    private javax.swing.JTextField OrdenesTrabajotxt_cliente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -316,13 +450,7 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

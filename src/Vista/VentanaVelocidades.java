@@ -5,6 +5,11 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+
 /**
  *
  * @author aaron
@@ -18,6 +23,62 @@ public class VentanaVelocidades extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getVentanaVelocidad_BntActualizar() {
+        return VentanaVelocidad_BntActualizar;
+    }
+
+    public void setVentanaVelocidad_BntActualizar(JButton VentanaVelocidad_BntActualizar) {
+        this.VentanaVelocidad_BntActualizar = VentanaVelocidad_BntActualizar;
+    }
+
+    public JButton getVentanaVelocidad_BntAplicarFiltro() {
+        return VentanaVelocidad_BntAplicarFiltro;
+    }
+
+    public void setVentanaVelocidad_BntAplicarFiltro(JButton VentanaVelocidad_BntAplicarFiltro) {
+        this.VentanaVelocidad_BntAplicarFiltro = VentanaVelocidad_BntAplicarFiltro;
+    }
+
+    public JButton getVentanaVelocidad_BntRestablecer() {
+        return VentanaVelocidad_BntRestablecer;
+    }
+
+    public void setVentanaVelocidad_BntRestablecer(JButton VentanaVelocidad_BntRestablecer) {
+        this.VentanaVelocidad_BntRestablecer = VentanaVelocidad_BntRestablecer;
+    }
+
+    public JComboBox<String> getVentanaVelocidad_ComboUnidad() {
+        return VentanaVelocidad_ComboUnidad;
+    }
+
+    public void setVentanaVelocidad_ComboUnidad(JComboBox<String> VentanaVelocidad_ComboUnidad) {
+        this.VentanaVelocidad_ComboUnidad = VentanaVelocidad_ComboUnidad;
+    }
+
+    public JPanel getVentanaVelocidad_PanelFiltro() {
+        return VentanaVelocidad_PanelFiltro;
+    }
+
+    public void setVentanaVelocidad_PanelFiltro(JPanel VentanaVelocidad_PanelFiltro) {
+        this.VentanaVelocidad_PanelFiltro = VentanaVelocidad_PanelFiltro;
+    }
+
+    public JPanel getVentanaVelocidad_PanelVelocidad() {
+        return VentanaVelocidad_PanelVelocidad;
+    }
+
+    public void setVentanaVelocidad_PanelVelocidad(JPanel VentanaVelocidad_PanelVelocidad) {
+        this.VentanaVelocidad_PanelVelocidad = VentanaVelocidad_PanelVelocidad;
+    }
+
+    public JTable getVentanaVelocidad_TablaGeneral() {
+        return VentanaVelocidad_TablaGeneral;
+    }
+
+    public void setVentanaVelocidad_TablaGeneral(JTable VentanaVelocidad_TablaGeneral) {
+        this.VentanaVelocidad_TablaGeneral = VentanaVelocidad_TablaGeneral;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,15 +90,15 @@ public class VentanaVelocidades extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        VentanaVelocidad_PanelVelocidad = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        VentanaVelocidad_ComboUnidad = new javax.swing.JComboBox<String>();
+        VentanaVelocidad_PanelFiltro = new javax.swing.JPanel();
+        VentanaVelocidad_BntAplicarFiltro = new javax.swing.JButton();
+        VentanaVelocidad_BntActualizar = new javax.swing.JButton();
+        VentanaVelocidad_BntRestablecer = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaVelocidad_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -60,80 +121,77 @@ public class VentanaVelocidades extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 980, 40));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Velocidades de Plan", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        VentanaVelocidad_PanelVelocidad.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaVelocidad_PanelVelocidad.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidades de Plan"));
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Unidad:");
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Kbps", "Mbps", "Gbps" }));
+        VentanaVelocidad_ComboUnidad.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccione", "Kbps", "Mbps", "Gbps" }));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaVelocidad_PanelVelocidadLayout = new javax.swing.GroupLayout(VentanaVelocidad_PanelVelocidad);
+        VentanaVelocidad_PanelVelocidad.setLayout(VentanaVelocidad_PanelVelocidadLayout);
+        VentanaVelocidad_PanelVelocidadLayout.setHorizontalGroup(
+            VentanaVelocidad_PanelVelocidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaVelocidad_PanelVelocidadLayout.createSequentialGroup()
                 .addGap(160, 160, 160)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(VentanaVelocidad_ComboUnidad, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(573, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        VentanaVelocidad_PanelVelocidadLayout.setVerticalGroup(
+            VentanaVelocidad_PanelVelocidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaVelocidad_PanelVelocidadLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(VentanaVelocidad_PanelVelocidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(VentanaVelocidad_ComboUnidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 980, 60));
+        jPanel1.add(VentanaVelocidad_PanelVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 980, 60));
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaVelocidad_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 51));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Aplicar Filtros");
+        VentanaVelocidad_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaVelocidad_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaVelocidad_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        jButton2.setBackground(new java.awt.Color(0, 204, 51));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Actualizar");
+        VentanaVelocidad_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaVelocidad_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaVelocidad_BntActualizar.setText("Actualizar");
 
-        jButton3.setBackground(new java.awt.Color(0, 204, 51));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Restablecer Filtros");
+        VentanaVelocidad_BntRestablecer.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaVelocidad_BntRestablecer.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaVelocidad_BntRestablecer.setText("Restablecer Filtros");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaVelocidad_PanelFiltroLayout = new javax.swing.GroupLayout(VentanaVelocidad_PanelFiltro);
+        VentanaVelocidad_PanelFiltro.setLayout(VentanaVelocidad_PanelFiltroLayout);
+        VentanaVelocidad_PanelFiltroLayout.setHorizontalGroup(
+            VentanaVelocidad_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaVelocidad_PanelFiltroLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addComponent(jButton1)
+                .addComponent(VentanaVelocidad_BntAplicarFiltro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(VentanaVelocidad_BntActualizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
+                .addComponent(VentanaVelocidad_BntRestablecer)
                 .addContainerGap(596, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        VentanaVelocidad_PanelFiltroLayout.setVerticalGroup(
+            VentanaVelocidad_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaVelocidad_PanelFiltroLayout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                .addGroup(VentanaVelocidad_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaVelocidad_BntAplicarFiltro)
+                    .addComponent(VentanaVelocidad_BntActualizar)
+                    .addComponent(VentanaVelocidad_BntRestablecer))
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 980, 50));
+        jPanel1.add(VentanaVelocidad_PanelFiltro, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 980, 50));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaVelocidad_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -144,7 +202,7 @@ public class VentanaVelocidades extends javax.swing.JFrame {
                 "Velocidad", "Creado por", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaVelocidad_TablaGeneral);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 980, 270));
 
@@ -162,52 +220,52 @@ public class VentanaVelocidades extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaVelocidades().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaVelocidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaVelocidades().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton VentanaVelocidad_BntActualizar;
+    private javax.swing.JButton VentanaVelocidad_BntAplicarFiltro;
+    private javax.swing.JButton VentanaVelocidad_BntRestablecer;
+    private javax.swing.JComboBox<String> VentanaVelocidad_ComboUnidad;
+    private javax.swing.JPanel VentanaVelocidad_PanelFiltro;
+    private javax.swing.JPanel VentanaVelocidad_PanelVelocidad;
+    private javax.swing.JTable VentanaVelocidad_TablaGeneral;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

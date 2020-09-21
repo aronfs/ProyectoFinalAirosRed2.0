@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JTable;
+
 /**
  *
  * @author aaron
@@ -18,6 +21,23 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getVentanaTarifaInstalacion_BntActualizar() {
+        return VentanaTarifaInstalacion_BntActualizar;
+    }
+
+    public void setVentanaTarifaInstalacion_BntActualizar(JButton VentanaTarifaInstalacion_BntActualizar) {
+        this.VentanaTarifaInstalacion_BntActualizar = VentanaTarifaInstalacion_BntActualizar;
+    }
+
+    public JTable getVentanaTarifasInstalacion_TablaGeneral() {
+        return VentanaTarifasInstalacion_TablaGeneral;
+    }
+
+    public void setVentanaTarifasInstalacion_TablaGeneral(JTable VentanaTarifasInstalacion_TablaGeneral) {
+        this.VentanaTarifasInstalacion_TablaGeneral = VentanaTarifasInstalacion_TablaGeneral;
+    }
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,9 +50,9 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        VentanaTarifaInstalacion_BntActualizar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaTarifasInstalacion_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -46,9 +66,9 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Tarifas de Instalacion");
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 51));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Actualizar");
+        VentanaTarifaInstalacion_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaTarifaInstalacion_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaTarifaInstalacion_BntActualizar.setText("Actualizar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -58,7 +78,7 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 637, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(VentanaTarifaInstalacion_BntActualizar)
                 .addGap(36, 36, 36))
         );
         jPanel2Layout.setVerticalGroup(
@@ -66,14 +86,14 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(9, 9, 9)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(VentanaTarifaInstalacion_BntActualizar)
                     .addComponent(jLabel1))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 970, 50));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaTarifasInstalacion_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -84,7 +104,7 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
                 "Nombre", "Codigo de Item Inventario", "Valor", "Creado por", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaTarifasInstalacion_TablaGeneral);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 970, -1));
 
@@ -102,47 +122,47 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaTarifasInstalacion().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaTarifasInstalacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaTarifasInstalacion().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton VentanaTarifaInstalacion_BntActualizar;
+    private javax.swing.JTable VentanaTarifasInstalacion_TablaGeneral;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

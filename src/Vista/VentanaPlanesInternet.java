@@ -5,6 +5,11 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+
 /**
  *
  * @author aaron
@@ -18,6 +23,111 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getVentanaPlanesInternet_BntActualizar() {
+        return VentanaPlanesInternet_BntActualizar;
+    }
+
+    public void setVentanaPlanesInternet_BntActualizar(JButton VentanaPlanesInternet_BntActualizar) {
+        this.VentanaPlanesInternet_BntActualizar = VentanaPlanesInternet_BntActualizar;
+    }
+
+    public JButton getVentanaPlanesInternet_BntAnular() {
+        return VentanaPlanesInternet_BntAnular;
+    }
+
+    public void setVentanaPlanesInternet_BntAnular(JButton VentanaPlanesInternet_BntAnular) {
+        this.VentanaPlanesInternet_BntAnular = VentanaPlanesInternet_BntAnular;
+    }
+
+    public JButton getVentanaPlanesInternet_BntAplicarFiltro() {
+        return VentanaPlanesInternet_BntAplicarFiltro;
+    }
+
+    public void setVentanaPlanesInternet_BntAplicarFiltro(JButton VentanaPlanesInternet_BntAplicarFiltro) {
+        this.VentanaPlanesInternet_BntAplicarFiltro = VentanaPlanesInternet_BntAplicarFiltro;
+    }
+
+    public JButton getVentanaPlanesInternet_BntEditar() {
+        return VentanaPlanesInternet_BntEditar;
+    }
+
+    public void setVentanaPlanesInternet_BntEditar(JButton VentanaPlanesInternet_BntEditar) {
+        this.VentanaPlanesInternet_BntEditar = VentanaPlanesInternet_BntEditar;
+    }
+
+    public JButton getVentanaPlanesInternet_BntNuevo() {
+        return VentanaPlanesInternet_BntNuevo;
+    }
+
+    public void setVentanaPlanesInternet_BntNuevo(JButton VentanaPlanesInternet_BntNuevo) {
+        this.VentanaPlanesInternet_BntNuevo = VentanaPlanesInternet_BntNuevo;
+    }
+
+    public JButton getVentanaPlanesInternet_BntRestablecerFiltro() {
+        return VentanaPlanesInternet_BntRestablecerFiltro;
+    }
+
+    public void setVentanaPlanesInternet_BntRestablecerFiltro(JButton VentanaPlanesInternet_BntRestablecerFiltro) {
+        this.VentanaPlanesInternet_BntRestablecerFiltro = VentanaPlanesInternet_BntRestablecerFiltro;
+    }
+
+    public JComboBox<String> getVentanaPlanesInternet_ComboNombreTecnico() {
+        return VentanaPlanesInternet_ComboNombreTecnico;
+    }
+
+    public void setVentanaPlanesInternet_ComboNombreTecnico(JComboBox<String> VentanaPlanesInternet_ComboNombreTecnico) {
+        this.VentanaPlanesInternet_ComboNombreTecnico = VentanaPlanesInternet_ComboNombreTecnico;
+    }
+
+    public JComboBox<String> getVentanaPlanesInternet_ComboTipoCliente() {
+        return VentanaPlanesInternet_ComboTipoCliente;
+    }
+
+    public void setVentanaPlanesInternet_ComboTipoCliente(JComboBox<String> VentanaPlanesInternet_ComboTipoCliente) {
+        this.VentanaPlanesInternet_ComboTipoCliente = VentanaPlanesInternet_ComboTipoCliente;
+    }
+
+    public JComboBox<String> getVentanaPlanesInternet_ComboVelocidad() {
+        return VentanaPlanesInternet_ComboVelocidad;
+    }
+
+    public void setVentanaPlanesInternet_ComboVelocidad(JComboBox<String> VentanaPlanesInternet_ComboVelocidad) {
+        this.VentanaPlanesInternet_ComboVelocidad = VentanaPlanesInternet_ComboVelocidad;
+    }
+
+    public JPanel getVentanaPlanesInternet_PaneBntFiltro() {
+        return VentanaPlanesInternet_PaneBntFiltro;
+    }
+
+    public void setVentanaPlanesInternet_PaneBntFiltro(JPanel VentanaPlanesInternet_PaneBntFiltro) {
+        this.VentanaPlanesInternet_PaneBntFiltro = VentanaPlanesInternet_PaneBntFiltro;
+    }
+
+    public JPanel getVentanaPlanesInternet_PanelBntNuevo() {
+        return VentanaPlanesInternet_PanelBntNuevo;
+    }
+
+    public void setVentanaPlanesInternet_PanelBntNuevo(JPanel VentanaPlanesInternet_PanelBntNuevo) {
+        this.VentanaPlanesInternet_PanelBntNuevo = VentanaPlanesInternet_PanelBntNuevo;
+    }
+
+    public JPanel getVentanaPlanesInternet_PanelPlanesInter() {
+        return VentanaPlanesInternet_PanelPlanesInter;
+    }
+
+    public void setVentanaPlanesInternet_PanelPlanesInter(JPanel VentanaPlanesInternet_PanelPlanesInter) {
+        this.VentanaPlanesInternet_PanelPlanesInter = VentanaPlanesInternet_PanelPlanesInter;
+    }
+
+    public JTable getVentanaPlanesInternet_TablaGeneral() {
+        return VentanaPlanesInternet_TablaGeneral;
+    }
+
+    public void setVentanaPlanesInternet_TablaGeneral(JTable VentanaPlanesInternet_TablaGeneral) {
+        this.VentanaPlanesInternet_TablaGeneral = VentanaPlanesInternet_TablaGeneral;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,23 +138,23 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        VentanaPlanesInternet_PanelBntNuevo = new javax.swing.JPanel();
+        VentanaPlanesInternet_BntNuevo = new javax.swing.JButton();
+        VentanaPlanesInternet_BntEditar = new javax.swing.JButton();
+        VentanaPlanesInternet_BntAnular = new javax.swing.JButton();
+        VentanaPlanesInternet_PanelPlanesInter = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        VentanaPlanesInternet_ComboNombreTecnico = new javax.swing.JComboBox<String>();
+        VentanaPlanesInternet_ComboTipoCliente = new javax.swing.JComboBox<String>();
+        VentanaPlanesInternet_ComboVelocidad = new javax.swing.JComboBox<String>();
+        VentanaPlanesInternet_PaneBntFiltro = new javax.swing.JPanel();
+        VentanaPlanesInternet_BntAplicarFiltro = new javax.swing.JButton();
+        VentanaPlanesInternet_BntActualizar = new javax.swing.JButton();
+        VentanaPlanesInternet_BntRestablecerFiltro = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaPlanesInternet_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -52,99 +162,99 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaPlanesInternet_PanelBntNuevo.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton4.setText("Nuevo");
+        VentanaPlanesInternet_BntNuevo.setText("Nuevo");
 
-        jButton5.setText("Editar");
+        VentanaPlanesInternet_BntEditar.setText("Editar");
 
-        jButton6.setText("Anular");
+        VentanaPlanesInternet_BntAnular.setText("Anular");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaPlanesInternet_PanelBntNuevoLayout = new javax.swing.GroupLayout(VentanaPlanesInternet_PanelBntNuevo);
+        VentanaPlanesInternet_PanelBntNuevo.setLayout(VentanaPlanesInternet_PanelBntNuevoLayout);
+        VentanaPlanesInternet_PanelBntNuevoLayout.setHorizontalGroup(
+            VentanaPlanesInternet_PanelBntNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaPlanesInternet_PanelBntNuevoLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addGap(18, 18, 18)
-                .addComponent(jButton5)
-                .addGap(18, 18, 18)
-                .addComponent(jButton6)
-                .addContainerGap(721, Short.MAX_VALUE))
+                .addComponent(VentanaPlanesInternet_BntNuevo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(VentanaPlanesInternet_BntEditar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(VentanaPlanesInternet_BntAnular)
+                .addContainerGap(745, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addComponent(jButton5)
-                .addComponent(jButton6))
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 970, 40));
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Planes de Internet", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Nombre tecnico:");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
-
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Tipo de Cliente:");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
-
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("Velocidad:");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 180, -1));
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
-        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 180, -1));
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
-        jPanel3.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 260, -1));
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 970, 100));
-
-        jPanel4.setBackground(new java.awt.Color(0, 153, 51));
-
-        jButton1.setText("Aplicar Filtros");
-
-        jButton2.setText("Actualizar");
-
-        jButton3.setText("Restablecer Filtros");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        VentanaPlanesInternet_PanelBntNuevoLayout.setVerticalGroup(
+            VentanaPlanesInternet_PanelBntNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaPlanesInternet_PanelBntNuevoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
-                .addGap(26, 26, 26)
-                .addComponent(jButton2)
-                .addGap(28, 28, 28)
-                .addComponent(jButton3)
-                .addContainerGap(578, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                .addGroup(VentanaPlanesInternet_PanelBntNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaPlanesInternet_BntNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(VentanaPlanesInternet_BntEditar)
+                    .addComponent(VentanaPlanesInternet_BntAnular))
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 970, 50));
+        jPanel1.add(VentanaPlanesInternet_PanelBntNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 970, 40));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaPlanesInternet_PanelPlanesInter.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaPlanesInternet_PanelPlanesInter.setBorder(javax.swing.BorderFactory.createTitledBorder("Planes de Internet"));
+        VentanaPlanesInternet_PanelPlanesInter.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("Nombre tecnico:");
+        VentanaPlanesInternet_PanelPlanesInter.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+
+        jLabel2.setText("Tipo de Cliente:");
+        VentanaPlanesInternet_PanelPlanesInter.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
+
+        jLabel4.setText("Velocidad:");
+        VentanaPlanesInternet_PanelPlanesInter.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
+
+        VentanaPlanesInternet_ComboNombreTecnico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaPlanesInternet_PanelPlanesInter.add(VentanaPlanesInternet_ComboNombreTecnico, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 180, -1));
+
+        VentanaPlanesInternet_ComboTipoCliente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaPlanesInternet_PanelPlanesInter.add(VentanaPlanesInternet_ComboTipoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 180, -1));
+
+        VentanaPlanesInternet_ComboVelocidad.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaPlanesInternet_PanelPlanesInter.add(VentanaPlanesInternet_ComboVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 260, -1));
+
+        jPanel1.add(VentanaPlanesInternet_PanelPlanesInter, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 970, 100));
+
+        VentanaPlanesInternet_PaneBntFiltro.setBackground(new java.awt.Color(0, 153, 51));
+
+        VentanaPlanesInternet_BntAplicarFiltro.setText("Aplicar Filtros");
+
+        VentanaPlanesInternet_BntActualizar.setText("Actualizar");
+
+        VentanaPlanesInternet_BntRestablecerFiltro.setText("Restablecer Filtros");
+
+        javax.swing.GroupLayout VentanaPlanesInternet_PaneBntFiltroLayout = new javax.swing.GroupLayout(VentanaPlanesInternet_PaneBntFiltro);
+        VentanaPlanesInternet_PaneBntFiltro.setLayout(VentanaPlanesInternet_PaneBntFiltroLayout);
+        VentanaPlanesInternet_PaneBntFiltroLayout.setHorizontalGroup(
+            VentanaPlanesInternet_PaneBntFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaPlanesInternet_PaneBntFiltroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(VentanaPlanesInternet_BntAplicarFiltro)
+                .addGap(26, 26, 26)
+                .addComponent(VentanaPlanesInternet_BntActualizar)
+                .addGap(28, 28, 28)
+                .addComponent(VentanaPlanesInternet_BntRestablecerFiltro)
+                .addContainerGap(578, Short.MAX_VALUE))
+        );
+        VentanaPlanesInternet_PaneBntFiltroLayout.setVerticalGroup(
+            VentanaPlanesInternet_PaneBntFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaPlanesInternet_PaneBntFiltroLayout.createSequentialGroup()
+                .addContainerGap(12, Short.MAX_VALUE)
+                .addGroup(VentanaPlanesInternet_PaneBntFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaPlanesInternet_BntAplicarFiltro)
+                    .addComponent(VentanaPlanesInternet_BntActualizar)
+                    .addComponent(VentanaPlanesInternet_BntRestablecerFiltro))
+                .addContainerGap())
+        );
+
+        jPanel1.add(VentanaPlanesInternet_PaneBntFiltro, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 970, 50));
+
+        VentanaPlanesInternet_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null},
@@ -155,7 +265,7 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
                 "Nombre", "Nombre Tecnico", "Tipo Cliente", "Precio", "Velocidad", "Codigo Inventario", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaPlanesInternet_TablaGeneral);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 970, 270));
 
@@ -173,59 +283,59 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaPlanesInternet().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaPlanesInternet().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JButton VentanaPlanesInternet_BntActualizar;
+    private javax.swing.JButton VentanaPlanesInternet_BntAnular;
+    private javax.swing.JButton VentanaPlanesInternet_BntAplicarFiltro;
+    private javax.swing.JButton VentanaPlanesInternet_BntEditar;
+    private javax.swing.JButton VentanaPlanesInternet_BntNuevo;
+    private javax.swing.JButton VentanaPlanesInternet_BntRestablecerFiltro;
+    private javax.swing.JComboBox<String> VentanaPlanesInternet_ComboNombreTecnico;
+    private javax.swing.JComboBox<String> VentanaPlanesInternet_ComboTipoCliente;
+    private javax.swing.JComboBox<String> VentanaPlanesInternet_ComboVelocidad;
+    private javax.swing.JPanel VentanaPlanesInternet_PaneBntFiltro;
+    private javax.swing.JPanel VentanaPlanesInternet_PanelBntNuevo;
+    private javax.swing.JPanel VentanaPlanesInternet_PanelPlanesInter;
+    private javax.swing.JTable VentanaPlanesInternet_TablaGeneral;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

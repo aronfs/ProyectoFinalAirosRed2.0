@@ -5,6 +5,11 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+
 /**
  *
  * @author aaron
@@ -18,6 +23,119 @@ public class VentanaContribuentes extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getVentanaContribuyente_BntActualizar() {
+        return VentanaContribuyente_BntActualizar;
+    }
+
+    public void setVentanaContribuyente_BntActualizar(JButton VentanaContribuyente_BntActualizar) {
+        this.VentanaContribuyente_BntActualizar = VentanaContribuyente_BntActualizar;
+    }
+
+    public JButton getVentanaContribuyente_BntAnular() {
+        return VentanaContribuyente_BntAnular;
+    }
+
+    public void setVentanaContribuyente_BntAnular(JButton VentanaContribuyente_BntAnular) {
+        this.VentanaContribuyente_BntAnular = VentanaContribuyente_BntAnular;
+    }
+
+    public JButton getVentanaContribuyente_BntAplicarFiltros() {
+        return VentanaContribuyente_BntAplicarFiltros;
+    }
+
+    public void setVentanaContribuyente_BntAplicarFiltros(JButton VentanaContribuyente_BntAplicarFiltros) {
+        this.VentanaContribuyente_BntAplicarFiltros = VentanaContribuyente_BntAplicarFiltros;
+    }
+
+    public JButton getVentanaContribuyente_BntEditar() {
+        return VentanaContribuyente_BntEditar;
+    }
+
+    public void setVentanaContribuyente_BntEditar(JButton VentanaContribuyente_BntEditar) {
+        this.VentanaContribuyente_BntEditar = VentanaContribuyente_BntEditar;
+    }
+
+    public JButton getVentanaContribuyente_BntNuevo() {
+        return VentanaContribuyente_BntNuevo;
+    }
+
+    public void setVentanaContribuyente_BntNuevo(JButton VentanaContribuyente_BntNuevo) {
+        this.VentanaContribuyente_BntNuevo = VentanaContribuyente_BntNuevo;
+    }
+
+    public JButton getVentanaContribuyente_BntRestablecerFiltros() {
+        return VentanaContribuyente_BntRestablecerFiltros;
+    }
+
+    public void setVentanaContribuyente_BntRestablecerFiltros(JButton VentanaContribuyente_BntRestablecerFiltros) {
+        this.VentanaContribuyente_BntRestablecerFiltros = VentanaContribuyente_BntRestablecerFiltros;
+    }
+
+    public JButton getVentanaContribuyente_BntVerPlantilla() {
+        return VentanaContribuyente_BntVerPlantilla;
+    }
+
+    public void setVentanaContribuyente_BntVerPlantilla(JButton VentanaContribuyente_BntVerPlantilla) {
+        this.VentanaContribuyente_BntVerPlantilla = VentanaContribuyente_BntVerPlantilla;
+    }
+
+    public JComboBox<String> getVentanaContribuyente_ComboActivo() {
+        return VentanaContribuyente_ComboActivo;
+    }
+
+    public void setVentanaContribuyente_ComboActivo(JComboBox<String> VentanaContribuyente_ComboActivo) {
+        this.VentanaContribuyente_ComboActivo = VentanaContribuyente_ComboActivo;
+    }
+
+    public JComboBox<String> getVentanaContribuyente_ComboComprovanteElectrinico() {
+        return VentanaContribuyente_ComboComprovanteElectrinico;
+    }
+
+    public void setVentanaContribuyente_ComboComprovanteElectrinico(JComboBox<String> VentanaContribuyente_ComboComprovanteElectrinico) {
+        this.VentanaContribuyente_ComboComprovanteElectrinico = VentanaContribuyente_ComboComprovanteElectrinico;
+    }
+
+    public JPanel getVentanaContribuyente_PanelAplicar() {
+        return VentanaContribuyente_PanelAplicar;
+    }
+
+    public void setVentanaContribuyente_PanelAplicar(JPanel VentanaContribuyente_PanelAplicar) {
+        this.VentanaContribuyente_PanelAplicar = VentanaContribuyente_PanelAplicar;
+    }
+
+    public JPanel getVentanaContribuyente_PanelContribuyente() {
+        return VentanaContribuyente_PanelContribuyente;
+    }
+
+    public void setVentanaContribuyente_PanelContribuyente(JPanel VentanaContribuyente_PanelContribuyente) {
+        this.VentanaContribuyente_PanelContribuyente = VentanaContribuyente_PanelContribuyente;
+    }
+
+    public JPanel getVentanaContribuyente_PanelGeneral() {
+        return VentanaContribuyente_PanelGeneral;
+    }
+
+    public void setVentanaContribuyente_PanelGeneral(JPanel VentanaContribuyente_PanelGeneral) {
+        this.VentanaContribuyente_PanelGeneral = VentanaContribuyente_PanelGeneral;
+    }
+
+    public JTable getVentanaContribuyente_TablaGeneral() {
+        return VentanaContribuyente_TablaGeneral;
+    }
+
+    public void setVentanaContribuyente_TablaGeneral(JTable VentanaContribuyente_TablaGeneral) {
+        this.VentanaContribuyente_TablaGeneral = VentanaContribuyente_TablaGeneral;
+    }
+
+    public JPanel getVentanaContribuyentes_PanelBntNuevo() {
+        return VentanaContribuyentes_PanelBntNuevo;
+    }
+
+    public void setVentanaContribuyentes_PanelBntNuevo(JPanel VentanaContribuyentes_PanelBntNuevo) {
+        this.VentanaContribuyentes_PanelBntNuevo = VentanaContribuyentes_PanelBntNuevo;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,149 +145,141 @@ public class VentanaContribuentes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        VentanaContribuyente_PanelGeneral = new javax.swing.JPanel();
+        VentanaContribuyentes_PanelBntNuevo = new javax.swing.JPanel();
+        VentanaContribuyente_BntNuevo = new javax.swing.JButton();
+        VentanaContribuyente_BntEditar = new javax.swing.JButton();
+        VentanaContribuyente_BntAnular = new javax.swing.JButton();
+        VentanaContribuyente_BntVerPlantilla = new javax.swing.JButton();
+        VentanaContribuyente_PanelContribuyente = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        VentanaContribuyente_ComboActivo = new javax.swing.JComboBox<String>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jPanel4 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        VentanaContribuyente_ComboComprovanteElectrinico = new javax.swing.JComboBox<String>();
+        VentanaContribuyente_PanelAplicar = new javax.swing.JPanel();
+        VentanaContribuyente_BntAplicarFiltros = new javax.swing.JButton();
+        VentanaContribuyente_BntActualizar = new javax.swing.JButton();
+        VentanaContribuyente_BntRestablecerFiltros = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaContribuyente_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaContribuyente_PanelGeneral.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_PanelGeneral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaContribuyentes_PanelBntNuevo.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 51));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Nuevo");
+        VentanaContribuyente_BntNuevo.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntNuevo.setText("Nuevo");
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 51));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Editar");
+        VentanaContribuyente_BntEditar.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntEditar.setText("Editar");
 
-        jButton3.setBackground(new java.awt.Color(0, 255, 51));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Anular");
+        VentanaContribuyente_BntAnular.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntAnular.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntAnular.setText("Anular");
 
-        jButton4.setBackground(new java.awt.Color(0, 255, 51));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Ver plantilla");
+        VentanaContribuyente_BntVerPlantilla.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntVerPlantilla.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntVerPlantilla.setText("Ver plantilla");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaContribuyentes_PanelBntNuevoLayout = new javax.swing.GroupLayout(VentanaContribuyentes_PanelBntNuevo);
+        VentanaContribuyentes_PanelBntNuevo.setLayout(VentanaContribuyentes_PanelBntNuevoLayout);
+        VentanaContribuyentes_PanelBntNuevoLayout.setHorizontalGroup(
+            VentanaContribuyentes_PanelBntNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaContribuyentes_PanelBntNuevoLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jButton1)
+                .addComponent(VentanaContribuyente_BntNuevo)
                 .addGap(28, 28, 28)
-                .addComponent(jButton2)
+                .addComponent(VentanaContribuyente_BntEditar)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(VentanaContribuyente_BntAnular)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4)
+                .addComponent(VentanaContribuyente_BntVerPlantilla)
                 .addContainerGap(615, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        VentanaContribuyentes_PanelBntNuevoLayout.setVerticalGroup(
+            VentanaContribuyentes_PanelBntNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaContribuyentes_PanelBntNuevoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                .addGroup(VentanaContribuyentes_PanelBntNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaContribuyente_BntEditar)
+                    .addComponent(VentanaContribuyente_BntNuevo)
+                    .addComponent(VentanaContribuyente_BntAnular)
+                    .addComponent(VentanaContribuyente_BntVerPlantilla))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 980, 50));
+        VentanaContribuyente_PanelGeneral.add(VentanaContribuyentes_PanelBntNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 980, 50));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Contribuyentes", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaContribuyente_PanelContribuyente.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_PanelContribuyente.setBorder(javax.swing.BorderFactory.createTitledBorder("Contribuyentes"));
+        VentanaContribuyente_PanelContribuyente.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Activo(a):");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 21, -1, -1));
+        VentanaContribuyente_PanelContribuyente.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 21, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("¿Es emisor de");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
+        VentanaContribuyente_PanelContribuyente.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NO FILTRAR", "SI", "NO" }));
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 159, -1));
+        VentanaContribuyente_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "NO FILTRAR", "SI", "NO" }));
+        VentanaContribuyente_PanelContribuyente.add(VentanaContribuyente_ComboActivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 159, -1));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("comprobantes");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
+        VentanaContribuyente_PanelContribuyente.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("eléctronicos?");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, -1, -1));
+        VentanaContribuyente_PanelContribuyente.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, -1, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NO FILTRAR", "SI", "NO" }));
-        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 140, -1));
+        VentanaContribuyente_ComboComprovanteElectrinico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "NO FILTRAR", "SI", "NO" }));
+        VentanaContribuyente_PanelContribuyente.add(VentanaContribuyente_ComboComprovanteElectrinico, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 140, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 100));
+        VentanaContribuyente_PanelGeneral.add(VentanaContribuyente_PanelContribuyente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 100));
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaContribuyente_PanelAplicar.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton5.setBackground(new java.awt.Color(0, 255, 51));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Aplicar Filtros");
+        VentanaContribuyente_BntAplicarFiltros.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntAplicarFiltros.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntAplicarFiltros.setText("Aplicar Filtros");
 
-        jButton6.setBackground(new java.awt.Color(0, 255, 51));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Actualizar");
+        VentanaContribuyente_BntActualizar.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntActualizar.setText("Actualizar");
 
-        jButton7.setBackground(new java.awt.Color(0, 255, 51));
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Restablecer Filtros");
+        VentanaContribuyente_BntRestablecerFiltros.setBackground(new java.awt.Color(0, 255, 51));
+        VentanaContribuyente_BntRestablecerFiltros.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaContribuyente_BntRestablecerFiltros.setText("Restablecer Filtros");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaContribuyente_PanelAplicarLayout = new javax.swing.GroupLayout(VentanaContribuyente_PanelAplicar);
+        VentanaContribuyente_PanelAplicar.setLayout(VentanaContribuyente_PanelAplicarLayout);
+        VentanaContribuyente_PanelAplicarLayout.setHorizontalGroup(
+            VentanaContribuyente_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaContribuyente_PanelAplicarLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton5)
+                .addComponent(VentanaContribuyente_BntAplicarFiltros)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(VentanaContribuyente_BntActualizar)
                 .addGap(18, 18, 18)
-                .addComponent(jButton7)
+                .addComponent(VentanaContribuyente_BntRestablecerFiltros)
                 .addContainerGap(606, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addComponent(jButton6)
-                .addComponent(jButton7))
+        VentanaContribuyente_PanelAplicarLayout.setVerticalGroup(
+            VentanaContribuyente_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaContribuyente_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(VentanaContribuyente_BntAplicarFiltros, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                .addComponent(VentanaContribuyente_BntActualizar)
+                .addComponent(VentanaContribuyente_BntRestablecerFiltros))
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 980, 40));
+        VentanaContribuyente_PanelGeneral.add(VentanaContribuyente_PanelAplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 980, 40));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaContribuyente_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -188,78 +298,78 @@ public class VentanaContribuentes extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaContribuyente_TablaGeneral);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 980, 360));
+        VentanaContribuyente_PanelGeneral.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 980, 360));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 999, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(VentanaContribuyente_PanelGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, 999, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
+            .addComponent(VentanaContribuyente_PanelGeneral, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaContribuentes().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaContribuentes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaContribuentes().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JButton VentanaContribuyente_BntActualizar;
+    private javax.swing.JButton VentanaContribuyente_BntAnular;
+    private javax.swing.JButton VentanaContribuyente_BntAplicarFiltros;
+    private javax.swing.JButton VentanaContribuyente_BntEditar;
+    private javax.swing.JButton VentanaContribuyente_BntNuevo;
+    private javax.swing.JButton VentanaContribuyente_BntRestablecerFiltros;
+    private javax.swing.JButton VentanaContribuyente_BntVerPlantilla;
+    private javax.swing.JComboBox<String> VentanaContribuyente_ComboActivo;
+    private javax.swing.JComboBox<String> VentanaContribuyente_ComboComprovanteElectrinico;
+    private javax.swing.JPanel VentanaContribuyente_PanelAplicar;
+    private javax.swing.JPanel VentanaContribuyente_PanelContribuyente;
+    private javax.swing.JPanel VentanaContribuyente_PanelGeneral;
+    private javax.swing.JTable VentanaContribuyente_TablaGeneral;
+    private javax.swing.JPanel VentanaContribuyentes_PanelBntNuevo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

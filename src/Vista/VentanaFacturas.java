@@ -5,7 +5,11 @@
  */
 package Vista;
 
+import com.toedter.calendar.JDateChooser;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.JTable;
 
 /**
  *
@@ -20,6 +24,151 @@ public class VentanaFacturas extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JPanel getPanelVentaFacturasPanelPrincipanl() {
+        return PanelVentaFacturasPanelPrincipanl;
+    }
+
+    public void setPanelVentaFacturasPanelPrincipanl(JPanel PanelVentaFacturasPanelPrincipanl) {
+        this.PanelVentaFacturasPanelPrincipanl = PanelVentaFacturasPanelPrincipanl;
+    }
+
+    public JPanel getVentanaFacturasPanelBntInicio() {
+        return VentanaFacturasPanelBntInicio;
+    }
+
+    public void setVentanaFacturasPanelBntInicio(JPanel VentanaFacturasPanelBntInicio) {
+        this.VentanaFacturasPanelBntInicio = VentanaFacturasPanelBntInicio;
+    }
+
+    public JPanel getVentanaFacturasPanelFacturas() {
+        return VentanaFacturasPanelFacturas;
+    }
+
+    public void setVentanaFacturasPanelFacturas(JPanel VentanaFacturasPanelFacturas) {
+        this.VentanaFacturasPanelFacturas = VentanaFacturasPanelFacturas;
+    }
+
+    public JPanel getVentanaFacturasPanelFiltros() {
+        return VentanaFacturasPanelFiltros;
+    }
+
+    public void setVentanaFacturasPanelFiltros(JPanel VentanaFacturasPanelFiltros) {
+        this.VentanaFacturasPanelFiltros = VentanaFacturasPanelFiltros;
+    }
+
+    public JButton getVentanaFacturas_BntActualizar() {
+        return VentanaFacturas_BntActualizar;
+    }
+
+    public void setVentanaFacturas_BntActualizar(JButton VentanaFacturas_BntActualizar) {
+        this.VentanaFacturas_BntActualizar = VentanaFacturas_BntActualizar;
+    }
+
+    public JButton getVentanaFacturas_BntAplicarFiltro() {
+        return VentanaFacturas_BntAplicarFiltro;
+    }
+
+    public void setVentanaFacturas_BntAplicarFiltro(JButton VentanaFacturas_BntAplicarFiltro) {
+        this.VentanaFacturas_BntAplicarFiltro = VentanaFacturas_BntAplicarFiltro;
+    }
+
+    public JButton getVentanaFacturas_BntEditar() {
+        return VentanaFacturas_BntEditar;
+    }
+
+    public void setVentanaFacturas_BntEditar(JButton VentanaFacturas_BntEditar) {
+        this.VentanaFacturas_BntEditar = VentanaFacturas_BntEditar;
+    }
+
+    public JButton getVentanaFacturas_BntVerFactura() {
+        return VentanaFacturas_BntVerFactura;
+    }
+
+    public void setVentanaFacturas_BntVerFactura(JButton VentanaFacturas_BntVerFactura) {
+        this.VentanaFacturas_BntVerFactura = VentanaFacturas_BntVerFactura;
+    }
+
+    public JComboBox<String> getVentanaFacturas_ComboAutorizacion() {
+        return VentanaFacturas_ComboAutorizacion;
+    }
+
+    public void setVentanaFacturas_ComboAutorizacion(JComboBox<String> VentanaFacturas_ComboAutorizacion) {
+        this.VentanaFacturas_ComboAutorizacion = VentanaFacturas_ComboAutorizacion;
+    }
+
+    public JComboBox<String> getVentanaFacturas_ComboBodega() {
+        return VentanaFacturas_ComboBodega;
+    }
+
+    public void setVentanaFacturas_ComboBodega(JComboBox<String> VentanaFacturas_ComboBodega) {
+        this.VentanaFacturas_ComboBodega = VentanaFacturas_ComboBodega;
+    }
+
+    public JComboBox<String> getVentanaFacturas_ComboCreadoPor() {
+        return VentanaFacturas_ComboCreadoPor;
+    }
+
+    public void setVentanaFacturas_ComboCreadoPor(JComboBox<String> VentanaFacturas_ComboCreadoPor) {
+        this.VentanaFacturas_ComboCreadoPor = VentanaFacturas_ComboCreadoPor;
+    }
+
+    public JComboBox<String> getVentanaFacturas_ComboEstadoDoc() {
+        return VentanaFacturas_ComboEstadoDoc;
+    }
+
+    public void setVentanaFacturas_ComboEstadoDoc(JComboBox<String> VentanaFacturas_ComboEstadoDoc) {
+        this.VentanaFacturas_ComboEstadoDoc = VentanaFacturas_ComboEstadoDoc;
+    }
+
+    public JComboBox<String> getVentanaFacturas_ComboFormaPago() {
+        return VentanaFacturas_ComboFormaPago;
+    }
+
+    public void setVentanaFacturas_ComboFormaPago(JComboBox<String> VentanaFacturas_ComboFormaPago) {
+        this.VentanaFacturas_ComboFormaPago = VentanaFacturas_ComboFormaPago;
+    }
+
+    public JDateChooser getVentanaFacturas_JDateFechaFin() {
+        return VentanaFacturas_JDateFechaFin;
+    }
+
+    public void setVentanaFacturas_JDateFechaFin(JDateChooser VentanaFacturas_JDateFechaFin) {
+        this.VentanaFacturas_JDateFechaFin = VentanaFacturas_JDateFechaFin;
+    }
+
+    public JDateChooser getVentanaFacturas_JDateFechaInicio() {
+        return VentanaFacturas_JDateFechaInicio;
+    }
+
+    public void setVentanaFacturas_JDateFechaInicio(JDateChooser VentanaFacturas_JDateFechaInicio) {
+        this.VentanaFacturas_JDateFechaInicio = VentanaFacturas_JDateFechaInicio;
+    }
+
+    public JTable getVentanaFacturas_TablaGeneral() {
+        return VentanaFacturas_TablaGeneral;
+    }
+
+    public void setVentanaFacturas_TablaGeneral(JTable VentanaFacturas_TablaGeneral) {
+        this.VentanaFacturas_TablaGeneral = VentanaFacturas_TablaGeneral;
+    }
+
+    public JButton getVentanaFacturas_bntAnular() {
+        return VentanaFacturas_bntAnular;
+    }
+
+    public void setVentanaFacturas_bntAnular(JButton VentanaFacturas_bntAnular) {
+        this.VentanaFacturas_bntAnular = VentanaFacturas_bntAnular;
+    }
+
+    public JButton getBtnNuevoVentanaFactura() {
+        return btnNuevoVentanaFactura;
+    }
+
+    public void setBtnNuevoVentanaFactura(JButton btnNuevoVentanaFactura) {
+        this.btnNuevoVentanaFactura = btnNuevoVentanaFactura;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,16 +178,16 @@ public class VentanaFacturas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        btnAplicarFiltros = new javax.swing.JButton();
-        btnActualizarVentanaFacturas = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        PanelVentaFacturasPanelPrincipanl = new javax.swing.JPanel();
+        VentanaFacturasPanelFiltros = new javax.swing.JPanel();
+        VentanaFacturas_BntAplicarFiltro = new javax.swing.JButton();
+        VentanaFacturas_BntActualizar = new javax.swing.JButton();
+        VentanaFacturasPanelBntInicio = new javax.swing.JPanel();
         btnNuevoVentanaFactura = new javax.swing.JButton();
-        btnVentanaFactura = new javax.swing.JButton();
-        btnAnularFactura = new javax.swing.JButton();
-        btnVerFacturaVentanaFactura = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
+        VentanaFacturas_BntEditar = new javax.swing.JButton();
+        VentanaFacturas_bntAnular = new javax.swing.JButton();
+        VentanaFacturas_BntVerFactura = new javax.swing.JButton();
+        VentanaFacturasPanelFacturas = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -48,180 +197,158 @@ public class VentanaFacturas extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        VentanaFacturas_JDateFechaInicio = new com.toedter.calendar.JDateChooser();
+        VentanaFacturas_ComboAutorizacion = new javax.swing.JComboBox<String>();
+        VentanaFacturas_JDateFechaFin = new com.toedter.calendar.JDateChooser();
+        VentanaFacturas_ComboBodega = new javax.swing.JComboBox<String>();
+        VentanaFacturas_ComboEstadoDoc = new javax.swing.JComboBox<String>();
+        VentanaFacturas_ComboFormaPago = new javax.swing.JComboBox<String>();
+        VentanaFacturas_ComboCreadoPor = new javax.swing.JComboBox<String>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaFacturas_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1015, 555));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        PanelVentaFacturasPanelPrincipanl.setBackground(new java.awt.Color(255, 255, 255));
+        PanelVentaFacturasPanelPrincipanl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 102, 51));
+        VentanaFacturasPanelFiltros.setBackground(new java.awt.Color(0, 102, 51));
 
-        btnAplicarFiltros.setBackground(new java.awt.Color(0, 204, 51));
-        btnAplicarFiltros.setForeground(new java.awt.Color(255, 255, 255));
-        btnAplicarFiltros.setText("Aplicar Filtros");
+        VentanaFacturas_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaFacturas_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        btnActualizarVentanaFacturas.setBackground(new java.awt.Color(0, 204, 51));
-        btnActualizarVentanaFacturas.setForeground(new java.awt.Color(255, 255, 255));
-        btnActualizarVentanaFacturas.setText("Actualizar");
+        VentanaFacturas_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaFacturas_BntActualizar.setText("Actualizar");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaFacturasPanelFiltrosLayout = new javax.swing.GroupLayout(VentanaFacturasPanelFiltros);
+        VentanaFacturasPanelFiltros.setLayout(VentanaFacturasPanelFiltrosLayout);
+        VentanaFacturasPanelFiltrosLayout.setHorizontalGroup(
+            VentanaFacturasPanelFiltrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaFacturasPanelFiltrosLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(btnAplicarFiltros)
+                .addComponent(VentanaFacturas_BntAplicarFiltro)
                 .addGap(18, 18, 18)
-                .addComponent(btnActualizarVentanaFacturas)
+                .addComponent(VentanaFacturas_BntActualizar)
                 .addContainerGap(749, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(btnAplicarFiltros, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addComponent(btnActualizarVentanaFacturas))
+        VentanaFacturasPanelFiltrosLayout.setVerticalGroup(
+            VentanaFacturasPanelFiltrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaFacturasPanelFiltrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(VentanaFacturas_BntAplicarFiltro, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                .addComponent(VentanaFacturas_BntActualizar))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 980, 40));
+        PanelVentaFacturasPanelPrincipanl.add(VentanaFacturasPanelFiltros, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 980, 40));
 
-        jPanel3.setBackground(new java.awt.Color(0, 102, 51));
+        VentanaFacturasPanelBntInicio.setBackground(new java.awt.Color(0, 102, 51));
 
         btnNuevoVentanaFactura.setBackground(new java.awt.Color(0, 204, 51));
         btnNuevoVentanaFactura.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevoVentanaFactura.setText("Nuevo");
 
-        btnVentanaFactura.setBackground(new java.awt.Color(0, 204, 51));
-        btnVentanaFactura.setForeground(new java.awt.Color(255, 255, 255));
-        btnVentanaFactura.setText("Editar");
+        VentanaFacturas_BntEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaFacturas_BntEditar.setText("Editar");
 
-        btnAnularFactura.setBackground(new java.awt.Color(0, 204, 51));
-        btnAnularFactura.setForeground(new java.awt.Color(255, 255, 255));
-        btnAnularFactura.setText("Anular");
+        VentanaFacturas_bntAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_bntAnular.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaFacturas_bntAnular.setText("Anular");
 
-        btnVerFacturaVentanaFactura.setBackground(new java.awt.Color(0, 204, 51));
-        btnVerFacturaVentanaFactura.setForeground(new java.awt.Color(255, 255, 255));
-        btnVerFacturaVentanaFactura.setText("Ver Factura");
+        VentanaFacturas_BntVerFactura.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaFacturas_BntVerFactura.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaFacturas_BntVerFactura.setText("Ver Factura");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaFacturasPanelBntInicioLayout = new javax.swing.GroupLayout(VentanaFacturasPanelBntInicio);
+        VentanaFacturasPanelBntInicio.setLayout(VentanaFacturasPanelBntInicioLayout);
+        VentanaFacturasPanelBntInicioLayout.setHorizontalGroup(
+            VentanaFacturasPanelBntInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaFacturasPanelBntInicioLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(btnNuevoVentanaFactura)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnVentanaFactura)
+                .addComponent(VentanaFacturas_BntEditar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnAnularFactura)
+                .addComponent(VentanaFacturas_bntAnular)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnVerFacturaVentanaFactura)
+                .addComponent(VentanaFacturas_BntVerFactura)
                 .addContainerGap(654, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        VentanaFacturasPanelBntInicioLayout.setVerticalGroup(
+            VentanaFacturasPanelBntInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaFacturasPanelBntInicioLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(VentanaFacturasPanelBntInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnNuevoVentanaFactura)
-                    .addComponent(btnVentanaFactura)
-                    .addComponent(btnAnularFactura)
-                    .addComponent(btnVerFacturaVentanaFactura))
+                    .addComponent(VentanaFacturas_BntEditar)
+                    .addComponent(VentanaFacturas_bntAnular)
+                    .addComponent(VentanaFacturas_BntVerFactura))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 980, 50));
+        PanelVentaFacturasPanelPrincipanl.add(VentanaFacturasPanelBntInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 980, 50));
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Facturas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaFacturasPanelFacturas.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaFacturasPanelFacturas.setBorder(javax.swing.BorderFactory.createTitledBorder("Facturas"));
+        VentanaFacturasPanelFacturas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Fecha Inicio:");
-        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 17, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Estado Doc.");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 56, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Fecha fin:");
-        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Bodega:");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, -1, -1));
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Estado Doc.");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 20, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, -1, -1));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Sistema:");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 40, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, -1, -1));
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Forma pago:");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 20, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 20, -1, -1));
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Creado por:");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, -1, -1));
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Autorizacion:");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
+        VentanaFacturasPanelFacturas.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
-        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel4.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 170, 30));
+        VentanaFacturas_JDateFechaInicio.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_JDateFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 170, 20));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "AUTORIZADO", "AÚN NO AUTORIZADOS", "ANULADO", "NO FILTRAR" }));
-        jPanel4.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 170, -1));
+        VentanaFacturas_ComboAutorizacion.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "AUTORIZADO", "AÚN NO AUTORIZADOS", "ANULADO", "NO FILTRAR" }));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboAutorizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 170, -1));
 
-        jDateChooser2.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel4.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 170, -1));
+        VentanaFacturas_JDateFechaFin.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_JDateFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 170, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
-        jPanel4.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 170, -1));
+        VentanaFacturas_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboBodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 170, -1));
 
-        jComboBox3.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox3.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "ANULADO", "ARCHIVADO", "PENDIENTE" }));
-        jPanel4.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 130, -1));
+        VentanaFacturas_ComboEstadoDoc.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "ANULADO", "ARCHIVADO", "PENDIENTE" }));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboEstadoDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 130, -1));
 
-        jComboBox4.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox4.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "CONTADO", "CRÉDITO", "SIN FORMA DE PAGO" }));
-        jPanel4.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, 110, -1));
+        VentanaFacturas_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "CONTADO", "CRÉDITO", "SIN FORMA DE PAGO" }));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboFormaPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 20, 110, -1));
 
-        jComboBox5.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox5.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
-        jPanel4.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 50, 110, -1));
+        VentanaFacturas_ComboCreadoPor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboCreadoPor, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 60, 110, -1));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 100));
+        PanelVentaFacturasPanelPrincipanl.add(VentanaFacturasPanelFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 980, 170));
 
         jScrollPane1.setBorder(null);
 
-        jTable1.setBackground(new java.awt.Color(255, 255, 255));
-        jTable1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaFacturas_TablaGeneral.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        VentanaFacturas_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null},
@@ -240,122 +367,80 @@ public class VentanaFacturas extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaFacturas_TablaGeneral);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 980, 280));
+        PanelVentaFacturasPanelPrincipanl.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 980, 170));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PanelVentaFacturasPanelPrincipanl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, Short.MAX_VALUE)
+            .addComponent(PanelVentaFacturasPanelPrincipanl, javax.swing.GroupLayout.DEFAULT_SIZE, 517, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaFacturas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaFacturas().setVisible(true);
+//            }
+//        });
+//    }
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaFacturas().setVisible(true);
-            }
-        });
-    }
-
-    public JButton getBtnActualizarVentanaFacturas() {
-        return btnActualizarVentanaFacturas;
-    }
-
-    public void setBtnActualizarVentanaFacturas(JButton btnActualizarVentanaFacturas) {
-        this.btnActualizarVentanaFacturas = btnActualizarVentanaFacturas;
-    }
-
-    public JButton getBtnAnularFactura() {
-        return btnAnularFactura;
-    }
-
-    public void setBtnAnularFactura(JButton btnAnularFactura) {
-        this.btnAnularFactura = btnAnularFactura;
-    }
-
-    public JButton getBtnAplicarFiltros() {
-        return btnAplicarFiltros;
-    }
-
-    public void setBtnAplicarFiltros(JButton btnAplicarFiltros) {
-        this.btnAplicarFiltros = btnAplicarFiltros;
-    }
-
-    public JButton getBtnNuevoVentanaFactura() {
-        return btnNuevoVentanaFactura;
-    }
-
-    public void setBtnNuevoVentanaFactura(JButton btnNuevoVentanaFactura) {
-        this.btnNuevoVentanaFactura = btnNuevoVentanaFactura;
-    }
-
-    public JButton getBtnVentanaFactura() {
-        return btnVentanaFactura;
-    }
-
-    public void setBtnVentanaFactura(JButton btnVentanaFactura) {
-        this.btnVentanaFactura = btnVentanaFactura;
-    }
-
-    public JButton getBtnVerFacturaVentanaFactura() {
-        return btnVerFacturaVentanaFactura;
-    }
-
-    public void setBtnVerFacturaVentanaFactura(JButton btnVerFacturaVentanaFactura) {
-        this.btnVerFacturaVentanaFactura = btnVerFacturaVentanaFactura;
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnActualizarVentanaFacturas;
-    private javax.swing.JButton btnAnularFactura;
-    private javax.swing.JButton btnAplicarFiltros;
+    private javax.swing.JPanel PanelVentaFacturasPanelPrincipanl;
+    private javax.swing.JPanel VentanaFacturasPanelBntInicio;
+    private javax.swing.JPanel VentanaFacturasPanelFacturas;
+    private javax.swing.JPanel VentanaFacturasPanelFiltros;
+    private javax.swing.JButton VentanaFacturas_BntActualizar;
+    private javax.swing.JButton VentanaFacturas_BntAplicarFiltro;
+    private javax.swing.JButton VentanaFacturas_BntEditar;
+    private javax.swing.JButton VentanaFacturas_BntVerFactura;
+    private javax.swing.JComboBox<String> VentanaFacturas_ComboAutorizacion;
+    private javax.swing.JComboBox<String> VentanaFacturas_ComboBodega;
+    private javax.swing.JComboBox<String> VentanaFacturas_ComboCreadoPor;
+    private javax.swing.JComboBox<String> VentanaFacturas_ComboEstadoDoc;
+    private javax.swing.JComboBox<String> VentanaFacturas_ComboFormaPago;
+    private com.toedter.calendar.JDateChooser VentanaFacturas_JDateFechaFin;
+    private com.toedter.calendar.JDateChooser VentanaFacturas_JDateFechaInicio;
+    private javax.swing.JTable VentanaFacturas_TablaGeneral;
+    private javax.swing.JButton VentanaFacturas_bntAnular;
     private javax.swing.JButton btnNuevoVentanaFactura;
-    private javax.swing.JButton btnVentanaFactura;
-    private javax.swing.JButton btnVerFacturaVentanaFactura;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -365,11 +450,6 @@ public class VentanaFacturas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

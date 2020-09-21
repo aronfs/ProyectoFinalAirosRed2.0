@@ -5,6 +5,12 @@
  */
 package Vista;
 
+import com.toedter.calendar.JDateChooser;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author aaron
@@ -18,6 +24,120 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JPanel getVentanaCambioDireccionPanelBotones_Aplicar() {
+        return VentanaCambioDireccionPanelBotones_Aplicar;
+    }
+
+    public void setVentanaCambioDireccionPanelBotones_Aplicar(JPanel VentanaCambioDireccionPanelBotones_Aplicar) {
+        this.VentanaCambioDireccionPanelBotones_Aplicar = VentanaCambioDireccionPanelBotones_Aplicar;
+    }
+
+    public JPanel getVentanaCambioDireccionPanelBotones_Nuevo() {
+        return VentanaCambioDireccionPanelBotones_Nuevo;
+    }
+
+    public void setVentanaCambioDireccionPanelBotones_Nuevo(JPanel VentanaCambioDireccionPanelBotones_Nuevo) {
+        this.VentanaCambioDireccionPanelBotones_Nuevo = VentanaCambioDireccionPanelBotones_Nuevo;
+    }
+    
+
+    public JButton getVentanaCambioDireccionBntAnular() {
+        return VentanaCambioDireccionBntAnular;
+    }
+
+    public void setVentanaCambioDireccionBntAnular(JButton VentanaCambioDireccionBntAnular) {
+        this.VentanaCambioDireccionBntAnular = VentanaCambioDireccionBntAnular;
+    }
+
+    public JButton getVentanaCambioDireccionBntEditar() {
+        return VentanaCambioDireccionBntEditar;
+    }
+
+    public void setVentanaCambioDireccionBntEditar(JButton VentanaCambioDireccionBntEditar) {
+        this.VentanaCambioDireccionBntEditar = VentanaCambioDireccionBntEditar;
+    }
+
+    public JButton getVentanaCambioDireccionBntImprimirSolicitud() {
+        return VentanaCambioDireccionBntImprimirSolicitud;
+    }
+
+    public void setVentanaCambioDireccionBntImprimirSolicitud(JButton VentanaCambioDireccionBntImprimirSolicitud) {
+        this.VentanaCambioDireccionBntImprimirSolicitud = VentanaCambioDireccionBntImprimirSolicitud;
+    }
+
+    public JButton getVentanaCambioDireccionBntNuevo() {
+        return VentanaCambioDireccionBntNuevo;
+    }
+
+    public void setVentanaCambioDireccionBntNuevo(JButton VentanaCambioDireccionBntNuevo) {
+        this.VentanaCambioDireccionBntNuevo = VentanaCambioDireccionBntNuevo;
+    }
+
+    public JButton getVentanaCambioDireccionBnt_Actualizar() {
+        return VentanaCambioDireccionBnt_Actualizar;
+    }
+
+    public void setVentanaCambioDireccionBnt_Actualizar(JButton VentanaCambioDireccionBnt_Actualizar) {
+        this.VentanaCambioDireccionBnt_Actualizar = VentanaCambioDireccionBnt_Actualizar;
+    }
+
+    public JButton getVentanaCambioDireccionBnt_AplicarFiltro() {
+        return VentanaCambioDireccionBnt_AplicarFiltro;
+    }
+
+    public void setVentanaCambioDireccionBnt_AplicarFiltro(JButton VentanaCambioDireccionBnt_AplicarFiltro) {
+        this.VentanaCambioDireccionBnt_AplicarFiltro = VentanaCambioDireccionBnt_AplicarFiltro;
+    }
+
+    public JButton getVentanaCambioDireccionBnt_RestablecerFiltros() {
+        return VentanaCambioDireccionBnt_RestablecerFiltros;
+    }
+
+    public void setVentanaCambioDireccionBnt_RestablecerFiltros(JButton VentanaCambioDireccionBnt_RestablecerFiltros) {
+        this.VentanaCambioDireccionBnt_RestablecerFiltros = VentanaCambioDireccionBnt_RestablecerFiltros;
+    }
+
+    public JDateChooser getVentanaCambioDireccionJDate_FechaDesde() {
+        return VentanaCambioDireccionJDate_FechaDesde;
+    }
+
+    public void setVentanaCambioDireccionJDate_FechaDesde(JDateChooser VentanaCambioDireccionJDate_FechaDesde) {
+        this.VentanaCambioDireccionJDate_FechaDesde = VentanaCambioDireccionJDate_FechaDesde;
+    }
+
+    public JDateChooser getVentanaCambioDireccionJDate_FechaHasta() {
+        return VentanaCambioDireccionJDate_FechaHasta;
+    }
+
+    public void setVentanaCambioDireccionJDate_FechaHasta(JDateChooser VentanaCambioDireccionJDate_FechaHasta) {
+        this.VentanaCambioDireccionJDate_FechaHasta = VentanaCambioDireccionJDate_FechaHasta;
+    }
+
+   public JPanel getVentanaCambioDireccionPanel_FechadeCambio() {
+        return VentanaCambioDireccionPanel_FechadeCambio;
+    }
+
+    public void setVentanaCambioDireccionPanel_FechadeCambio(JPanel VentanaCambioDireccionPanel_FechadeCambio) {
+        this.VentanaCambioDireccionPanel_FechadeCambio = VentanaCambioDireccionPanel_FechadeCambio;
+    }
+
+    public JTable getVentanaCambioDireccionTabla_General() {
+        return VentanaCambioDireccionTabla_General;
+    }
+
+    public void setVentanaCambioDireccionTabla_General(JTable VentanaCambioDireccionTabla_General) {
+        this.VentanaCambioDireccionTabla_General = VentanaCambioDireccionTabla_General;
+    }
+
+    public JTextField getVentanaCambioDirecciontxt_Cliente() {
+        return VentanaCambioDirecciontxt_Cliente;
+    }
+
+    public void setVentanaCambioDirecciontxt_Cliente(JTextField VentanaCambioDirecciontxt_Cliente) {
+        this.VentanaCambioDirecciontxt_Cliente = VentanaCambioDirecciontxt_Cliente;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,144 +148,136 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        VentanaCambioDireccionPanelBotones_Nuevo = new javax.swing.JPanel();
+        VentanaCambioDireccionBntNuevo = new javax.swing.JButton();
+        VentanaCambioDireccionBntEditar = new javax.swing.JButton();
+        VentanaCambioDireccionBntAnular = new javax.swing.JButton();
+        VentanaCambioDireccionBntImprimirSolicitud = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        VentanaCambioDireccionPanel_FechadeCambio = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jTextField1 = new javax.swing.JTextField();
-        jPanel4 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        VentanaCambioDireccionJDate_FechaDesde = new com.toedter.calendar.JDateChooser();
+        VentanaCambioDireccionJDate_FechaHasta = new com.toedter.calendar.JDateChooser();
+        VentanaCambioDirecciontxt_Cliente = new javax.swing.JTextField();
+        VentanaCambioDireccionPanelBotones_Aplicar = new javax.swing.JPanel();
+        VentanaCambioDireccionBnt_AplicarFiltro = new javax.swing.JButton();
+        VentanaCambioDireccionBnt_Actualizar = new javax.swing.JButton();
+        VentanaCambioDireccionBnt_RestablecerFiltros = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaCambioDireccionTabla_General = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCambioDireccionPanelBotones_Nuevo.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 51));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Nuevo");
+        VentanaCambioDireccionBntNuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBntNuevo.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBntNuevo.setText("Nuevo");
 
-        jButton2.setBackground(new java.awt.Color(0, 204, 51));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Editar");
+        VentanaCambioDireccionBntEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBntEditar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBntEditar.setText("Editar");
 
-        jButton3.setBackground(new java.awt.Color(0, 204, 51));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Anular");
+        VentanaCambioDireccionBntAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBntAnular.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBntAnular.setText("Anular");
 
-        jButton4.setBackground(new java.awt.Color(0, 204, 51));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Imprimir Solicitud");
+        VentanaCambioDireccionBntImprimirSolicitud.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBntImprimirSolicitud.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBntImprimirSolicitud.setText("Imprimir Solicitud");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaCambioDireccionPanelBotones_NuevoLayout = new javax.swing.GroupLayout(VentanaCambioDireccionPanelBotones_Nuevo);
+        VentanaCambioDireccionPanelBotones_Nuevo.setLayout(VentanaCambioDireccionPanelBotones_NuevoLayout);
+        VentanaCambioDireccionPanelBotones_NuevoLayout.setHorizontalGroup(
+            VentanaCambioDireccionPanelBotones_NuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaCambioDireccionPanelBotones_NuevoLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jButton1)
+                .addComponent(VentanaCambioDireccionBntNuevo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
+                .addComponent(VentanaCambioDireccionBntEditar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addComponent(VentanaCambioDireccionBntAnular)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(VentanaCambioDireccionBntImprimirSolicitud)
                 .addContainerGap(578, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        VentanaCambioDireccionPanelBotones_NuevoLayout.setVerticalGroup(
+            VentanaCambioDireccionPanelBotones_NuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(VentanaCambioDireccionBntNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VentanaCambioDireccionBntEditar, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(VentanaCambioDireccionBntAnular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VentanaCambioDireccionBntImprimirSolicitud, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Solicitudes de cambio de direccion", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Solicitudes de cambio de direccion"));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cliente:");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha de Cambio", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaCambioDireccionPanel_FechadeCambio.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionPanel_FechadeCambio.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha de Cambio"));
+        VentanaCambioDireccionPanel_FechadeCambio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Desde:");
-        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 24, -1, -1));
+        VentanaCambioDireccionPanel_FechadeCambio.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 24, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Hasta:");
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
+        VentanaCambioDireccionPanel_FechadeCambio.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
 
-        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
+        VentanaCambioDireccionJDate_FechaDesde.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionPanel_FechadeCambio.add(VentanaCambioDireccionJDate_FechaDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
 
-        jDateChooser2.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
+        VentanaCambioDireccionJDate_FechaHasta.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionPanel_FechadeCambio.add(VentanaCambioDireccionJDate_FechaHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
+        jPanel3.add(VentanaCambioDireccionPanel_FechadeCambio, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
+        jPanel3.add(VentanaCambioDirecciontxt_Cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
+        VentanaCambioDireccionPanelBotones_Aplicar.setBackground(new java.awt.Color(0, 153, 51));
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCambioDireccionBnt_AplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBnt_AplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBnt_AplicarFiltro.setText("Aplicar Filtros");
 
-        jButton5.setBackground(new java.awt.Color(0, 204, 51));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Aplicar Filtros");
+        VentanaCambioDireccionBnt_Actualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBnt_Actualizar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBnt_Actualizar.setText("Actualizar");
 
-        jButton6.setBackground(new java.awt.Color(0, 204, 51));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Actualizar");
+        VentanaCambioDireccionBnt_RestablecerFiltros.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioDireccionBnt_RestablecerFiltros.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaCambioDireccionBnt_RestablecerFiltros.setText("Restablecer Filtros");
 
-        jButton7.setBackground(new java.awt.Color(0, 204, 51));
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Restablecer Filtros");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaCambioDireccionPanelBotones_AplicarLayout = new javax.swing.GroupLayout(VentanaCambioDireccionPanelBotones_Aplicar);
+        VentanaCambioDireccionPanelBotones_Aplicar.setLayout(VentanaCambioDireccionPanelBotones_AplicarLayout);
+        VentanaCambioDireccionPanelBotones_AplicarLayout.setHorizontalGroup(
+            VentanaCambioDireccionPanelBotones_AplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaCambioDireccionPanelBotones_AplicarLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton5)
+                .addComponent(VentanaCambioDireccionBnt_AplicarFiltro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(VentanaCambioDireccionBnt_Actualizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton7)
+                .addComponent(VentanaCambioDireccionBnt_RestablecerFiltros)
                 .addContainerGap(592, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addComponent(jButton6)
-                .addComponent(jButton7))
+        VentanaCambioDireccionPanelBotones_AplicarLayout.setVerticalGroup(
+            VentanaCambioDireccionPanelBotones_AplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaCambioDireccionPanelBotones_AplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(VentanaCambioDireccionBnt_AplicarFiltro, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                .addComponent(VentanaCambioDireccionBnt_Actualizar)
+                .addComponent(VentanaCambioDireccionBnt_RestablecerFiltros))
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaCambioDireccionTabla_General.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -176,7 +288,7 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
                 "Numero", "Centro de costos", "Cedula", "Cliente", "Contrato", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaCambioDireccionTabla_General);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -187,9 +299,9 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VentanaCambioDireccionPanelBotones_Nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VentanaCambioDireccionPanelBotones_Aplicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
@@ -199,11 +311,11 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentanaCambioDireccionPanelBotones_Nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentanaCambioDireccionPanelBotones_Aplicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
@@ -223,62 +335,62 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaCambioDireccion().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaCambioDireccion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaCambioDireccion().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JButton VentanaCambioDireccionBntAnular;
+    private javax.swing.JButton VentanaCambioDireccionBntEditar;
+    private javax.swing.JButton VentanaCambioDireccionBntImprimirSolicitud;
+    private javax.swing.JButton VentanaCambioDireccionBntNuevo;
+    private javax.swing.JButton VentanaCambioDireccionBnt_Actualizar;
+    private javax.swing.JButton VentanaCambioDireccionBnt_AplicarFiltro;
+    private javax.swing.JButton VentanaCambioDireccionBnt_RestablecerFiltros;
+    private com.toedter.calendar.JDateChooser VentanaCambioDireccionJDate_FechaDesde;
+    private com.toedter.calendar.JDateChooser VentanaCambioDireccionJDate_FechaHasta;
+    private javax.swing.JPanel VentanaCambioDireccionPanelBotones_Aplicar;
+    private javax.swing.JPanel VentanaCambioDireccionPanelBotones_Nuevo;
+    private javax.swing.JPanel VentanaCambioDireccionPanel_FechadeCambio;
+    private javax.swing.JTable VentanaCambioDireccionTabla_General;
+    private javax.swing.JTextField VentanaCambioDirecciontxt_Cliente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

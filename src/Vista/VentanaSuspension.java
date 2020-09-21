@@ -5,6 +5,12 @@
  */
 package Vista;
 
+import com.toedter.calendar.JDateChooser;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author aaron
@@ -18,6 +24,127 @@ public class VentanaSuspension extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getVentanaSuspencion_BntActualizar() {
+        return VentanaSuspencion_BntActualizar;
+    }
+
+    public void setVentanaSuspencion_BntActualizar(JButton VentanaSuspencion_BntActualizar) {
+        this.VentanaSuspencion_BntActualizar = VentanaSuspencion_BntActualizar;
+    }
+
+    public JButton getVentanaSuspencion_BntAnular() {
+        return VentanaSuspencion_BntAnular;
+    }
+
+    public void setVentanaSuspencion_BntAnular(JButton VentanaSuspencion_BntAnular) {
+        this.VentanaSuspencion_BntAnular = VentanaSuspencion_BntAnular;
+    }
+
+    public JButton getVentanaSuspencion_BntAplicarFiltro() {
+        return VentanaSuspencion_BntAplicarFiltro;
+    }
+
+    public void setVentanaSuspencion_BntAplicarFiltro(JButton VentanaSuspencion_BntAplicarFiltro) {
+        this.VentanaSuspencion_BntAplicarFiltro = VentanaSuspencion_BntAplicarFiltro;
+    }
+
+    public JButton getVentanaSuspencion_BntEditar() {
+        return VentanaSuspencion_BntEditar;
+    }
+
+    public void setVentanaSuspencion_BntEditar(JButton VentanaSuspencion_BntEditar) {
+        this.VentanaSuspencion_BntEditar = VentanaSuspencion_BntEditar;
+    }
+
+    public JButton getVentanaSuspencion_BntImprimirSoli() {
+        return VentanaSuspencion_BntImprimirSoli;
+    }
+
+    public void setVentanaSuspencion_BntImprimirSoli(JButton VentanaSuspencion_BntImprimirSoli) {
+        this.VentanaSuspencion_BntImprimirSoli = VentanaSuspencion_BntImprimirSoli;
+    }
+
+    public JButton getVentanaSuspencion_BntNuevo() {
+        return VentanaSuspencion_BntNuevo;
+    }
+
+    public void setVentanaSuspencion_BntNuevo(JButton VentanaSuspencion_BntNuevo) {
+        this.VentanaSuspencion_BntNuevo = VentanaSuspencion_BntNuevo;
+    }
+
+    public JButton getVentanaSuspencion_BntRestablecerFiltro() {
+        return VentanaSuspencion_BntRestablecerFiltro;
+    }
+
+    public void setVentanaSuspencion_BntRestablecerFiltro(JButton VentanaSuspencion_BntRestablecerFiltro) {
+        this.VentanaSuspencion_BntRestablecerFiltro = VentanaSuspencion_BntRestablecerFiltro;
+    }
+
+    public JDateChooser getVentanaSuspencion_JDateDesde() {
+        return VentanaSuspencion_JDateDesde;
+    }
+
+    public void setVentanaSuspencion_JDateDesde(JDateChooser VentanaSuspencion_JDateDesde) {
+        this.VentanaSuspencion_JDateDesde = VentanaSuspencion_JDateDesde;
+    }
+
+    public JDateChooser getVentanaSuspencion_JDateHasta() {
+        return VentanaSuspencion_JDateHasta;
+    }
+
+    public void setVentanaSuspencion_JDateHasta(JDateChooser VentanaSuspencion_JDateHasta) {
+        this.VentanaSuspencion_JDateHasta = VentanaSuspencion_JDateHasta;
+    }
+
+    public JPanel getVentanaSuspencion_PanelFecha() {
+        return VentanaSuspencion_PanelFecha;
+    }
+
+    public void setVentanaSuspencion_PanelFecha(JPanel VentanaSuspencion_PanelFecha) {
+        this.VentanaSuspencion_PanelFecha = VentanaSuspencion_PanelFecha;
+    }
+
+    public JPanel getVentanaSuspencion_PanelFiltro() {
+        return VentanaSuspencion_PanelFiltro;
+    }
+
+    public void setVentanaSuspencion_PanelFiltro(JPanel VentanaSuspencion_PanelFiltro) {
+        this.VentanaSuspencion_PanelFiltro = VentanaSuspencion_PanelFiltro;
+    }
+
+    public JPanel getVentanaSuspencion_PanelNuevo() {
+        return VentanaSuspencion_PanelNuevo;
+    }
+
+    public void setVentanaSuspencion_PanelNuevo(JPanel VentanaSuspencion_PanelNuevo) {
+        this.VentanaSuspencion_PanelNuevo = VentanaSuspencion_PanelNuevo;
+    }
+
+    public JPanel getVentanaSuspencion_PanelSolicitud() {
+        return VentanaSuspencion_PanelSolicitud;
+    }
+
+    public void setVentanaSuspencion_PanelSolicitud(JPanel VentanaSuspencion_PanelSolicitud) {
+        this.VentanaSuspencion_PanelSolicitud = VentanaSuspencion_PanelSolicitud;
+    }
+
+    public JTable getVentanaSuspencion_TablaGeneral() {
+        return VentanaSuspencion_TablaGeneral;
+    }
+
+    public void setVentanaSuspencion_TablaGeneral(JTable VentanaSuspencion_TablaGeneral) {
+        this.VentanaSuspencion_TablaGeneral = VentanaSuspencion_TablaGeneral;
+    }
+
+    public JTextField getVentanaSuspencion_txtCliente() {
+        return VentanaSuspencion_txtCliente;
+    }
+
+    public void setVentanaSuspencion_txtCliente(JTextField VentanaSuspencion_txtCliente) {
+        this.VentanaSuspencion_txtCliente = VentanaSuspencion_txtCliente;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,144 +155,139 @@ public class VentanaSuspension extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        VentanaSuspencion_PanelNuevo = new javax.swing.JPanel();
+        VentanaSuspencion_BntNuevo = new javax.swing.JButton();
+        VentanaSuspencion_BntEditar = new javax.swing.JButton();
+        VentanaSuspencion_BntAnular = new javax.swing.JButton();
+        VentanaSuspencion_BntImprimirSoli = new javax.swing.JButton();
+        VentanaSuspencion_PanelSolicitud = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        VentanaSuspencion_PanelFecha = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jTextField1 = new javax.swing.JTextField();
-        jPanel4 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        VentanaSuspencion_JDateDesde = new com.toedter.calendar.JDateChooser();
+        VentanaSuspencion_JDateHasta = new com.toedter.calendar.JDateChooser();
+        VentanaSuspencion_txtCliente = new javax.swing.JTextField();
+        VentanaSuspencion_PanelFiltro = new javax.swing.JPanel();
+        VentanaSuspencion_BntAplicarFiltro = new javax.swing.JButton();
+        VentanaSuspencion_BntActualizar = new javax.swing.JButton();
+        VentanaSuspencion_BntRestablecerFiltro = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        VentanaSuspencion_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaSuspencion_PanelNuevo.setBackground(new java.awt.Color(0, 153, 51));
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 51));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Nuevo");
+        VentanaSuspencion_BntNuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntNuevo.setText("Nuevo");
 
-        jButton2.setBackground(new java.awt.Color(0, 204, 51));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Editar");
+        VentanaSuspencion_BntEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntEditar.setText("Editar");
 
-        jButton3.setBackground(new java.awt.Color(0, 204, 51));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Anular");
+        VentanaSuspencion_BntAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntAnular.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntAnular.setText("Anular");
 
-        jButton4.setBackground(new java.awt.Color(0, 204, 51));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Imprimir Solicitud");
+        VentanaSuspencion_BntImprimirSoli.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntImprimirSoli.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntImprimirSoli.setText("Imprimir Solicitud");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaSuspencion_PanelNuevoLayout = new javax.swing.GroupLayout(VentanaSuspencion_PanelNuevo);
+        VentanaSuspencion_PanelNuevo.setLayout(VentanaSuspencion_PanelNuevoLayout);
+        VentanaSuspencion_PanelNuevoLayout.setHorizontalGroup(
+            VentanaSuspencion_PanelNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaSuspencion_PanelNuevoLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jButton1)
+                .addComponent(VentanaSuspencion_BntNuevo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
+                .addComponent(VentanaSuspencion_BntEditar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addComponent(VentanaSuspencion_BntAnular)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(VentanaSuspencion_BntImprimirSoli)
                 .addContainerGap(578, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        VentanaSuspencion_PanelNuevoLayout.setVerticalGroup(
+            VentanaSuspencion_PanelNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(VentanaSuspencion_BntNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VentanaSuspencion_BntEditar, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(VentanaSuspencion_BntAnular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VentanaSuspencion_BntImprimirSoli, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Solicitudes de suspension de contrato", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaSuspencion_PanelSolicitud.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_PanelSolicitud.setBorder(javax.swing.BorderFactory.createTitledBorder("Solicitudes de suspension de contrato"));
+        VentanaSuspencion_PanelSolicitud.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cliente:");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
+        VentanaSuspencion_PanelSolicitud.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
+        VentanaSuspencion_PanelSolicitud.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha de Cambio", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaSuspencion_PanelFecha.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_PanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha de Cambio"));
+        VentanaSuspencion_PanelFecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Desde:");
-        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 24, -1, -1));
+        VentanaSuspencion_PanelFecha.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 24, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Hasta:");
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
+        VentanaSuspencion_PanelFecha.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
 
-        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
+        VentanaSuspencion_JDateDesde.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_PanelFecha.add(VentanaSuspencion_JDateDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
 
-        jDateChooser2.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel5.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
+        VentanaSuspencion_JDateHasta.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_PanelFecha.add(VentanaSuspencion_JDateHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
+        VentanaSuspencion_PanelSolicitud.add(VentanaSuspencion_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
+        VentanaSuspencion_PanelSolicitud.add(VentanaSuspencion_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
+        VentanaSuspencion_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaSuspencion_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        jButton5.setBackground(new java.awt.Color(0, 204, 51));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Aplicar Filtros");
+        VentanaSuspencion_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntActualizar.setText("Actualizar");
 
-        jButton6.setBackground(new java.awt.Color(0, 204, 51));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Actualizar");
+        VentanaSuspencion_BntRestablecerFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntRestablecerFiltro.setForeground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_BntRestablecerFiltro.setText("Restablecer Filtros");
 
-        jButton7.setBackground(new java.awt.Color(0, 204, 51));
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Restablecer Filtros");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaSuspencion_PanelFiltroLayout = new javax.swing.GroupLayout(VentanaSuspencion_PanelFiltro);
+        VentanaSuspencion_PanelFiltro.setLayout(VentanaSuspencion_PanelFiltroLayout);
+        VentanaSuspencion_PanelFiltroLayout.setHorizontalGroup(
+            VentanaSuspencion_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaSuspencion_PanelFiltroLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton5)
+                .addComponent(VentanaSuspencion_BntAplicarFiltro)
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(VentanaSuspencion_BntActualizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton7)
+                .addComponent(VentanaSuspencion_BntRestablecerFiltro)
                 .addContainerGap(592, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addComponent(jButton6)
-                .addComponent(jButton7))
+        VentanaSuspencion_PanelFiltroLayout.setVerticalGroup(
+            VentanaSuspencion_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaSuspencion_PanelFiltroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(VentanaSuspencion_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaSuspencion_BntAplicarFiltro, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                    .addComponent(VentanaSuspencion_BntActualizar)
+                    .addComponent(VentanaSuspencion_BntRestablecerFiltro))
+                .addContainerGap())
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaSuspencion_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -176,7 +298,7 @@ public class VentanaSuspension extends javax.swing.JFrame {
                 "Numero", "Centro de costos", "Cedula", "Cliente", "Contrato", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(VentanaSuspencion_TablaGeneral);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -187,23 +309,23 @@ public class VentanaSuspension extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VentanaSuspencion_PanelNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VentanaSuspencion_PanelSolicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VentanaSuspencion_PanelFiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
+            .addGap(0, 631, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentanaSuspencion_PanelNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentanaSuspencion_PanelSolicitud, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentanaSuspencion_PanelFiltro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
@@ -223,62 +345,62 @@ public class VentanaSuspension extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaSuspension().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(VentanaSuspension.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new VentanaSuspension().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JButton VentanaSuspencion_BntActualizar;
+    private javax.swing.JButton VentanaSuspencion_BntAnular;
+    private javax.swing.JButton VentanaSuspencion_BntAplicarFiltro;
+    private javax.swing.JButton VentanaSuspencion_BntEditar;
+    private javax.swing.JButton VentanaSuspencion_BntImprimirSoli;
+    private javax.swing.JButton VentanaSuspencion_BntNuevo;
+    private javax.swing.JButton VentanaSuspencion_BntRestablecerFiltro;
+    private com.toedter.calendar.JDateChooser VentanaSuspencion_JDateDesde;
+    private com.toedter.calendar.JDateChooser VentanaSuspencion_JDateHasta;
+    private javax.swing.JPanel VentanaSuspencion_PanelFecha;
+    private javax.swing.JPanel VentanaSuspencion_PanelFiltro;
+    private javax.swing.JPanel VentanaSuspencion_PanelNuevo;
+    private javax.swing.JPanel VentanaSuspencion_PanelSolicitud;
+    private javax.swing.JTable VentanaSuspencion_TablaGeneral;
+    private javax.swing.JTextField VentanaSuspencion_txtCliente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
