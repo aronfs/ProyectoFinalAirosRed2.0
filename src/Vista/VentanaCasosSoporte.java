@@ -25,158 +25,6 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         initComponents();
     }
 
-    public JButton getVentanaCancelacionServicio_BntActualizar() {
-        return VentanaCancelacionServicio_BntActualizar;
-    }
-
-    public void setVentanaCancelacionServicio_BntActualizar(JButton VentanaCancelacionServicio_BntActualizar) {
-        this.VentanaCancelacionServicio_BntActualizar = VentanaCancelacionServicio_BntActualizar;
-    }
-
-    public JButton getVentanaCancelacionServicio_BntAnular() {
-        return VentanaCancelacionServicio_BntAnular;
-    }
-
-    public void setVentanaCancelacionServicio_BntAnular(JButton VentanaCancelacionServicio_BntAnular) {
-        this.VentanaCancelacionServicio_BntAnular = VentanaCancelacionServicio_BntAnular;
-    }
-
-    public JButton getVentanaCancelacionServicio_BntAplicarFiltro() {
-        return VentanaCancelacionServicio_BntAplicarFiltro;
-    }
-
-    public void setVentanaCancelacionServicio_BntAplicarFiltro(JButton VentanaCancelacionServicio_BntAplicarFiltro) {
-        this.VentanaCancelacionServicio_BntAplicarFiltro = VentanaCancelacionServicio_BntAplicarFiltro;
-    }
-
-    public JButton getVentanaCancelacionServicio_BntEditar() {
-        return VentanaCancelacionServicio_BntEditar;
-    }
-
-    public void setVentanaCancelacionServicio_BntEditar(JButton VentanaCancelacionServicio_BntEditar) {
-        this.VentanaCancelacionServicio_BntEditar = VentanaCancelacionServicio_BntEditar;
-    }
-
-    public JButton getVentanaCancelacionServicio_BntNuevo() {
-        return VentanaCancelacionServicio_BntNuevo;
-    }
-
-    public void setVentanaCancelacionServicio_BntNuevo(JButton VentanaCancelacionServicio_BntNuevo) {
-        this.VentanaCancelacionServicio_BntNuevo = VentanaCancelacionServicio_BntNuevo;
-    }
-
-    public JButton getVentanaCancelacionServicio_BntRestablecerFiltros() {
-        return VentanaCancelacionServicio_BntRestablecerFiltros;
-    }
-
-    public void setVentanaCancelacionServicio_BntRestablecerFiltros(JButton VentanaCancelacionServicio_BntRestablecerFiltros) {
-        this.VentanaCancelacionServicio_BntRestablecerFiltros = VentanaCancelacionServicio_BntRestablecerFiltros;
-    }
-
-    public JButton getVentanaCancelacionServicio_BntSolicitudServicio() {
-        return VentanaCancelacionServicio_BntSolicitudServicio;
-    }
-
-    public void setVentanaCancelacionServicio_BntSolicitudServicio(JButton VentanaCancelacionServicio_BntSolicitudServicio) {
-        this.VentanaCancelacionServicio_BntSolicitudServicio = VentanaCancelacionServicio_BntSolicitudServicio;
-    }
-
-    public JComboBox<String> getVentanaCancelacionServicio_ComboEstado() {
-        return VentanaCancelacionServicio_ComboEstado;
-    }
-
-    public void setVentanaCancelacionServicio_ComboEstado(JComboBox<String> VentanaCancelacionServicio_ComboEstado) {
-        this.VentanaCancelacionServicio_ComboEstado = VentanaCancelacionServicio_ComboEstado;
-    }
-
-    public JComboBox<String> getVentanaCancelacionServicio_ComboMedioContrato() {
-        return VentanaCancelacionServicio_ComboMedioContrato;
-    }
-
-    public void setVentanaCancelacionServicio_ComboMedioContrato(JComboBox<String> VentanaCancelacionServicio_ComboMedioContrato) {
-        this.VentanaCancelacionServicio_ComboMedioContrato = VentanaCancelacionServicio_ComboMedioContrato;
-    }
-
-    public JDateChooser getVentanaCancelacionServicio_JDateDesde() {
-        return VentanaCancelacionServicio_JDateDesde;
-    }
-
-    public void setVentanaCancelacionServicio_JDateDesde(JDateChooser VentanaCancelacionServicio_JDateDesde) {
-        this.VentanaCancelacionServicio_JDateDesde = VentanaCancelacionServicio_JDateDesde;
-    }
-
-    public JDateChooser getVentanaCancelacionServicio_JDateHasta() {
-        return VentanaCancelacionServicio_JDateHasta;
-    }
-
-    public void setVentanaCancelacionServicio_JDateHasta(JDateChooser VentanaCancelacionServicio_JDateHasta) {
-        this.VentanaCancelacionServicio_JDateHasta = VentanaCancelacionServicio_JDateHasta;
-    }
-
-    public JPanel getVentanaCancelacionServicio_PanelAplicar() {
-        return VentanaCancelacionServicio_PanelAplicar;
-    }
-
-    public void setVentanaCancelacionServicio_PanelAplicar(JPanel VentanaCancelacionServicio_PanelAplicar) {
-        this.VentanaCancelacionServicio_PanelAplicar = VentanaCancelacionServicio_PanelAplicar;
-    }
-
-    public JPanel getVentanaCancelacionServicio_PanelCasos() {
-        return VentanaCancelacionServicio_PanelCasos;
-    }
-
-    public void setVentanaCancelacionServicio_PanelCasos(JPanel VentanaCancelacionServicio_PanelCasos) {
-        this.VentanaCancelacionServicio_PanelCasos = VentanaCancelacionServicio_PanelCasos;
-    }
-
-    public JPanel getVentanaCancelacionServicio_PanelFecha() {
-        return VentanaCancelacionServicio_PanelFecha;
-    }
-
-    public void setVentanaCancelacionServicio_PanelFecha(JPanel VentanaCancelacionServicio_PanelFecha) {
-        this.VentanaCancelacionServicio_PanelFecha = VentanaCancelacionServicio_PanelFecha;
-    }
-
-    public JTable getVentanaCancelacionServicio_TablaGeneral() {
-        return VentanaCancelacionServicio_TablaGeneral;
-    }
-
-    public void setVentanaCancelacionServicio_TablaGeneral(JTable VentanaCancelacionServicio_TablaGeneral) {
-        this.VentanaCancelacionServicio_TablaGeneral = VentanaCancelacionServicio_TablaGeneral;
-    }
-
-    public JTextField getVentanaCancelacionServicio_txtAsignadoA() {
-        return VentanaCancelacionServicio_txtAsignadoA;
-    }
-
-    public void setVentanaCancelacionServicio_txtAsignadoA(JTextField VentanaCancelacionServicio_txtAsignadoA) {
-        this.VentanaCancelacionServicio_txtAsignadoA = VentanaCancelacionServicio_txtAsignadoA;
-    }
-
-    public JTextField getVentanaCancelacionServicio_txtCliente() {
-        return VentanaCancelacionServicio_txtCliente;
-    }
-
-    public void setVentanaCancelacionServicio_txtCliente(JTextField VentanaCancelacionServicio_txtCliente) {
-        this.VentanaCancelacionServicio_txtCliente = VentanaCancelacionServicio_txtCliente;
-    }
-
-    public JTextField getVentanaCancelacionServicio_txtEjecutadoPor() {
-        return VentanaCancelacionServicio_txtEjecutadoPor;
-    }
-
-    public void setVentanaCancelacionServicio_txtEjecutadoPor(JTextField VentanaCancelacionServicio_txtEjecutadoPor) {
-        this.VentanaCancelacionServicio_txtEjecutadoPor = VentanaCancelacionServicio_txtEjecutadoPor;
-    }
-
-    public JTextField getVentanaCancelacionServicio_txtMotivo() {
-        return VentanaCancelacionServicio_txtMotivo;
-    }
-
-    public void setVentanaCancelacionServicio_txtMotivo(JTextField VentanaCancelacionServicio_txtMotivo) {
-        this.VentanaCancelacionServicio_txtMotivo = VentanaCancelacionServicio_txtMotivo;
-    }
-
     public JPanel getVentanaCasosSoportePanel() {
         return VentanaCasosSoportePanel;
     }
@@ -184,6 +32,160 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
     public void setVentanaCasosSoportePanel(JPanel VentanaCasosSoportePanel) {
         this.VentanaCasosSoportePanel = VentanaCasosSoportePanel;
     }
+
+    public JButton getVentanaCasosSoporte_BntActualizar() {
+        return VentanaCasosSoporte_BntActualizar;
+    }
+
+    public void setVentanaCasosSoporte_BntActualizar(JButton VentanaCasosSoporte_BntActualizar) {
+        this.VentanaCasosSoporte_BntActualizar = VentanaCasosSoporte_BntActualizar;
+    }
+
+    public JButton getVentanaCasosSoporte_BntAnular() {
+        return VentanaCasosSoporte_BntAnular;
+    }
+
+    public void setVentanaCasosSoporte_BntAnular(JButton VentanaCasosSoporte_BntAnular) {
+        this.VentanaCasosSoporte_BntAnular = VentanaCasosSoporte_BntAnular;
+    }
+
+    public JButton getVentanaCasosSoporte_BntAplicarFiltros() {
+        return VentanaCasosSoporte_BntAplicarFiltros;
+    }
+
+    public void setVentanaCasosSoporte_BntAplicarFiltros(JButton VentanaCasosSoporte_BntAplicarFiltros) {
+        this.VentanaCasosSoporte_BntAplicarFiltros = VentanaCasosSoporte_BntAplicarFiltros;
+    }
+
+    public JButton getVentanaCasosSoporte_BntEditar() {
+        return VentanaCasosSoporte_BntEditar;
+    }
+
+    public void setVentanaCasosSoporte_BntEditar(JButton VentanaCasosSoporte_BntEditar) {
+        this.VentanaCasosSoporte_BntEditar = VentanaCasosSoporte_BntEditar;
+    }
+
+    public JButton getVentanaCasosSoporte_BntNuevo() {
+        return VentanaCasosSoporte_BntNuevo;
+    }
+
+    public void setVentanaCasosSoporte_BntNuevo(JButton VentanaCasosSoporte_BntNuevo) {
+        this.VentanaCasosSoporte_BntNuevo = VentanaCasosSoporte_BntNuevo;
+    }
+
+    public JButton getVentanaCasosSoporte_BntRestablecerFiltros() {
+        return VentanaCasosSoporte_BntRestablecerFiltros;
+    }
+
+    public void setVentanaCasosSoporte_BntRestablecerFiltros(JButton VentanaCasosSoporte_BntRestablecerFiltros) {
+        this.VentanaCasosSoporte_BntRestablecerFiltros = VentanaCasosSoporte_BntRestablecerFiltros;
+    }
+
+    public JButton getVentanaCasosSoporte_BntSolicitudServicio() {
+        return VentanaCasosSoporte_BntSolicitudServicio;
+    }
+
+    public void setVentanaCasosSoporte_BntSolicitudServicio(JButton VentanaCasosSoporte_BntSolicitudServicio) {
+        this.VentanaCasosSoporte_BntSolicitudServicio = VentanaCasosSoporte_BntSolicitudServicio;
+    }
+
+    public JComboBox<String> getVentanaCasosSoporte_ComboEstado() {
+        return VentanaCasosSoporte_ComboEstado;
+    }
+
+    public void setVentanaCasosSoporte_ComboEstado(JComboBox<String> VentanaCasosSoporte_ComboEstado) {
+        this.VentanaCasosSoporte_ComboEstado = VentanaCasosSoporte_ComboEstado;
+    }
+
+    public JComboBox<String> getVentanaCasosSoporte_ComboMedioContacto() {
+        return VentanaCasosSoporte_ComboMedioContacto;
+    }
+
+    public void setVentanaCasosSoporte_ComboMedioContacto(JComboBox<String> VentanaCasosSoporte_ComboMedioContacto) {
+        this.VentanaCasosSoporte_ComboMedioContacto = VentanaCasosSoporte_ComboMedioContacto;
+    }
+
+    public JDateChooser getVentanaCasosSoporte_JDateDesde() {
+        return VentanaCasosSoporte_JDateDesde;
+    }
+
+    public void setVentanaCasosSoporte_JDateDesde(JDateChooser VentanaCasosSoporte_JDateDesde) {
+        this.VentanaCasosSoporte_JDateDesde = VentanaCasosSoporte_JDateDesde;
+    }
+
+    public JDateChooser getVentanaCasosSoporte_JDateHasta() {
+        return VentanaCasosSoporte_JDateHasta;
+    }
+
+    public void setVentanaCasosSoporte_JDateHasta(JDateChooser VentanaCasosSoporte_JDateHasta) {
+        this.VentanaCasosSoporte_JDateHasta = VentanaCasosSoporte_JDateHasta;
+    }
+
+    public JPanel getVentanaCasosSoporte_PanelCasosSoporte() {
+        return VentanaCasosSoporte_PanelCasosSoporte;
+    }
+
+    public void setVentanaCasosSoporte_PanelCasosSoporte(JPanel VentanaCasosSoporte_PanelCasosSoporte) {
+        this.VentanaCasosSoporte_PanelCasosSoporte = VentanaCasosSoporte_PanelCasosSoporte;
+    }
+
+    public JPanel getVentanaCasosSoporte_PanelFecha() {
+        return VentanaCasosSoporte_PanelFecha;
+    }
+
+    public void setVentanaCasosSoporte_PanelFecha(JPanel VentanaCasosSoporte_PanelFecha) {
+        this.VentanaCasosSoporte_PanelFecha = VentanaCasosSoporte_PanelFecha;
+    }
+
+    public JPanel getVentanaCasosSoporte_PanelFiltro() {
+        return VentanaCasosSoporte_PanelFiltro;
+    }
+
+    public void setVentanaCasosSoporte_PanelFiltro(JPanel VentanaCasosSoporte_PanelFiltro) {
+        this.VentanaCasosSoporte_PanelFiltro = VentanaCasosSoporte_PanelFiltro;
+    }
+
+    public JTable getVentanaCasosSoporte_TablaGeneral() {
+        return VentanaCasosSoporte_TablaGeneral;
+    }
+
+    public void setVentanaCasosSoporte_TablaGeneral(JTable VentanaCasosSoporte_TablaGeneral) {
+        this.VentanaCasosSoporte_TablaGeneral = VentanaCasosSoporte_TablaGeneral;
+    }
+
+    public JTextField getVentanaCasosSoporte_txtAsigadoA() {
+        return VentanaCasosSoporte_txtAsigadoA;
+    }
+
+    public void setVentanaCasosSoporte_txtAsigadoA(JTextField VentanaCasosSoporte_txtAsigadoA) {
+        this.VentanaCasosSoporte_txtAsigadoA = VentanaCasosSoporte_txtAsigadoA;
+    }
+
+    public JTextField getVentanaCasosSoporte_txtEjecutadoPor() {
+        return VentanaCasosSoporte_txtEjecutadoPor;
+    }
+
+    public void setVentanaCasosSoporte_txtEjecutadoPor(JTextField VentanaCasosSoporte_txtEjecutadoPor) {
+        this.VentanaCasosSoporte_txtEjecutadoPor = VentanaCasosSoporte_txtEjecutadoPor;
+    }
+
+    public JTextField getVentanaCasosSoporte_txtMotivo() {
+        return VentanaCasosSoporte_txtMotivo;
+    }
+
+    public void setVentanaCasosSoporte_txtMotivo(JTextField VentanaCasosSoporte_txtMotivo) {
+        this.VentanaCasosSoporte_txtMotivo = VentanaCasosSoporte_txtMotivo;
+    }
+
+    public JTextField getVentanaCasosSoporte_txtcliente() {
+        return VentanaCasosSoporte_txtcliente;
+    }
+
+    public void setVentanaCasosSoporte_txtcliente(JTextField VentanaCasosSoporte_txtcliente) {
+        this.VentanaCasosSoporte_txtcliente = VentanaCasosSoporte_txtcliente;
+    }
+
+    
     
 
     /**
@@ -197,35 +199,35 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         VentanaCasosSoportePanel = new javax.swing.JPanel();
-        VentanaCancelacionServicio_BntNuevo = new javax.swing.JButton();
-        VentanaCancelacionServicio_BntEditar = new javax.swing.JButton();
-        VentanaCancelacionServicio_BntAnular = new javax.swing.JButton();
-        VentanaCancelacionServicio_BntSolicitudServicio = new javax.swing.JButton();
-        VentanaCancelacionServicio_PanelCasos = new javax.swing.JPanel();
+        VentanaCasosSoporte_BntNuevo = new javax.swing.JButton();
+        VentanaCasosSoporte_BntEditar = new javax.swing.JButton();
+        VentanaCasosSoporte_BntAnular = new javax.swing.JButton();
+        VentanaCasosSoporte_BntSolicitudServicio = new javax.swing.JButton();
+        VentanaCasosSoporte_PanelCasosSoporte = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        VentanaCancelacionServicio_PanelFecha = new javax.swing.JPanel();
+        VentanaCasosSoporte_PanelFecha = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        VentanaCancelacionServicio_JDateDesde = new com.toedter.calendar.JDateChooser();
-        VentanaCancelacionServicio_JDateHasta = new com.toedter.calendar.JDateChooser();
-        VentanaCancelacionServicio_txtCliente = new javax.swing.JTextField();
-        VentanaCancelacionServicio_ComboEstado = new javax.swing.JComboBox<String>();
+        VentanaCasosSoporte_JDateDesde = new com.toedter.calendar.JDateChooser();
+        VentanaCasosSoporte_JDateHasta = new com.toedter.calendar.JDateChooser();
+        VentanaCasosSoporte_txtcliente = new javax.swing.JTextField();
+        VentanaCasosSoporte_ComboEstado = new javax.swing.JComboBox<String>();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        VentanaCancelacionServicio_txtAsignadoA = new javax.swing.JTextField();
-        VentanaCancelacionServicio_txtEjecutadoPor = new javax.swing.JTextField();
-        VentanaCancelacionServicio_txtMotivo = new javax.swing.JTextField();
+        VentanaCasosSoporte_txtAsigadoA = new javax.swing.JTextField();
+        VentanaCasosSoporte_txtEjecutadoPor = new javax.swing.JTextField();
+        VentanaCasosSoporte_txtMotivo = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        VentanaCancelacionServicio_ComboMedioContrato = new javax.swing.JComboBox<String>();
-        VentanaCancelacionServicio_PanelAplicar = new javax.swing.JPanel();
-        VentanaCancelacionServicio_BntAplicarFiltro = new javax.swing.JButton();
-        VentanaCancelacionServicio_BntActualizar = new javax.swing.JButton();
-        VentanaCancelacionServicio_BntRestablecerFiltros = new javax.swing.JButton();
+        VentanaCasosSoporte_ComboMedioContacto = new javax.swing.JComboBox<String>();
+        VentanaCasosSoporte_PanelFiltro = new javax.swing.JPanel();
+        VentanaCasosSoporte_BntAplicarFiltros = new javax.swing.JButton();
+        VentanaCasosSoporte_BntActualizar = new javax.swing.JButton();
+        VentanaCasosSoporte_BntRestablecerFiltros = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        VentanaCancelacionServicio_TablaGeneral = new javax.swing.JTable();
+        VentanaCasosSoporte_TablaGeneral = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -235,18 +237,18 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
 
         VentanaCasosSoportePanel.setBackground(new java.awt.Color(0, 153, 51));
 
-        VentanaCancelacionServicio_BntNuevo.setText("Nuevo");
+        VentanaCasosSoporte_BntNuevo.setText("Nuevo");
 
-        VentanaCancelacionServicio_BntEditar.setText("Editar");
-        VentanaCancelacionServicio_BntEditar.addActionListener(new java.awt.event.ActionListener() {
+        VentanaCasosSoporte_BntEditar.setText("Editar");
+        VentanaCasosSoporte_BntEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VentanaCancelacionServicio_BntEditarActionPerformed(evt);
+                VentanaCasosSoporte_BntEditarActionPerformed(evt);
             }
         });
 
-        VentanaCancelacionServicio_BntAnular.setText("Anular");
+        VentanaCasosSoporte_BntAnular.setText("Anular");
 
-        VentanaCancelacionServicio_BntSolicitudServicio.setText("Solicitud de Servicio");
+        VentanaCasosSoporte_BntSolicitudServicio.setText("Solicitud de Servicio");
 
         javax.swing.GroupLayout VentanaCasosSoportePanelLayout = new javax.swing.GroupLayout(VentanaCasosSoportePanel);
         VentanaCasosSoportePanel.setLayout(VentanaCasosSoportePanelLayout);
@@ -254,13 +256,13 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
             VentanaCasosSoportePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VentanaCasosSoportePanelLayout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(VentanaCancelacionServicio_BntNuevo)
+                .addComponent(VentanaCasosSoporte_BntNuevo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(VentanaCancelacionServicio_BntEditar)
+                .addComponent(VentanaCasosSoporte_BntEditar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(VentanaCancelacionServicio_BntAnular)
+                .addComponent(VentanaCasosSoporte_BntAnular)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(VentanaCancelacionServicio_BntSolicitudServicio)
+                .addComponent(VentanaCasosSoporte_BntSolicitudServicio)
                 .addContainerGap(575, Short.MAX_VALUE))
         );
         VentanaCasosSoportePanelLayout.setVerticalGroup(
@@ -268,103 +270,103 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
             .addGroup(VentanaCasosSoportePanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(VentanaCasosSoportePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VentanaCancelacionServicio_BntNuevo)
-                    .addComponent(VentanaCancelacionServicio_BntEditar)
-                    .addComponent(VentanaCancelacionServicio_BntAnular)
-                    .addComponent(VentanaCancelacionServicio_BntSolicitudServicio))
+                    .addComponent(VentanaCasosSoporte_BntNuevo)
+                    .addComponent(VentanaCasosSoporte_BntEditar)
+                    .addComponent(VentanaCasosSoporte_BntAnular)
+                    .addComponent(VentanaCasosSoporte_BntSolicitudServicio))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jPanel1.add(VentanaCasosSoportePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 970, 50));
 
-        VentanaCancelacionServicio_PanelCasos.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCancelacionServicio_PanelCasos.setBorder(javax.swing.BorderFactory.createTitledBorder("Casos de Soporte"));
-        VentanaCancelacionServicio_PanelCasos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaCasosSoporte_PanelCasosSoporte.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCasosSoporte_PanelCasosSoporte.setBorder(javax.swing.BorderFactory.createTitledBorder("Casos de Soporte"));
+        VentanaCasosSoporte_PanelCasosSoporte.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Cliente:");
-        VentanaCancelacionServicio_PanelCasos.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 50, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 50, -1));
 
         jLabel3.setText("Estado:");
-        VentanaCancelacionServicio_PanelCasos.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, -1));
 
         jLabel4.setText("Motivo:");
-        VentanaCancelacionServicio_PanelCasos.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, -1, 20));
-        VentanaCancelacionServicio_PanelCasos.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, -1, 20));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, -1, -1));
 
-        VentanaCancelacionServicio_PanelFecha.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCancelacionServicio_PanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha "));
-        VentanaCancelacionServicio_PanelFecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        VentanaCasosSoporte_PanelFecha.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCasosSoporte_PanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha "));
+        VentanaCasosSoporte_PanelFecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setText("Desde:");
-        VentanaCancelacionServicio_PanelFecha.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
+        VentanaCasosSoporte_PanelFecha.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
 
         jLabel9.setText("Hasta:");
-        VentanaCancelacionServicio_PanelFecha.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, -1));
+        VentanaCasosSoporte_PanelFecha.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, -1));
 
-        VentanaCancelacionServicio_JDateDesde.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCancelacionServicio_PanelFecha.add(VentanaCancelacionServicio_JDateDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 170, 20));
+        VentanaCasosSoporte_JDateDesde.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCasosSoporte_PanelFecha.add(VentanaCasosSoporte_JDateDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 170, 20));
 
-        VentanaCancelacionServicio_JDateHasta.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCancelacionServicio_PanelFecha.add(VentanaCancelacionServicio_JDateHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 170, 20));
+        VentanaCasosSoporte_JDateHasta.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCasosSoporte_PanelFecha.add(VentanaCasosSoporte_JDateHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 170, 20));
 
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 450, 100));
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 450, 100));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_txtcliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
 
-        VentanaCancelacionServicio_ComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "RECIBIDO SIN ASIGNAR", "ASIGNADO", "RESUELTO" }));
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_ComboEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 200, -1));
+        VentanaCasosSoporte_ComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "RECIBIDO SIN ASIGNAR", "ASIGNADO", "RESUELTO" }));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_ComboEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 200, -1));
 
         jLabel2.setText("Ejecutada por:");
-        VentanaCancelacionServicio_PanelCasos.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, -1, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, -1, -1));
 
         jLabel6.setText("Asignada a:");
-        VentanaCancelacionServicio_PanelCasos.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_txtAsignadoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 320, -1));
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_txtEjecutadoPor, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 320, -1));
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_txtMotivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 320, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_txtAsigadoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 320, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_txtEjecutadoPor, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 320, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_txtMotivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 320, -1));
 
         jLabel10.setText("Medio Contacto:");
-        VentanaCancelacionServicio_PanelCasos.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, -1, -1));
+        VentanaCasosSoporte_PanelCasosSoporte.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, -1, -1));
 
-        VentanaCancelacionServicio_ComboMedioContrato.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "EMAIL", "TELÉFONO", "VISITA" }));
-        VentanaCancelacionServicio_PanelCasos.add(VentanaCancelacionServicio_ComboMedioContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 320, -1));
+        VentanaCasosSoporte_ComboMedioContacto.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "EMAIL", "TELÉFONO", "VISITA" }));
+        VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_ComboMedioContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 320, -1));
 
-        jPanel1.add(VentanaCancelacionServicio_PanelCasos, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
+        jPanel1.add(VentanaCasosSoporte_PanelCasosSoporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
 
-        VentanaCancelacionServicio_PanelAplicar.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCasosSoporte_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
 
-        VentanaCancelacionServicio_BntAplicarFiltro.setText("Aplicar Filtros");
+        VentanaCasosSoporte_BntAplicarFiltros.setText("Aplicar Filtros");
 
-        VentanaCancelacionServicio_BntActualizar.setText("Actualizar");
+        VentanaCasosSoporte_BntActualizar.setText("Actualizar");
 
-        VentanaCancelacionServicio_BntRestablecerFiltros.setText("Restablecer Filtros");
+        VentanaCasosSoporte_BntRestablecerFiltros.setText("Restablecer Filtros");
 
-        javax.swing.GroupLayout VentanaCancelacionServicio_PanelAplicarLayout = new javax.swing.GroupLayout(VentanaCancelacionServicio_PanelAplicar);
-        VentanaCancelacionServicio_PanelAplicar.setLayout(VentanaCancelacionServicio_PanelAplicarLayout);
-        VentanaCancelacionServicio_PanelAplicarLayout.setHorizontalGroup(
-            VentanaCancelacionServicio_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(VentanaCancelacionServicio_PanelAplicarLayout.createSequentialGroup()
+        javax.swing.GroupLayout VentanaCasosSoporte_PanelFiltroLayout = new javax.swing.GroupLayout(VentanaCasosSoporte_PanelFiltro);
+        VentanaCasosSoporte_PanelFiltro.setLayout(VentanaCasosSoporte_PanelFiltroLayout);
+        VentanaCasosSoporte_PanelFiltroLayout.setHorizontalGroup(
+            VentanaCasosSoporte_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VentanaCasosSoporte_PanelFiltroLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(VentanaCancelacionServicio_BntAplicarFiltro)
+                .addComponent(VentanaCasosSoporte_BntAplicarFiltros)
                 .addGap(18, 18, 18)
-                .addComponent(VentanaCancelacionServicio_BntActualizar)
+                .addComponent(VentanaCasosSoporte_BntActualizar)
                 .addGap(18, 18, 18)
-                .addComponent(VentanaCancelacionServicio_BntRestablecerFiltros)
+                .addComponent(VentanaCasosSoporte_BntRestablecerFiltros)
                 .addContainerGap(596, Short.MAX_VALUE))
         );
-        VentanaCancelacionServicio_PanelAplicarLayout.setVerticalGroup(
-            VentanaCancelacionServicio_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaCancelacionServicio_PanelAplicarLayout.createSequentialGroup()
+        VentanaCasosSoporte_PanelFiltroLayout.setVerticalGroup(
+            VentanaCasosSoporte_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaCasosSoporte_PanelFiltroLayout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
-                .addGroup(VentanaCancelacionServicio_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VentanaCancelacionServicio_BntAplicarFiltro)
-                    .addComponent(VentanaCancelacionServicio_BntActualizar)
-                    .addComponent(VentanaCancelacionServicio_BntRestablecerFiltros))
+                .addGroup(VentanaCasosSoporte_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaCasosSoporte_BntAplicarFiltros)
+                    .addComponent(VentanaCasosSoporte_BntActualizar)
+                    .addComponent(VentanaCasosSoporte_BntRestablecerFiltros))
                 .addContainerGap())
         );
 
-        jPanel1.add(VentanaCancelacionServicio_PanelAplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 970, 50));
+        jPanel1.add(VentanaCasosSoporte_PanelFiltro, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 970, 50));
 
-        VentanaCancelacionServicio_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
+        VentanaCasosSoporte_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null},
@@ -375,7 +377,7 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
                 "Numero de Caso", "Direccion", "Medio de Contacto", "Fecha ", "Nombre del Solicitante", "Telefono del Contacto", "Motivo", "Estado", "Asignado a", "Resuelto por", "Fecha de Creacion"
             }
         ));
-        jScrollPane1.setViewportView(VentanaCancelacionServicio_TablaGeneral);
+        jScrollPane1.setViewportView(VentanaCasosSoporte_TablaGeneral);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 970, 220));
 
@@ -395,9 +397,9 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void VentanaCancelacionServicio_BntEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentanaCancelacionServicio_BntEditarActionPerformed
+    private void VentanaCasosSoporte_BntEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentanaCasosSoporte_BntEditarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_VentanaCancelacionServicio_BntEditarActionPerformed
+    }//GEN-LAST:event_VentanaCasosSoporte_BntEditarActionPerformed
 
 //    /**
 //     * @param args the command line arguments
@@ -435,26 +437,26 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton VentanaCancelacionServicio_BntActualizar;
-    private javax.swing.JButton VentanaCancelacionServicio_BntAnular;
-    private javax.swing.JButton VentanaCancelacionServicio_BntAplicarFiltro;
-    private javax.swing.JButton VentanaCancelacionServicio_BntEditar;
-    private javax.swing.JButton VentanaCancelacionServicio_BntNuevo;
-    private javax.swing.JButton VentanaCancelacionServicio_BntRestablecerFiltros;
-    private javax.swing.JButton VentanaCancelacionServicio_BntSolicitudServicio;
-    private javax.swing.JComboBox<String> VentanaCancelacionServicio_ComboEstado;
-    private javax.swing.JComboBox<String> VentanaCancelacionServicio_ComboMedioContrato;
-    private com.toedter.calendar.JDateChooser VentanaCancelacionServicio_JDateDesde;
-    private com.toedter.calendar.JDateChooser VentanaCancelacionServicio_JDateHasta;
-    private javax.swing.JPanel VentanaCancelacionServicio_PanelAplicar;
-    private javax.swing.JPanel VentanaCancelacionServicio_PanelCasos;
-    private javax.swing.JPanel VentanaCancelacionServicio_PanelFecha;
-    private javax.swing.JTable VentanaCancelacionServicio_TablaGeneral;
-    private javax.swing.JTextField VentanaCancelacionServicio_txtAsignadoA;
-    private javax.swing.JTextField VentanaCancelacionServicio_txtCliente;
-    private javax.swing.JTextField VentanaCancelacionServicio_txtEjecutadoPor;
-    private javax.swing.JTextField VentanaCancelacionServicio_txtMotivo;
     private javax.swing.JPanel VentanaCasosSoportePanel;
+    private javax.swing.JButton VentanaCasosSoporte_BntActualizar;
+    private javax.swing.JButton VentanaCasosSoporte_BntAnular;
+    private javax.swing.JButton VentanaCasosSoporte_BntAplicarFiltros;
+    private javax.swing.JButton VentanaCasosSoporte_BntEditar;
+    private javax.swing.JButton VentanaCasosSoporte_BntNuevo;
+    private javax.swing.JButton VentanaCasosSoporte_BntRestablecerFiltros;
+    private javax.swing.JButton VentanaCasosSoporte_BntSolicitudServicio;
+    private javax.swing.JComboBox<String> VentanaCasosSoporte_ComboEstado;
+    private javax.swing.JComboBox<String> VentanaCasosSoporte_ComboMedioContacto;
+    private com.toedter.calendar.JDateChooser VentanaCasosSoporte_JDateDesde;
+    private com.toedter.calendar.JDateChooser VentanaCasosSoporte_JDateHasta;
+    private javax.swing.JPanel VentanaCasosSoporte_PanelCasosSoporte;
+    private javax.swing.JPanel VentanaCasosSoporte_PanelFecha;
+    private javax.swing.JPanel VentanaCasosSoporte_PanelFiltro;
+    private javax.swing.JTable VentanaCasosSoporte_TablaGeneral;
+    private javax.swing.JTextField VentanaCasosSoporte_txtAsigadoA;
+    private javax.swing.JTextField VentanaCasosSoporte_txtEjecutadoPor;
+    private javax.swing.JTextField VentanaCasosSoporte_txtMotivo;
+    private javax.swing.JTextField VentanaCasosSoporte_txtcliente;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;

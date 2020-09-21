@@ -22,7 +22,6 @@ import Vista.VentanaNombresTecnicos;
 import Vista.VentanaOperarioSoporte;
 import Vista.VentanaPlanesInternet;
 import Vista.VentanaReactivacion;
-
 import Vista.VentanaReportes;
 import Vista.VentanaSeries;
 import Vista.VentanaServicio;
@@ -32,8 +31,11 @@ import Vista.VentanaTipoCliente;
 import Vista.VentanaVelocidades;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import Vista.FormularioFactura;
 
 /**
  *
@@ -75,6 +77,10 @@ public class ControladorVista implements MouseListener {
         Vista.getLblSeries().setVisible(false);
         Vista.getLblComprasPanel().setVisible(false);
         //Ahora vienen los botones 
+        
+       
+        
+        
     }
 
     
@@ -139,8 +145,23 @@ public class ControladorVista implements MouseListener {
         Vista.getBtnOperarioSoporte().addMouseListener(this);
         Vista.getBtnContratos().addMouseListener(this);
         Vista.getBtnOrdenesTrabajo().addMouseListener(this);
+        
+        
+        //validaciones
+        Validad_VentanaCambioDireccion_Txt();
+        Validad_VentanaCasosSoporte_txt();
+        validar_VentanaCompras_txt();
+        validar_Ventana_Contratos_txt();
+        validar_Ventana_Servicio_txt();
+        Validad_Ventana_Serie_txt();
+        Validar_Formulario_Factura_txt();
+        Validar_Ventana_Reactivacion_txt();
+        Validar_Ventana_Cancelacion_Servicio_txt();
+        Validar_Ventana_Cambio_Plan_Txt();
+        Validar_Ordenes_Trabajo_Txt();
 
     }
+    
     
     
    
@@ -413,5 +434,257 @@ public class ControladorVista implements MouseListener {
     }
 
     
-
+    //Validaciones
+    public void Validar_Formulario_Factura_txt(){
+        
+        //Formulario Factura
+        FormularioFactura FF = new FormularioFactura();
+        
+        FF.getFormulariofacturatxt_cliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || FF.getFormulariofacturatxt_cliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+       
+        
+        FF.getFormulariofacturatxt_observaciones().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || FF.getFormulariofacturatxt_observaciones().getText().length()==1000) {
+                    evt.consume();
+                }
+            }
+        });
+   
+  
+    }
+    
+    public void Validar_Ordenes_Trabajo_Txt(){
+        
+        OrdenesTrabajo OT = new OrdenesTrabajo();
+        
+        OT.getOrdenesTrabajotxt_cliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || OT.getOrdenesTrabajotxt_cliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+        OT.getOrdenesTrabajotxt_asignadoA().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || OT.getOrdenesTrabajotxt_asignadoA().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+        OT.getOrdenesTrabajotxt_Ejecutadopor().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || OT.getOrdenesTrabajotxt_Ejecutadopor().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+    
+    public void Validad_VentanaCambioDireccion_Txt(){
+        VentanaCambioDireccion VCD = new VentanaCambioDireccion();
+        
+        VCD.getVentanaCambioDirecciontxt_Cliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCD.getVentanaCambioDirecciontxt_Cliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+    }
+    
+    public void Validar_Ventana_Cambio_Plan_Txt(){
+        
+        VentanaCambioPlan VCP = new VentanaCambioPlan();
+        
+        VCP.getVentanaCambioPlantxt_cliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCP.getVentanaCambioPlantxt_cliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+    
+    public void Validar_Ventana_Cancelacion_Servicio_txt(){
+        
+        VentanaCancelacionDeServicio VCDS = new VentanaCancelacionDeServicio();
+        
+       VCDS.getVentanaCancelacionServicio_txtCliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCDS.getVentanaCancelacionServicio_txtCliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+            
+    }
+    
+    public void Validad_VentanaCasosSoporte_txt(){
+        
+        VentanaCasosSoporte VCSO = new VentanaCasosSoporte();
+        
+         VCSO.getVentanaCasosSoporte_txtcliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCSO.getVentanaCasosSoporte_txtcliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+         
+        VCSO.getVentanaCasosSoporte_txtMotivo().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCSO.getVentanaCasosSoporte_txtMotivo().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+         VCSO.getVentanaCasosSoporte_txtAsigadoA().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCSO.getVentanaCasosSoporte_txtAsigadoA().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+         
+          VCSO.getVentanaCasosSoporte_txtEjecutadoPor().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCSO.getVentanaCasosSoporte_txtEjecutadoPor().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+          
+    }
+    
+    public void validar_VentanaCompras_txt(){
+        
+        VentanaCompras VC = new VentanaCompras();
+        
+          VC.getVentanaCompras_txtCreadoPor().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VC.getVentanaCompras_txtCreadoPor().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+    
+    public void validar_Ventana_Contratos_txt(){
+        
+        VentanaContratos VCTRA = new VentanaContratos();
+        
+         VCTRA.getVentanaContratos_txtCliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VCTRA.getVentanaContratos_txtCliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+    
+    public void Validar_Ventana_Reactivacion_txt(){
+        
+        VentanaReactivacion VR = new VentanaReactivacion();
+        
+         VR.getVentanaReactivacion_txtCliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VR.getVentanaReactivacion_txtCliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+    
+    public void Validad_Ventana_Serie_txt(){
+        
+        VentanaSeries VSRIE = new VentanaSeries();
+        
+         VSRIE.getVentanaSeries_txtItem().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VSRIE.getVentanaSeries_txtItem().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+    }
+    
+    public void validar_Ventana_Servicio_txt(){
+        
+        VentanaServicio VSER = new VentanaServicio();
+        
+         VSER.getVentanaServicio_txtCliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VSER.getVentanaServicio_txtCliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+    
+    public void Validad_ventana_suspencion_txt(){
+        
+        VentanaSuspension VSUS = new VentanaSuspension();
+        
+         VSUS.getVentanaSuspencion_txtCliente().addKeyListener(new KeyAdapter() {
+             @Override
+            public void keyTyped(KeyEvent evt) {
+                char c = evt.getKeyChar();
+                if (!Character.isAlphabetic(c) || VSUS.getVentanaSuspencion_txtCliente().getText().length()==70) {
+                    evt.consume();
+                }
+            }
+        });
+        
+    }
+   
 }

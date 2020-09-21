@@ -65,13 +65,13 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntNuevo" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntNuevo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntEditar" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntEditar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntAnular" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntAnular" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntSolicitudServicio" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntSolicitudServicio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="575" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -81,10 +81,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="VentanaCancelacionServicio_BntNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="VentanaCancelacionServicio_BntEditar" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="VentanaCancelacionServicio_BntAnular" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="VentanaCancelacionServicio_BntSolicitudServicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntEditar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntAnular" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntSolicitudServicio" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
@@ -92,32 +92,32 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntNuevo">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntNuevo">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Nuevo"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntEditar">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntEditar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Editar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VentanaCancelacionServicio_BntEditarActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VentanaCasosSoporte_BntEditarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntAnular">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntAnular">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Anular"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntSolicitudServicio">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntSolicitudServicio">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Solicitud de Servicio"/>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="VentanaCancelacionServicio_PanelCasos">
+        <Container class="javax.swing.JPanel" name="VentanaCasosSoporte_PanelCasosSoporte">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -175,7 +175,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Container class="javax.swing.JPanel" name="VentanaCancelacionServicio_PanelFecha">
+            <Container class="javax.swing.JPanel" name="VentanaCasosSoporte_PanelFecha">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -216,7 +216,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="com.toedter.calendar.JDateChooser" name="VentanaCancelacionServicio_JDateDesde">
+                <Component class="com.toedter.calendar.JDateChooser" name="VentanaCasosSoporte_JDateDesde">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -228,7 +228,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="com.toedter.calendar.JDateChooser" name="VentanaCancelacionServicio_JDateHasta">
+                <Component class="com.toedter.calendar.JDateChooser" name="VentanaCasosSoporte_JDateHasta">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -242,14 +242,14 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JTextField" name="VentanaCancelacionServicio_txtCliente">
+            <Component class="javax.swing.JTextField" name="VentanaCasosSoporte_txtcliente">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="250" y="20" width="200" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JComboBox" name="VentanaCancelacionServicio_ComboEstado">
+            <Component class="javax.swing.JComboBox" name="VentanaCasosSoporte_ComboEstado">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
@@ -289,21 +289,21 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="VentanaCancelacionServicio_txtAsignadoA">
+            <Component class="javax.swing.JTextField" name="VentanaCasosSoporte_txtAsigadoA">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="580" y="110" width="320" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="VentanaCancelacionServicio_txtEjecutadoPor">
+            <Component class="javax.swing.JTextField" name="VentanaCasosSoporte_txtEjecutadoPor">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="580" y="140" width="320" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JTextField" name="VentanaCancelacionServicio_txtMotivo">
+            <Component class="javax.swing.JTextField" name="VentanaCasosSoporte_txtMotivo">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="580" y="70" width="320" height="-1"/>
@@ -320,7 +320,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="javax.swing.JComboBox" name="VentanaCancelacionServicio_ComboMedioContrato">
+            <Component class="javax.swing.JComboBox" name="VentanaCasosSoporte_ComboMedioContacto">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
@@ -342,7 +342,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="VentanaCancelacionServicio_PanelAplicar">
+        <Container class="javax.swing.JPanel" name="VentanaCasosSoporte_PanelFiltro">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="99" red="0" type="rgb"/>
@@ -359,11 +359,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntAplicarFiltro" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntAplicarFiltros" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntActualizar" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntActualizar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="VentanaCancelacionServicio_BntRestablecerFiltros" min="-2" max="-2" attributes="0"/>
+                      <Component id="VentanaCasosSoporte_BntRestablecerFiltros" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="596" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -373,9 +373,9 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="12" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="VentanaCancelacionServicio_BntAplicarFiltro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="VentanaCancelacionServicio_BntActualizar" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="VentanaCancelacionServicio_BntRestablecerFiltros" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntAplicarFiltros" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntActualizar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VentanaCasosSoporte_BntRestablecerFiltros" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -383,17 +383,17 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntAplicarFiltro">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntAplicarFiltros">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Aplicar Filtros"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntActualizar">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntActualizar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="VentanaCancelacionServicio_BntRestablecerFiltros">
+            <Component class="javax.swing.JButton" name="VentanaCasosSoporte_BntRestablecerFiltros">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Restablecer Filtros"/>
               </Properties>
@@ -412,7 +412,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="VentanaCancelacionServicio_TablaGeneral">
+            <Component class="javax.swing.JTable" name="VentanaCasosSoporte_TablaGeneral">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="11" rowCount="4">
