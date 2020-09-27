@@ -24,6 +24,23 @@ public class FormularioPlanesInternet extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JTextField getFormularioplanesinternet_txtRuc() {
+        return formularioplanesinternet_txtRuc;
+    }
+
+    public void setFormularioplanesinternet_txtRuc(JTextField formularioplanesinternet_txtRuc) {
+        this.formularioplanesinternet_txtRuc = formularioplanesinternet_txtRuc;
+    }
+
+    public JTextField getFormularioplanesinternet_txtcodigoempleado() {
+        return formularioplanesinternet_txtcodigoempleado;
+    }
+
+    public void setFormularioplanesinternet_txtcodigoempleado(JTextField formularioplanesinternet_txtcodigoempleado) {
+        this.formularioplanesinternet_txtcodigoempleado = formularioplanesinternet_txtcodigoempleado;
+    }
+    
+
     public JButton getFormularioPlanesIntenet_BntActualizar() {
         return FormularioPlanesIntenet_BntActualizar;
     }
@@ -173,6 +190,10 @@ public class FormularioPlanesInternet extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         FormularioPlanesIntenet_TablaGeneral = new javax.swing.JTable();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        formularioplanesinternet_txtcodigoempleado = new javax.swing.JTextField();
+        formularioplanesinternet_txtRuc = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -292,6 +313,14 @@ public class FormularioPlanesInternet extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 820, 200));
 
+        jLabel9.setText("Codigo Empleado:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 60, -1, -1));
+
+        jLabel11.setText("Ruc:");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 110, -1, -1));
+        jPanel1.add(formularioplanesinternet_txtcodigoempleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 60, 100, -1));
+        jPanel1.add(formularioplanesinternet_txtRuc, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 160, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -309,40 +338,40 @@ public class FormularioPlanesInternet extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FormularioPlanesInternet().setVisible(true);
-            }
-        });
-    }
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(FormularioPlanesInternet.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new FormularioPlanesInternet().setVisible(true);
+//            }
+//        });
+//    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton FormularioPlanesIntenet_BntActualizar;
@@ -359,8 +388,11 @@ public class FormularioPlanesInternet extends javax.swing.JFrame {
     private javax.swing.JTextField FormularioPlanesIntenet_txt_Velocidad;
     private javax.swing.JTextField FormularioPlanesIntenet_txt_comparticionCanal;
     private javax.swing.JTextField FormularioPlanesIntenet_txt_tipoCliente;
+    private javax.swing.JTextField formularioplanesinternet_txtRuc;
+    private javax.swing.JTextField formularioplanesinternet_txtcodigoempleado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -368,6 +400,7 @@ public class FormularioPlanesInternet extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

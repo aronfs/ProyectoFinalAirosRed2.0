@@ -25,13 +25,15 @@ public class ProyectoFinal_Version_12 {
         // TODO code application logic here
         FormularioContribuyentes formularioContribuyentes = new FormularioContribuyentes();
         FormularioFactura formulariofactura = new FormularioFactura();
+        FormularioPlanesInternet formuarioplanesinternet = new FormularioPlanesInternet();
+        FormularioReactivacion formularioreactivacion = new FormularioReactivacion();
        // Login login = new Login();
        // MenuInicio Vista = new MenuInicio();
        // VentanaFacturas ventanaFac = new VentanaFacturas();
        // ControladorVistaVentanas ventanas = new ControladorVistaVentanas(ventanaFac);
        // ControladorVista vista = new ControladorVista(Vista, login);
         //ControladorColores color = new ControladorColores(login);
-        ControladorValidaciones validaciones = new ControladorValidaciones(formularioContribuyentes,formulariofactura);
+        ControladorValidaciones validaciones = new ControladorValidaciones(formularioContribuyentes,formulariofactura, formuarioplanesinternet, formularioreactivacion);
         validaciones.IniciaValidaciones();
 /*
         vista.IniciaControlVista();
