@@ -5,6 +5,8 @@
  */
 package proyectofinal_version_1.pkg2;
 
+import Controlador.ControladorColores;
+import Controlador.ControladorValidaciones;
 import Controlador.ControladorVista;
 import Controlador.ControladorVistaVentanas;
 
@@ -21,14 +23,21 @@ public class ProyectoFinal_Version_12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        MenuInicio Vista = new MenuInicio();
-        VentanaFacturas ventanaFac = new VentanaFacturas();
-        ControladorVistaVentanas ventanas = new ControladorVistaVentanas(ventanaFac);
-        ControladorVista vista = new ControladorVista(Vista);
+        FormularioContribuyentes formularioContribuyentes = new FormularioContribuyentes();
+       // Login login = new Login();
+       // MenuInicio Vista = new MenuInicio();
+       // VentanaFacturas ventanaFac = new VentanaFacturas();
+       // ControladorVistaVentanas ventanas = new ControladorVistaVentanas(ventanaFac);
+       // ControladorVista vista = new ControladorVista(Vista, login);
+        //ControladorColores color = new ControladorColores(login);
+        ControladorValidaciones validaciones = new ControladorValidaciones(formularioContribuyentes);
+        validaciones.IniciaValidaciones();
+/*
         vista.IniciaControlVista();
         vista.IniciaControlBotones();
         ventanas.IniciaControlVentana();
-        
+        color.IntecambioColores();
+      */
 
     }
 

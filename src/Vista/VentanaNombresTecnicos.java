@@ -106,7 +106,7 @@ public class VentanaNombresTecnicos extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(VentanaNombresTecnicos_Tabla);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 990, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 410));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

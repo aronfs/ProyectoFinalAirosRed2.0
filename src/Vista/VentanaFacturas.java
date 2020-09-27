@@ -198,12 +198,12 @@ public class VentanaFacturas extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         VentanaFacturas_JDateFechaInicio = new com.toedter.calendar.JDateChooser();
-        VentanaFacturas_ComboAutorizacion = new javax.swing.JComboBox<String>();
+        VentanaFacturas_ComboAutorizacion = new javax.swing.JComboBox<>();
         VentanaFacturas_JDateFechaFin = new com.toedter.calendar.JDateChooser();
-        VentanaFacturas_ComboBodega = new javax.swing.JComboBox<String>();
-        VentanaFacturas_ComboEstadoDoc = new javax.swing.JComboBox<String>();
-        VentanaFacturas_ComboFormaPago = new javax.swing.JComboBox<String>();
-        VentanaFacturas_ComboCreadoPor = new javax.swing.JComboBox<String>();
+        VentanaFacturas_ComboBodega = new javax.swing.JComboBox<>();
+        VentanaFacturas_ComboEstadoDoc = new javax.swing.JComboBox<>();
+        VentanaFacturas_ComboFormaPago = new javax.swing.JComboBox<>();
+        VentanaFacturas_ComboCreadoPor = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaFacturas_TablaGeneral = new javax.swing.JTable();
 
@@ -325,22 +325,22 @@ public class VentanaFacturas extends javax.swing.JFrame {
         VentanaFacturas_JDateFechaInicio.setBackground(new java.awt.Color(255, 255, 255));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_JDateFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 170, 20));
 
-        VentanaFacturas_ComboAutorizacion.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "AUTORIZADO", "AÚN NO AUTORIZADOS", "ANULADO", "NO FILTRAR" }));
+        VentanaFacturas_ComboAutorizacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "AUTORIZADO", "AÚN NO AUTORIZADOS", "ANULADO", "NO FILTRAR" }));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboAutorizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 170, -1));
 
         VentanaFacturas_JDateFechaFin.setBackground(new java.awt.Color(255, 255, 255));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_JDateFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 170, -1));
 
-        VentanaFacturas_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
+        VentanaFacturas_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboBodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 170, -1));
 
-        VentanaFacturas_ComboEstadoDoc.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "ANULADO", "ARCHIVADO", "PENDIENTE" }));
+        VentanaFacturas_ComboEstadoDoc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "ANULADO", "ARCHIVADO", "PENDIENTE" }));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboEstadoDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 130, -1));
 
-        VentanaFacturas_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "CONTADO", "CRÉDITO", "SIN FORMA DE PAGO" }));
+        VentanaFacturas_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "CONTADO", "CRÉDITO", "SIN FORMA DE PAGO" }));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboFormaPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 20, 110, -1));
 
-        VentanaFacturas_ComboCreadoPor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaFacturas_ComboCreadoPor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaFacturasPanelFacturas.add(VentanaFacturas_ComboCreadoPor, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 60, 110, -1));
 
         PanelVentaFacturasPanelPrincipanl.add(VentanaFacturasPanelFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 980, 170));

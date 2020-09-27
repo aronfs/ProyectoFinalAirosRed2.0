@@ -23,17 +23,18 @@ public class ControladorVistaVentanas implements ActionListener {
     }
 
     public void IniciaControlVentana() {
-        ventanaFac.getBtnNuevoVentanaFactura().addActionListener(this);
+        ventanaFac.getBtnNuevoVentanaFactura().addActionListener(i->MostrarFormularioFactura());
     }
 
- 
-
+    public void MostrarFormularioFactura(){
+        FormularioFactura formulario = new FormularioFactura();
+        formulario.setVisible(true);
+        formulario.setLocationRelativeTo(null); 
+    }
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
-       if (ae.getSource() == ventanaFac.getBtnNuevoVentanaFactura()){
-           FormularioFactura f = new FormularioFactura();
-           f.setVisible(true);
-       }
+       //
     }
 
 }
