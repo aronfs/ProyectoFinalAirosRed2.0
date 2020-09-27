@@ -6,6 +6,8 @@
 package Vista;
 
 import java.awt.Color;
+import javax.swing.JButton;
+import javax.swing.JSpinner;
 import javax.swing.JTextField;
 
 /**
@@ -40,14 +42,14 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtRuc = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jSpinner1 = new javax.swing.JSpinner();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        formulariocontribuyente_txtrazonsocial = new javax.swing.JTextField();
+        formulariocontribuyente_txtcedula = new javax.swing.JTextField();
+        formulariocontribuyente_jSpinnerIngresoAnual = new javax.swing.JSpinner();
+        formulariocontribuyente_txtcuidad = new javax.swing.JTextField();
+        formulariocontribuyente_txtnombrecomercial = new javax.swing.JTextField();
+        formulariocontribuyente_txtdireccion = new javax.swing.JTextField();
+        formulariocontribuyente_BntGuardar = new javax.swing.JButton();
+        formulariocontribuyente_BntEditar = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -56,67 +58,42 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Forma Contribuyentes", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Forma Contribuyentes"));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("RUC:");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Razon Social:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
 
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Cedula:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, -1, 40));
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText(" Ingresos Anuales:");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Ciudad:");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, -1, -1));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Nombre Comercial:");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
 
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Direccion:");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
-
-        txtRuc.setBackground(new java.awt.Color(255, 255, 255));
-        txtRuc.setForeground(new java.awt.Color(0, 0, 0));
         jPanel2.add(txtRuc, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 200, -1));
+        jPanel2.add(formulariocontribuyente_txtrazonsocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 200, -1));
+        jPanel2.add(formulariocontribuyente_txtcedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 200, -1));
+        jPanel2.add(formulariocontribuyente_jSpinnerIngresoAnual, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 70, -1));
+        jPanel2.add(formulariocontribuyente_txtcuidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 200, -1));
+        jPanel2.add(formulariocontribuyente_txtnombrecomercial, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 200, -1));
+        jPanel2.add(formulariocontribuyente_txtdireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 200, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 200, -1));
+        formulariocontribuyente_BntGuardar.setText("Guardar");
+        jPanel2.add(formulariocontribuyente_BntGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, -1, -1));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 200, -1));
-        jPanel2.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 70, -1));
-
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 200, -1));
-
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 200, -1));
-
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 200, -1));
-
-        jButton1.setText("Guardar");
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, -1, -1));
-
-        jButton2.setText(" Editar");
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 90, -1));
+        formulariocontribuyente_BntEditar.setText(" Editar");
+        jPanel2.add(formulariocontribuyente_BntEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 90, -1));
 
         jButton3.setText("Boton");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +131,70 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
 
     public void setTxtRuc(JTextField txtRuc) {
         this.txtRuc = txtRuc;
+    }
+
+    public JButton getFormulariocontribuyente_BntEditar() {
+        return formulariocontribuyente_BntEditar;
+    }
+
+    public void setFormulariocontribuyente_BntEditar(JButton formulariocontribuyente_BntEditar) {
+        this.formulariocontribuyente_BntEditar = formulariocontribuyente_BntEditar;
+    }
+
+    public JButton getFormulariocontribuyente_BntGuardar() {
+        return formulariocontribuyente_BntGuardar;
+    }
+
+    public void setFormulariocontribuyente_BntGuardar(JButton formulariocontribuyente_BntGuardar) {
+        this.formulariocontribuyente_BntGuardar = formulariocontribuyente_BntGuardar;
+    }
+
+    public JSpinner getFormulariocontribuyente_jSpinnerIngresoAnual() {
+        return formulariocontribuyente_jSpinnerIngresoAnual;
+    }
+
+    public void setFormulariocontribuyente_jSpinnerIngresoAnual(JSpinner formulariocontribuyente_jSpinnerIngresoAnual) {
+        this.formulariocontribuyente_jSpinnerIngresoAnual = formulariocontribuyente_jSpinnerIngresoAnual;
+    }
+
+    public JTextField getFormulariocontribuyente_txtcedula() {
+        return formulariocontribuyente_txtcedula;
+    }
+
+    public void setFormulariocontribuyente_txtcedula(JTextField formulariocontribuyente_txtcedula) {
+        this.formulariocontribuyente_txtcedula = formulariocontribuyente_txtcedula;
+    }
+
+    public JTextField getFormulariocontribuyente_txtcuidad() {
+        return formulariocontribuyente_txtcuidad;
+    }
+
+    public void setFormulariocontribuyente_txtcuidad(JTextField formulariocontribuyente_txtcuidad) {
+        this.formulariocontribuyente_txtcuidad = formulariocontribuyente_txtcuidad;
+    }
+
+    public JTextField getFormulariocontribuyente_txtdireccion() {
+        return formulariocontribuyente_txtdireccion;
+    }
+
+    public void setFormulariocontribuyente_txtdireccion(JTextField formulariocontribuyente_txtdireccion) {
+        this.formulariocontribuyente_txtdireccion = formulariocontribuyente_txtdireccion;
+    }
+
+    public JTextField getFormulariocontribuyente_txtnombrecomercial() {
+        return formulariocontribuyente_txtnombrecomercial;
+    }
+
+    public void setFormulariocontribuyente_txtnombrecomercial(JTextField formulariocontribuyente_txtnombrecomercial) {
+        this.formulariocontribuyente_txtnombrecomercial = formulariocontribuyente_txtnombrecomercial;
+    }
+
+    public JTextField getFormulariocontribuyente_txtrazonsocial() {
+        return formulariocontribuyente_txtrazonsocial;
+    }
+
+    public void setFormulariocontribuyente_txtrazonsocial(JTextField formulariocontribuyente_txtrazonsocial) {
+        this.formulariocontribuyente_txtrazonsocial = formulariocontribuyente_txtrazonsocial;
     }
 
     
@@ -197,8 +238,14 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton formulariocontribuyente_BntEditar;
+    private javax.swing.JButton formulariocontribuyente_BntGuardar;
+    private javax.swing.JSpinner formulariocontribuyente_jSpinnerIngresoAnual;
+    private javax.swing.JTextField formulariocontribuyente_txtcedula;
+    private javax.swing.JTextField formulariocontribuyente_txtcuidad;
+    private javax.swing.JTextField formulariocontribuyente_txtdireccion;
+    private javax.swing.JTextField formulariocontribuyente_txtnombrecomercial;
+    private javax.swing.JTextField formulariocontribuyente_txtrazonsocial;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -209,12 +256,6 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField txtRuc;
     // End of variables declaration//GEN-END:variables
 }
