@@ -16,7 +16,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaCompras extends javax.swing.JFrame {
+public class VentanaCompras extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FormularioCompras
@@ -184,7 +184,6 @@ public class VentanaCompras extends javax.swing.JFrame {
     public void setVentanaCompras_txtCreadoPor(JTextField VentanaCompras_txtCreadoPor) {
         this.VentanaCompras_txtCreadoPor = VentanaCompras_txtCreadoPor;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -214,12 +213,12 @@ public class VentanaCompras extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         VentanaCompras_JDateFechaInicio = new com.toedter.calendar.JDateChooser();
         VentanaCompras_JDateFechaFin = new com.toedter.calendar.JDateChooser();
-        VentanaCompras_ComboFormaPago = new javax.swing.JComboBox<String>();
-        VentanaCompras_ComboEstado = new javax.swing.JComboBox<String>();
-        VentanaCompras_ComboBodega = new javax.swing.JComboBox<String>();
-        VentanaCompras_ComboTipoProveedor = new javax.swing.JComboBox<String>();
-        VentanaCompras_ComboSistema = new javax.swing.JComboBox<String>();
-        VentanaCompras_ComboAutorizacion = new javax.swing.JComboBox<String>();
+        VentanaCompras_ComboFormaPago = new javax.swing.JComboBox<>();
+        VentanaCompras_ComboEstado = new javax.swing.JComboBox<>();
+        VentanaCompras_ComboBodega = new javax.swing.JComboBox<>();
+        VentanaCompras_ComboTipoProveedor = new javax.swing.JComboBox<>();
+        VentanaCompras_ComboSistema = new javax.swing.JComboBox<>();
+        VentanaCompras_ComboAutorizacion = new javax.swing.JComboBox<>();
         VentanaCompras_txtCreadoPor = new javax.swing.JTextField();
         VentanaCompras_PanelAplicar = new javax.swing.JPanel();
         VentanaCompras_BntAplicarFiltro = new javax.swing.JButton();
@@ -228,27 +227,27 @@ public class VentanaCompras extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaCompras_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaCompras_PanelBotonNuevo.setBackground(new java.awt.Color(0, 102, 51));
+        VentanaCompras_PanelBotonNuevo.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaCompras_BntNuevo.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntNuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntNuevo.setText("Nuevo");
 
-        VentanaCompras_BntEditar.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntEditar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntEditar.setText("Editar");
 
-        VentanaCompras_BntAnular.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntAnular.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntAnular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntAnular.setText("Anular");
 
-        VentanaCompras_BntVerCompra.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntVerCompra.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntVerCompra.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntVerCompra.setText("Ver Compra");
 
@@ -321,38 +320,38 @@ public class VentanaCompras extends javax.swing.JFrame {
         VentanaCompras_JDateFechaFin.setBackground(new java.awt.Color(255, 255, 255));
         VentanaCompras_PanelCompra.add(VentanaCompras_JDateFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 150, 20));
 
-        VentanaCompras_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "CONTADO", "CRÉDITO", "SIN FORMA DE PAGO" }));
+        VentanaCompras_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "CONTADO", "CRÉDITO", "SIN FORMA DE PAGO" }));
         VentanaCompras_PanelCompra.add(VentanaCompras_ComboFormaPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 150, -1));
 
-        VentanaCompras_ComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "ANULADO", "ARCHIVADO", "PENDIENTE" }));
+        VentanaCompras_ComboEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "ANULADO", "ARCHIVADO", "PENDIENTE" }));
         VentanaCompras_PanelCompra.add(VentanaCompras_ComboEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, 160, -1));
 
-        VentanaCompras_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
+        VentanaCompras_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
         VentanaCompras_PanelCompra.add(VentanaCompras_ComboBodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 150, -1));
 
-        VentanaCompras_ComboTipoProveedor.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaCompras_ComboTipoProveedor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaCompras_PanelCompra.add(VentanaCompras_ComboTipoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 30, 110, -1));
 
-        VentanaCompras_ComboSistema.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaCompras_ComboSistema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaCompras_PanelCompra.add(VentanaCompras_ComboSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 160, -1));
 
-        VentanaCompras_ComboAutorizacion.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "AUTORIZADO", "AÚN NO AUTORIZADO", "ANULADO" }));
+        VentanaCompras_ComboAutorizacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "AUTORIZADO", "AÚN NO AUTORIZADO", "ANULADO" }));
         VentanaCompras_PanelCompra.add(VentanaCompras_ComboAutorizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 150, -1));
         VentanaCompras_PanelCompra.add(VentanaCompras_txtCreadoPor, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 150, -1));
 
         jPanel1.add(VentanaCompras_PanelCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 190));
 
-        VentanaCompras_PanelAplicar.setBackground(new java.awt.Color(0, 102, 51));
+        VentanaCompras_PanelAplicar.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaCompras_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntAplicarFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        VentanaCompras_BntActualizar.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntActualizar.setText("Actualizar");
 
-        VentanaCompras_BntRestablecerFiltro.setBackground(new java.awt.Color(0, 204, 102));
+        VentanaCompras_BntRestablecerFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCompras_BntRestablecerFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCompras_BntRestablecerFiltro.setText("Restablecer Filtros");
         VentanaCompras_BntRestablecerFiltro.addActionListener(new java.awt.event.ActionListener() {

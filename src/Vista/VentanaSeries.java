@@ -15,7 +15,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaSeries extends javax.swing.JFrame {
+public class VentanaSeries extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaSeries
@@ -151,7 +151,6 @@ public class VentanaSeries extends javax.swing.JFrame {
     public void setVentanaSeries_txtItem(JTextField VentanaSeries_txtItem) {
         this.VentanaSeries_txtItem = VentanaSeries_txtItem;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -175,10 +174,10 @@ public class VentanaSeries extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         VentanaSeries_txtItem = new javax.swing.JTextField();
-        VentanaSeries_ComboDisponibilidad = new javax.swing.JComboBox<String>();
-        VentanaSeries_ComboBodega = new javax.swing.JComboBox<String>();
-        VentanaSeries_ComboEstadoIntegridadItem = new javax.swing.JComboBox<String>();
-        VentanaSerie_ComboTipoDocumentoOrigen = new javax.swing.JComboBox<String>();
+        VentanaSeries_ComboDisponibilidad = new javax.swing.JComboBox<>();
+        VentanaSeries_ComboBodega = new javax.swing.JComboBox<>();
+        VentanaSeries_ComboEstadoIntegridadItem = new javax.swing.JComboBox<>();
+        VentanaSerie_ComboTipoDocumentoOrigen = new javax.swing.JComboBox<>();
         VentanaSeries_PanelFiltro = new javax.swing.JPanel();
         VentanaSeries_BntAplicarFiltro = new javax.swing.JButton();
         VentanaSeries_BntActualizar = new javax.swing.JButton();
@@ -186,13 +185,13 @@ public class VentanaSeries extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaSeries_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaSeries_PanelNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaSeries_PanelNuevo.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaSeries_BntNuevo.setText("Nuevo");
 
@@ -251,7 +250,7 @@ public class VentanaSeries extends javax.swing.JFrame {
         VentanaSerie_PanelSeries.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, -1, 10));
         VentanaSerie_PanelSeries.add(VentanaSeries_txtItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 240, -1));
 
-        VentanaSeries_ComboDisponibilidad.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "EN STOCK", "CONFIRMACION PENDIENTE DE TRANSFERENCIA", "DEVUELTO A PROVEEDOR", "VENDIDO", "DEVUELTO POR CLIENTE", "PEDIDO", "RESERVADO PARA FACTURAR CONTRATO DE SERVICIO DE INTERNET", "CESION TEMPORAL A CLIENTE" }));
+        VentanaSeries_ComboDisponibilidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "EN STOCK", "CONFIRMACION PENDIENTE DE TRANSFERENCIA", "DEVUELTO A PROVEEDOR", "VENDIDO", "DEVUELTO POR CLIENTE", "PEDIDO", "RESERVADO PARA FACTURAR CONTRATO DE SERVICIO DE INTERNET", "CESION TEMPORAL A CLIENTE" }));
         VentanaSeries_ComboDisponibilidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VentanaSeries_ComboDisponibilidadActionPerformed(evt);
@@ -259,18 +258,18 @@ public class VentanaSeries extends javax.swing.JFrame {
         });
         VentanaSerie_PanelSeries.add(VentanaSeries_ComboDisponibilidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 240, -1));
 
-        VentanaSeries_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaSeries_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaSerie_PanelSeries.add(VentanaSeries_ComboBodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 240, -1));
 
-        VentanaSeries_ComboEstadoIntegridadItem.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "BUENO", "DEFECTUOSO" }));
+        VentanaSeries_ComboEstadoIntegridadItem.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "BUENO", "DEFECTUOSO" }));
         VentanaSerie_PanelSeries.add(VentanaSeries_ComboEstadoIntegridadItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 240, -1));
 
-        VentanaSerie_ComboTipoDocumentoOrigen.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "FACTURA DE COMPRA", "ORDEN DE TRABAJO", "PEDIDO" }));
+        VentanaSerie_ComboTipoDocumentoOrigen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "FACTURA DE COMPRA", "ORDEN DE TRABAJO", "PEDIDO" }));
         VentanaSerie_PanelSeries.add(VentanaSerie_ComboTipoDocumentoOrigen, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 240, -1));
 
         jPanel1.add(VentanaSerie_PanelSeries, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 970, 110));
 
-        VentanaSeries_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaSeries_PanelFiltro.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaSeries_BntAplicarFiltro.setText("Aplicar Filtros");
 

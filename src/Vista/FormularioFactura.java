@@ -112,8 +112,6 @@ public class FormularioFactura extends javax.swing.JFrame {
     public void setFormulariofactura_txt(JLabel formulariofactura_txt) {
         this.formulariofactura_txt = formulariofactura_txt;
     }
-    
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -134,8 +132,8 @@ public class FormularioFactura extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        formulariofacturacombobox_bodega = new javax.swing.JComboBox<String>();
-        formulariofacturacombobox_Anulada = new javax.swing.JComboBox<String>();
+        formulariofacturacombobox_bodega = new javax.swing.JComboBox<>();
+        formulariofacturacombobox_Anulada = new javax.swing.JComboBox<>();
         formulariofacturatxt_numerodedocumento = new javax.swing.JLabel();
         formulariofacturatxt_fecha = new javax.swing.JLabel();
         formulariofacturatxt_cliente = new javax.swing.JTextField();
@@ -163,6 +161,7 @@ public class FormularioFactura extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -189,10 +188,10 @@ public class FormularioFactura extends javax.swing.JFrame {
         jLabel6.setText("Anulada:");
         formulariofacturaPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
 
-        formulariofacturacombobox_bodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
+        formulariofacturacombobox_bodega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
         formulariofacturaPanel.add(formulariofacturacombobox_bodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, 160, -1));
 
-        formulariofacturacombobox_Anulada.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        formulariofacturacombobox_Anulada.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         formulariofacturaPanel.add(formulariofacturacombobox_Anulada, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 160, -1));
 
         formulariofacturatxt_numerodedocumento.setText("---------------------------------------");

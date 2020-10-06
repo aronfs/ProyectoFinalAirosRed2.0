@@ -14,7 +14,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaCambioPlan extends javax.swing.JFrame {
+public class VentanaCambioPlan extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaCambioPlan
@@ -134,7 +134,6 @@ public class VentanaCambioPlan extends javax.swing.JFrame {
     public void setVentanaCambioPlantxt_cliente(JTextField VentanaCambioPlantxt_cliente) {
         this.VentanaCambioPlantxt_cliente = VentanaCambioPlantxt_cliente;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -167,27 +166,27 @@ public class VentanaCambioPlan extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaCambioPlanPanelBoton_Nuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCambioPlanPanelBoton_Nuevo.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaCambioPlanBnt_Nuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_Nuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_Nuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_Nuevo.setText("Nuevo");
 
-        VentanaCambioPlanBnt_Editar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_Editar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_Editar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_Editar.setText("Editar");
 
-        VentanaCambioPlanBnt_Anular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_Anular.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_Anular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_Anular.setText("Anular");
 
-        VentanaCambioPlanBnt_ImprimirSolicitud.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_ImprimirSolicitud.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_ImprimirSolicitud.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_ImprimirSolicitud.setText("Imprimir Solicitud");
 
@@ -217,15 +216,16 @@ public class VentanaCambioPlan extends javax.swing.JFrame {
         jPanel1.add(VentanaCambioPlanPanelBoton_Nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 960, 40));
 
         VentanaCambioPlanPanel_Solicitud.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCambioPlanPanel_Solicitud.setBorder(javax.swing.BorderFactory.createTitledBorder("Solicitudes de cambio de plan"));
+        VentanaCambioPlanPanel_Solicitud.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Solicitudes de cambio de plan", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
         VentanaCambioPlanPanel_Solicitud.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cliente:");
         VentanaCambioPlanPanel_Solicitud.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
         VentanaCambioPlanPanel_Solicitud.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
 
         VentanaCambioPlanPanelFecha.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCambioPlanPanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha de Cambio"));
+        VentanaCambioPlanPanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha de Cambio", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
         VentanaCambioPlanPanelFecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setText("Desde:");
@@ -235,27 +235,32 @@ public class VentanaCambioPlan extends javax.swing.JFrame {
         VentanaCambioPlanPanelFecha.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
 
         VentanaCambioPlanJDate_Desde.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCambioPlanJDate_Desde.setForeground(new java.awt.Color(0, 0, 0));
         VentanaCambioPlanPanelFecha.add(VentanaCambioPlanJDate_Desde, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
 
         VentanaCambioPlanJDate_Hasta.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCambioPlanJDate_Hasta.setForeground(new java.awt.Color(0, 0, 0));
         VentanaCambioPlanPanelFecha.add(VentanaCambioPlanJDate_Hasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
 
         VentanaCambioPlanPanel_Solicitud.add(VentanaCambioPlanPanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
-        VentanaCambioPlanPanel_Solicitud.add(VentanaCambioPlantxt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
+
+        VentanaCambioPlantxt_cliente.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCambioPlantxt_cliente.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaCambioPlanPanel_Solicitud.add(VentanaCambioPlantxt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 36, 250, -1));
 
         jPanel1.add(VentanaCambioPlanPanel_Solicitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 960, 120));
 
-        VentanaCambioPlanPanel_Bnt_Aplicar.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCambioPlanPanel_Bnt_Aplicar.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaCambioPlanBnt_Aplicar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_Aplicar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_Aplicar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_Aplicar.setText("Aplicar Filtros");
 
-        VentanaCambioPlanBnt_Actualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_Actualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_Actualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_Actualizar.setText("Actualizar");
 
-        VentanaCambioPlanBnt_RestablecerFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCambioPlanBnt_RestablecerFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCambioPlanBnt_RestablecerFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioPlanBnt_RestablecerFiltro.setText("Restablecer Filtros");
 

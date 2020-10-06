@@ -14,7 +14,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaVelocidades extends javax.swing.JFrame {
+public class VentanaVelocidades extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaVelocidades
@@ -78,7 +78,7 @@ public class VentanaVelocidades extends javax.swing.JFrame {
     public void setVentanaVelocidad_TablaGeneral(JTable VentanaVelocidad_TablaGeneral) {
         this.VentanaVelocidad_TablaGeneral = VentanaVelocidad_TablaGeneral;
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -90,9 +90,12 @@ public class VentanaVelocidades extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         VentanaVelocidad_PanelVelocidad = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        VentanaVelocidad_ComboUnidad = new javax.swing.JComboBox<String>();
+        VentanaVelocidad_ComboUnidad = new javax.swing.JComboBox<>();
         VentanaVelocidad_PanelFiltro = new javax.swing.JPanel();
         VentanaVelocidad_BntAplicarFiltro = new javax.swing.JButton();
         VentanaVelocidad_BntActualizar = new javax.swing.JButton();
@@ -100,23 +103,41 @@ public class VentanaVelocidades extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaVelocidad_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
+
+        jButton1.setText("Nuevo");
+
+        jButton2.setText("Editar");
+
+        jButton3.setText("Anular");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 980, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jButton1)
+                .addGap(39, 39, 39)
+                .addComponent(jButton2)
+                .addGap(39, 39, 39)
+                .addComponent(jButton3)
+                .addContainerGap(677, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addGap(0, 8, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 980, 40));
@@ -126,7 +147,7 @@ public class VentanaVelocidades extends javax.swing.JFrame {
 
         jLabel1.setText("Unidad:");
 
-        VentanaVelocidad_ComboUnidad.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccione", "Kbps", "Mbps", "Gbps" }));
+        VentanaVelocidad_ComboUnidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Kbps", "Mbps", "Gbps" }));
 
         javax.swing.GroupLayout VentanaVelocidad_PanelVelocidadLayout = new javax.swing.GroupLayout(VentanaVelocidad_PanelVelocidad);
         VentanaVelocidad_PanelVelocidad.setLayout(VentanaVelocidad_PanelVelocidadLayout);
@@ -151,17 +172,17 @@ public class VentanaVelocidades extends javax.swing.JFrame {
 
         jPanel1.add(VentanaVelocidad_PanelVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 980, 60));
 
-        VentanaVelocidad_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaVelocidad_PanelFiltro.setBackground(new java.awt.Color(204, 0, 0));
 
-        VentanaVelocidad_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaVelocidad_BntAplicarFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaVelocidad_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaVelocidad_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        VentanaVelocidad_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaVelocidad_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaVelocidad_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaVelocidad_BntActualizar.setText("Actualizar");
 
-        VentanaVelocidad_BntRestablecer.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaVelocidad_BntRestablecer.setBackground(new java.awt.Color(102, 102, 102));
         VentanaVelocidad_BntRestablecer.setForeground(new java.awt.Color(255, 255, 255));
         VentanaVelocidad_BntRestablecer.setText("Restablecer Filtros");
 
@@ -263,6 +284,9 @@ public class VentanaVelocidades extends javax.swing.JFrame {
     private javax.swing.JPanel VentanaVelocidad_PanelFiltro;
     private javax.swing.JPanel VentanaVelocidad_PanelVelocidad;
     private javax.swing.JTable VentanaVelocidad_TablaGeneral;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

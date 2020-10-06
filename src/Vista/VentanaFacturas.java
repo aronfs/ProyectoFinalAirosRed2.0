@@ -15,7 +15,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaFacturas extends javax.swing.JFrame {
+public class VentanaFacturas extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FormularioPreFacturas
@@ -207,8 +207,8 @@ public class VentanaFacturas extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaFacturas_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1015, 555));
 
         PanelVentaFacturasPanelPrincipanl.setBackground(new java.awt.Color(255, 255, 255));

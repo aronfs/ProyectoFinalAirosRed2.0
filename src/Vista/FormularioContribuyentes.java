@@ -46,11 +46,13 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -73,19 +75,19 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
 
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText(" Ingresos Anuales:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 176, -1, 30));
 
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Ciudad:");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, -1, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, -1, -1));
 
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Nombre Comercial:");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
 
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Direccion:");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
 
         txtRuc.setBackground(new java.awt.Color(255, 255, 255));
         txtRuc.setForeground(new java.awt.Color(0, 0, 0));
@@ -98,55 +100,58 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         jTextField3.setBackground(new java.awt.Color(255, 255, 255));
         jTextField3.setForeground(new java.awt.Color(0, 0, 0));
         jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 200, -1));
-        jPanel2.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 70, -1));
+        jPanel2.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 200, -1));
 
         jTextField4.setBackground(new java.awt.Color(255, 255, 255));
         jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 200, -1));
+        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 200, -1));
 
         jTextField5.setBackground(new java.awt.Color(255, 255, 255));
         jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 200, -1));
+        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 200, -1));
 
         jTextField6.setBackground(new java.awt.Color(255, 255, 255));
         jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 200, -1));
+        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 200, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 750, 240));
+
+        jButton2.setText("Cancelar");
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 470, 90, -1));
 
         jButton1.setText("Guardar");
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 470, -1, -1));
 
-        jButton2.setText(" Editar");
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 390, 90, -1));
-
-        jButton3.setText("Boton");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "RUC", "Razon Social ", "Cedula", "Ingresos Anuales", "Ciudad", "Nombre Comercial", "Direccion"
             }
-        });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 23, 430, 470));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 730, 200));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 527, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-      
-        
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     public JTextField getTxtRuc() {
         return txtRuc;
@@ -156,11 +161,6 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
         this.txtRuc = txtRuc;
     }
 
-    
-    
-    
-    
-    
     /**
      * @param args the command line arguments
      */
@@ -199,7 +199,6 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -209,7 +208,9 @@ public class FormularioContribuyentes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

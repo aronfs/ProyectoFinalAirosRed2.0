@@ -15,7 +15,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaReportes extends javax.swing.JFrame {
+public class VentanaReportes extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaReportes
@@ -135,7 +135,6 @@ public class VentanaReportes extends javax.swing.JFrame {
     public void setVentanaReporte_tablaGeneral(JTable VentanaReporte_tablaGeneral) {
         this.VentanaReporte_tablaGeneral = VentanaReporte_tablaGeneral;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -159,23 +158,23 @@ public class VentanaReportes extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         VentanaReporte_JDateFechaCorte = new com.toedter.calendar.JDateChooser();
-        VentanaReporte_ComboMarca = new javax.swing.JComboBox<String>();
-        VentanaReporte_ComboBodega = new javax.swing.JComboBox<String>();
-        VentanaReporte_ComboAplicarIva = new javax.swing.JComboBox<String>();
-        VentanaReporte_ComboActivo = new javax.swing.JComboBox<String>();
+        VentanaReporte_ComboMarca = new javax.swing.JComboBox<>();
+        VentanaReporte_ComboBodega = new javax.swing.JComboBox<>();
+        VentanaReporte_ComboAplicarIva = new javax.swing.JComboBox<>();
+        VentanaReporte_ComboActivo = new javax.swing.JComboBox<>();
         VentanaReporte_PanelFiltro = new javax.swing.JPanel();
         VentanaReporte_BntAplicarFiltro = new javax.swing.JButton();
         VentanaReporte_BntActualizar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaReporte_tablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel1.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaReporte_BntNevo.setText("Nuevo");
 
@@ -234,18 +233,27 @@ public class VentanaReportes extends javax.swing.JFrame {
         VentanaReporte_PanelStock.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, -1, -1));
 
         VentanaReporte_JDateFechaCorte.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaReporte_JDateFechaCorte.setForeground(new java.awt.Color(0, 0, 0));
         VentanaReporte_PanelStock.add(VentanaReporte_JDateFechaCorte, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 200, -1));
 
-        VentanaReporte_ComboMarca.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaReporte_ComboMarca.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaReporte_ComboMarca.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaReporte_ComboMarca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaReporte_PanelStock.add(VentanaReporte_ComboMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 200, -1));
 
-        VentanaReporte_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
+        VentanaReporte_ComboBodega.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaReporte_ComboBodega.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaReporte_ComboBodega.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "MATRIZ CUENCA" }));
         VentanaReporte_PanelStock.add(VentanaReporte_ComboBodega, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 200, -1));
 
-        VentanaReporte_ComboAplicarIva.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaReporte_ComboAplicarIva.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaReporte_ComboAplicarIva.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaReporte_ComboAplicarIva.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         VentanaReporte_PanelStock.add(VentanaReporte_ComboAplicarIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 190, -1));
 
-        VentanaReporte_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaReporte_ComboActivo.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaReporte_ComboActivo.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaReporte_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         VentanaReporte_ComboActivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VentanaReporte_ComboActivoActionPerformed(evt);
@@ -255,7 +263,7 @@ public class VentanaReportes extends javax.swing.JFrame {
 
         jPanel2.add(VentanaReporte_PanelStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 950, 120));
 
-        VentanaReporte_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaReporte_PanelFiltro.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaReporte_BntAplicarFiltro.setText("Aplicar Filtros");
 

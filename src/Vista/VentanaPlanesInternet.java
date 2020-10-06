@@ -14,7 +14,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaPlanesInternet extends javax.swing.JFrame {
+public class VentanaPlanesInternet extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaPlanesInternet
@@ -126,7 +126,6 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
     public void setVentanaPlanesInternet_TablaGeneral(JTable VentanaPlanesInternet_TablaGeneral) {
         this.VentanaPlanesInternet_TablaGeneral = VentanaPlanesInternet_TablaGeneral;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -146,9 +145,9 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        VentanaPlanesInternet_ComboNombreTecnico = new javax.swing.JComboBox<String>();
-        VentanaPlanesInternet_ComboTipoCliente = new javax.swing.JComboBox<String>();
-        VentanaPlanesInternet_ComboVelocidad = new javax.swing.JComboBox<String>();
+        VentanaPlanesInternet_ComboNombreTecnico = new javax.swing.JComboBox<>();
+        VentanaPlanesInternet_ComboTipoCliente = new javax.swing.JComboBox<>();
+        VentanaPlanesInternet_ComboVelocidad = new javax.swing.JComboBox<>();
         VentanaPlanesInternet_PaneBntFiltro = new javax.swing.JPanel();
         VentanaPlanesInternet_BntAplicarFiltro = new javax.swing.JButton();
         VentanaPlanesInternet_BntActualizar = new javax.swing.JButton();
@@ -156,13 +155,13 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaPlanesInternet_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaPlanesInternet_PanelBntNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaPlanesInternet_PanelBntNuevo.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaPlanesInternet_BntNuevo.setText("Nuevo");
 
@@ -209,18 +208,24 @@ public class VentanaPlanesInternet extends javax.swing.JFrame {
         jLabel4.setText("Velocidad:");
         VentanaPlanesInternet_PanelPlanesInter.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
 
-        VentanaPlanesInternet_ComboNombreTecnico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaPlanesInternet_ComboNombreTecnico.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaPlanesInternet_ComboNombreTecnico.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaPlanesInternet_ComboNombreTecnico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaPlanesInternet_PanelPlanesInter.add(VentanaPlanesInternet_ComboNombreTecnico, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 180, -1));
 
-        VentanaPlanesInternet_ComboTipoCliente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaPlanesInternet_ComboTipoCliente.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaPlanesInternet_ComboTipoCliente.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaPlanesInternet_ComboTipoCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaPlanesInternet_PanelPlanesInter.add(VentanaPlanesInternet_ComboTipoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 180, -1));
 
-        VentanaPlanesInternet_ComboVelocidad.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaPlanesInternet_ComboVelocidad.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaPlanesInternet_ComboVelocidad.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaPlanesInternet_ComboVelocidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaPlanesInternet_PanelPlanesInter.add(VentanaPlanesInternet_ComboVelocidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 260, -1));
 
         jPanel1.add(VentanaPlanesInternet_PanelPlanesInter, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 970, 100));
 
-        VentanaPlanesInternet_PaneBntFiltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaPlanesInternet_PaneBntFiltro.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaPlanesInternet_BntAplicarFiltro.setText("Aplicar Filtros");
 

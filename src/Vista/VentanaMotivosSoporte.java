@@ -12,7 +12,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaMotivosSoporte extends javax.swing.JFrame {
+public class VentanaMotivosSoporte extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaMotivosSoporte
@@ -36,7 +36,6 @@ public class VentanaMotivosSoporte extends javax.swing.JFrame {
     public void setVentanaMotivosSoporte_BntActuaizar(JButton VentanaMotivosSoporte_BntActuaizar) {
         this.VentanaMotivosSoporte_BntActuaizar = VentanaMotivosSoporte_BntActuaizar;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -54,14 +53,14 @@ public class VentanaMotivosSoporte extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaMotivosSoporte_Tabla = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1000, 555));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

@@ -15,7 +15,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaSuspension extends javax.swing.JFrame {
+public class VentanaSuspension extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaSuspension
@@ -143,7 +143,6 @@ public class VentanaSuspension extends javax.swing.JFrame {
     public void setVentanaSuspencion_txtCliente(JTextField VentanaSuspencion_txtCliente) {
         this.VentanaSuspencion_txtCliente = VentanaSuspencion_txtCliente;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -176,26 +175,26 @@ public class VentanaSuspension extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaSuspencion_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        VentanaSuspencion_PanelNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaSuspencion_PanelNuevo.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaSuspencion_BntNuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntNuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntNuevo.setText("Nuevo");
 
-        VentanaSuspencion_BntEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntEditar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntEditar.setText("Editar");
 
-        VentanaSuspencion_BntAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntAnular.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntAnular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntAnular.setText("Anular");
 
-        VentanaSuspencion_BntImprimirSoli.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntImprimirSoli.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntImprimirSoli.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntImprimirSoli.setText("Imprimir Solicitud");
 
@@ -241,25 +240,30 @@ public class VentanaSuspension extends javax.swing.JFrame {
         VentanaSuspencion_PanelFecha.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
 
         VentanaSuspencion_JDateDesde.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_JDateDesde.setForeground(new java.awt.Color(0, 0, 0));
         VentanaSuspencion_PanelFecha.add(VentanaSuspencion_JDateDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
 
         VentanaSuspencion_JDateHasta.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_JDateHasta.setForeground(new java.awt.Color(0, 0, 0));
         VentanaSuspencion_PanelFecha.add(VentanaSuspencion_JDateHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
 
         VentanaSuspencion_PanelSolicitud.add(VentanaSuspencion_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
+
+        VentanaSuspencion_txtCliente.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaSuspencion_txtCliente.setForeground(new java.awt.Color(0, 0, 0));
         VentanaSuspencion_PanelSolicitud.add(VentanaSuspencion_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
 
-        VentanaSuspencion_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaSuspencion_PanelFiltro.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaSuspencion_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntAplicarFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        VentanaSuspencion_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntActualizar.setText("Actualizar");
 
-        VentanaSuspencion_BntRestablecerFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaSuspencion_BntRestablecerFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaSuspencion_BntRestablecerFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaSuspencion_BntRestablecerFiltro.setText("Restablecer Filtros");
 
@@ -281,7 +285,7 @@ public class VentanaSuspension extends javax.swing.JFrame {
             .addGroup(VentanaSuspencion_PanelFiltroLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(VentanaSuspencion_PanelFiltroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VentanaSuspencion_BntAplicarFiltro, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                    .addComponent(VentanaSuspencion_BntAplicarFiltro, javax.swing.GroupLayout.PREFERRED_SIZE, 29, Short.MAX_VALUE)
                     .addComponent(VentanaSuspencion_BntActualizar)
                     .addComponent(VentanaSuspencion_BntRestablecerFiltro))
                 .addContainerGap())

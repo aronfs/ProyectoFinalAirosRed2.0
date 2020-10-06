@@ -16,7 +16,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaContratos extends javax.swing.JFrame {
+public class VentanaContratos extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaContratos
@@ -246,10 +246,10 @@ public class VentanaContratos extends javax.swing.JFrame {
         VentanaContratos_JDateHastaInstalacion = new com.toedter.calendar.JDateChooser();
         VentanaContratos_JDateFechaInstalacion = new com.toedter.calendar.JDateChooser();
         VentanaContratos_txtCliente = new javax.swing.JTextField();
-        VentanaContratos_ComboFormaPago = new javax.swing.JComboBox<String>();
-        VentanaContratos_ComboPlanInter = new javax.swing.JComboBox<String>();
+        VentanaContratos_ComboFormaPago = new javax.swing.JComboBox<>();
+        VentanaContratos_ComboPlanInter = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
-        VentanaContratos_ComboActivo = new javax.swing.JComboBox<String>();
+        VentanaContratos_ComboActivo = new javax.swing.JComboBox<>();
         VentanaContratos_PanelBntsAplicar = new javax.swing.JPanel();
         VentanaContratos_BntAplicarFiltro = new javax.swing.JButton();
         VentanaContratos_BntActualizar = new javax.swing.JButton();
@@ -257,8 +257,8 @@ public class VentanaContratos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaContratos_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -371,16 +371,16 @@ public class VentanaContratos extends javax.swing.JFrame {
         VentanaContratos_PanelContrato.add(VentanaContratos_PanelFechaInstalacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, 480, 100));
         VentanaContratos_PanelContrato.add(VentanaContratos_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
 
-        VentanaContratos_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "CONTADO", "CREDITO" }));
+        VentanaContratos_ComboFormaPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "CONTADO", "CREDITO" }));
         VentanaContratos_PanelContrato.add(VentanaContratos_ComboFormaPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 200, -1));
 
-        VentanaContratos_ComboPlanInter.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaContratos_ComboPlanInter.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaContratos_PanelContrato.add(VentanaContratos_ComboPlanInter, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 220, -1));
 
         jLabel2.setText("Activo:");
         VentanaContratos_PanelContrato.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 60, -1, -1));
 
-        VentanaContratos_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaContratos_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         VentanaContratos_PanelContrato.add(VentanaContratos_ComboActivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 60, 220, -1));
 
         jPanel1.add(VentanaContratos_PanelContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));

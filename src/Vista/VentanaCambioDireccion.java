@@ -15,7 +15,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaCambioDireccion extends javax.swing.JFrame {
+public class VentanaCambioDireccion extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaCambioDireccion
@@ -49,13 +49,7 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
         this.VentanaCambioDireccionBntAnular = VentanaCambioDireccionBntAnular;
     }
 
-    public JButton getVentanaCambioDireccionBntEditar() {
-        return VentanaCambioDireccionBntEditar;
-    }
-
-    public void setVentanaCambioDireccionBntEditar(JButton VentanaCambioDireccionBntEditar) {
-        this.VentanaCambioDireccionBntEditar = VentanaCambioDireccionBntEditar;
-    }
+   
 
     public JButton getVentanaCambioDireccionBntImprimirSolicitud() {
         return VentanaCambioDireccionBntImprimirSolicitud;
@@ -65,13 +59,6 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
         this.VentanaCambioDireccionBntImprimirSolicitud = VentanaCambioDireccionBntImprimirSolicitud;
     }
 
-    public JButton getVentanaCambioDireccionBntNuevo() {
-        return VentanaCambioDireccionBntNuevo;
-    }
-
-    public void setVentanaCambioDireccionBntNuevo(JButton VentanaCambioDireccionBntNuevo) {
-        this.VentanaCambioDireccionBntNuevo = VentanaCambioDireccionBntNuevo;
-    }
 
     public JButton getVentanaCambioDireccionBnt_Actualizar() {
         return VentanaCambioDireccionBnt_Actualizar;
@@ -149,8 +136,6 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         VentanaCambioDireccionPanelBotones_Nuevo = new javax.swing.JPanel();
-        VentanaCambioDireccionBntNuevo = new javax.swing.JButton();
-        VentanaCambioDireccionBntEditar = new javax.swing.JButton();
         VentanaCambioDireccionBntAnular = new javax.swing.JButton();
         VentanaCambioDireccionBntImprimirSolicitud = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
@@ -169,51 +154,23 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaCambioDireccionTabla_General = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         VentanaCambioDireccionPanelBotones_Nuevo.setBackground(new java.awt.Color(0, 153, 51));
-
-        VentanaCambioDireccionBntNuevo.setBackground(new java.awt.Color(0, 204, 51));
-        VentanaCambioDireccionBntNuevo.setForeground(new java.awt.Color(255, 255, 255));
-        VentanaCambioDireccionBntNuevo.setText("Nuevo");
-
-        VentanaCambioDireccionBntEditar.setBackground(new java.awt.Color(0, 204, 51));
-        VentanaCambioDireccionBntEditar.setForeground(new java.awt.Color(255, 255, 255));
-        VentanaCambioDireccionBntEditar.setText("Editar");
+        VentanaCambioDireccionPanelBotones_Nuevo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         VentanaCambioDireccionBntAnular.setBackground(new java.awt.Color(0, 204, 51));
         VentanaCambioDireccionBntAnular.setForeground(new java.awt.Color(255, 255, 255));
-        VentanaCambioDireccionBntAnular.setText("Anular");
+        VentanaCambioDireccionBntAnular.setText("Realizar Cambio");
+        VentanaCambioDireccionPanelBotones_Nuevo.add(VentanaCambioDireccionBntAnular, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 0, -1, 40));
 
         VentanaCambioDireccionBntImprimirSolicitud.setBackground(new java.awt.Color(0, 204, 51));
         VentanaCambioDireccionBntImprimirSolicitud.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCambioDireccionBntImprimirSolicitud.setText("Imprimir Solicitud");
-
-        javax.swing.GroupLayout VentanaCambioDireccionPanelBotones_NuevoLayout = new javax.swing.GroupLayout(VentanaCambioDireccionPanelBotones_Nuevo);
-        VentanaCambioDireccionPanelBotones_Nuevo.setLayout(VentanaCambioDireccionPanelBotones_NuevoLayout);
-        VentanaCambioDireccionPanelBotones_NuevoLayout.setHorizontalGroup(
-            VentanaCambioDireccionPanelBotones_NuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(VentanaCambioDireccionPanelBotones_NuevoLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(VentanaCambioDireccionBntNuevo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(VentanaCambioDireccionBntEditar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(VentanaCambioDireccionBntAnular)
-                .addGap(18, 18, 18)
-                .addComponent(VentanaCambioDireccionBntImprimirSolicitud)
-                .addContainerGap(578, Short.MAX_VALUE))
-        );
-        VentanaCambioDireccionPanelBotones_NuevoLayout.setVerticalGroup(
-            VentanaCambioDireccionPanelBotones_NuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(VentanaCambioDireccionBntNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(VentanaCambioDireccionBntEditar, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(VentanaCambioDireccionBntAnular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(VentanaCambioDireccionBntImprimirSolicitud, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        VentanaCambioDireccionPanelBotones_Nuevo.add(VentanaCambioDireccionBntImprimirSolicitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, -1, 40));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Solicitudes de cambio de direccion"));
@@ -298,11 +255,11 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(VentanaCambioDireccionPanelBotones_Nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(VentanaCambioDireccionPanelBotones_Aplicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 960, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 960, Short.MAX_VALUE)
+                        .addComponent(VentanaCambioDireccionPanelBotones_Aplicar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 960, Short.MAX_VALUE)
+                        .addComponent(VentanaCambioDireccionPanelBotones_Nuevo, javax.swing.GroupLayout.DEFAULT_SIZE, 960, Short.MAX_VALUE))
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
@@ -372,9 +329,7 @@ public class VentanaCambioDireccion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton VentanaCambioDireccionBntAnular;
-    private javax.swing.JButton VentanaCambioDireccionBntEditar;
     private javax.swing.JButton VentanaCambioDireccionBntImprimirSolicitud;
-    private javax.swing.JButton VentanaCambioDireccionBntNuevo;
     private javax.swing.JButton VentanaCambioDireccionBnt_Actualizar;
     private javax.swing.JButton VentanaCambioDireccionBnt_AplicarFiltro;
     private javax.swing.JButton VentanaCambioDireccionBnt_RestablecerFiltros;

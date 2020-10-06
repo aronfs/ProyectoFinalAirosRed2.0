@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
   <Properties>
+    <Property name="closable" type="boolean" value="true"/>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="undecorated" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -48,7 +47,7 @@
         <Container class="javax.swing.JPanel" name="VentanaCompras_PanelBotonNuevo">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="66" red="0" type="rgb"/>
+              <Color blue="33" green="33" red="ff" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -92,7 +91,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntNuevo">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -103,7 +102,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntEditar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -114,7 +113,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntAnular">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -125,7 +124,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntVerCompra">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -404,7 +403,7 @@
         <Container class="javax.swing.JPanel" name="VentanaCompras_PanelAplicar">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="66" red="0" type="rgb"/>
+              <Color blue="33" green="33" red="ff" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -441,7 +440,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntAplicarFiltro">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -452,7 +451,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntActualizar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -463,7 +462,7 @@
             <Component class="javax.swing.JButton" name="VentanaCompras_BntRestablecerFiltro">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="cc" red="0" type="rgb"/>
+                  <Color blue="66" green="66" red="66" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>

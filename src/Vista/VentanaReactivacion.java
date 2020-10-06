@@ -15,7 +15,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaReactivacion extends javax.swing.JFrame {
+public class VentanaReactivacion extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaReactivacion
@@ -143,7 +143,6 @@ public class VentanaReactivacion extends javax.swing.JFrame {
     public void setVentanaReactivacion_txtCliente(JTextField VentanaReactivacion_txtCliente) {
         this.VentanaReactivacion_txtCliente = VentanaReactivacion_txtCliente;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -176,26 +175,26 @@ public class VentanaReactivacion extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaReactivacion_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        VentanaReactivacion_PanelNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaReactivacion_PanelNuevo.setBackground(new java.awt.Color(255, 102, 102));
 
-        VentanaReactivacion_BntNuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntNuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntNuevo.setText("Nuevo");
 
-        VentanaReactivacion_BntEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntEditar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntEditar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntEditar.setText("Editar");
 
-        VentanaReactivacion_BntAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntAnular.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntAnular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntAnular.setText("Anular");
 
-        VentanaReactivacion_BntImprimirSolicitud.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntImprimirSolicitud.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntImprimirSolicitud.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntImprimirSolicitud.setText("Imprimir Solicitud");
 
@@ -249,19 +248,24 @@ public class VentanaReactivacion extends javax.swing.JFrame {
         VentanaReactivacion_PanelSolicitud.add(VentanaReactivacion_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
         VentanaReactivacion_PanelSolicitud.add(VentanaReactivacion_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
 
-        VentanaReactivacion_PanelAplicar.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaReactivacion_PanelAplicar.setBackground(new java.awt.Color(255, 102, 102));
 
-        VentanaReactivacion_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntAplicarFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        VentanaReactivacion_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntActualizar.setText("Actualizar");
 
-        VentanaReactivacion_BntRestablecer.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaReactivacion_BntRestablecer.setBackground(new java.awt.Color(102, 102, 102));
         VentanaReactivacion_BntRestablecer.setForeground(new java.awt.Color(255, 255, 255));
         VentanaReactivacion_BntRestablecer.setText("Restablecer Filtros");
+        VentanaReactivacion_BntRestablecer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VentanaReactivacion_BntRestablecerActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout VentanaReactivacion_PanelAplicarLayout = new javax.swing.GroupLayout(VentanaReactivacion_PanelAplicar);
         VentanaReactivacion_PanelAplicar.setLayout(VentanaReactivacion_PanelAplicarLayout);
@@ -281,7 +285,7 @@ public class VentanaReactivacion extends javax.swing.JFrame {
             .addGroup(VentanaReactivacion_PanelAplicarLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(VentanaReactivacion_PanelAplicarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(VentanaReactivacion_BntAplicarFiltro, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                    .addComponent(VentanaReactivacion_BntAplicarFiltro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(VentanaReactivacion_BntActualizar)
                     .addComponent(VentanaReactivacion_BntRestablecer))
                 .addContainerGap())
@@ -317,7 +321,7 @@ public class VentanaReactivacion extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 631, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -327,8 +331,8 @@ public class VentanaReactivacion extends javax.swing.JFrame {
                     .addGap(10, 10, 10)
                     .addComponent(VentanaReactivacion_PanelAplicar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(10, 10, 10)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 23, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -339,11 +343,17 @@ public class VentanaReactivacion extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void VentanaReactivacion_BntRestablecerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentanaReactivacion_BntRestablecerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VentanaReactivacion_BntRestablecerActionPerformed
 
 //    /**
 //     * @param args the command line arguments

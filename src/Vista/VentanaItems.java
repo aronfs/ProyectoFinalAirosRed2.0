@@ -14,7 +14,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaItems extends javax.swing.JFrame {
+public class VentanaItems extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaItems
@@ -166,7 +166,6 @@ public class VentanaItems extends javax.swing.JFrame {
     public void setVentanaItems_TablaGeneral(JTable VentanaItems_TablaGeneral) {
         this.VentanaItems_TablaGeneral = VentanaItems_TablaGeneral;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -190,13 +189,13 @@ public class VentanaItems extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        VentanaItems_ComboActivo = new javax.swing.JComboBox<String>();
-        VentanaItems_ComboControlSeries = new javax.swing.JComboBox<String>();
-        VentanaItems_ComboMarca = new javax.swing.JComboBox<String>();
-        VentanaItems_ComboGrupo = new javax.swing.JComboBox<String>();
-        VentanaItems_ComboIva = new javax.swing.JComboBox<String>();
-        VentanaItems_ComboTipo = new javax.swing.JComboBox<String>();
-        VentanaItems_ComboServicio = new javax.swing.JComboBox<String>();
+        VentanaItems_ComboActivo = new javax.swing.JComboBox<>();
+        VentanaItems_ComboControlSeries = new javax.swing.JComboBox<>();
+        VentanaItems_ComboMarca = new javax.swing.JComboBox<>();
+        VentanaItems_ComboGrupo = new javax.swing.JComboBox<>();
+        VentanaItems_ComboIva = new javax.swing.JComboBox<>();
+        VentanaItems_ComboTipo = new javax.swing.JComboBox<>();
+        VentanaItems_ComboServicio = new javax.swing.JComboBox<>();
         VentanaItems_PanelBotonFiltros = new javax.swing.JPanel();
         VentanaItems_BntAplicarFiltro = new javax.swing.JButton();
         VentanaItems_BntActualizar = new javax.swing.JButton();
@@ -204,8 +203,8 @@ public class VentanaItems extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaItems_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         VentanaItemsPanelGeneral.setBackground(new java.awt.Color(255, 255, 255));
         VentanaItemsPanelGeneral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -275,25 +274,25 @@ public class VentanaItems extends javax.swing.JFrame {
         jLabel8.setText("Servicio:");
         VentanaItems_PanelItem.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 30, -1, -1));
 
-        VentanaItems_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaItems_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboActivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 120, -1));
 
-        VentanaItems_ComboControlSeries.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaItems_ComboControlSeries.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboControlSeries, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 120, -1));
 
-        VentanaItems_ComboMarca.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaItems_ComboMarca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 60, 150, -1));
 
-        VentanaItems_ComboGrupo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaItems_ComboGrupo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboGrupo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 130, -1));
 
-        VentanaItems_ComboIva.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "APLICA IVA", "EXENTO DE IMPUESTO", "NO OBJETO DE IMPUESTO", "TARIFA 0%" }));
+        VentanaItems_ComboIva.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "APLICA IVA", "EXENTO DE IMPUESTO", "NO OBJETO DE IMPUESTO", "TARIFA 0%" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 130, -1));
 
-        VentanaItems_ComboTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "COMPRA", "VENTA" }));
+        VentanaItems_ComboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "COMPRA", "VENTA" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 170, -1));
 
-        VentanaItems_ComboServicio.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaItems_ComboServicio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
         VentanaItems_PanelItem.add(VentanaItems_ComboServicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, 150, -1));
 
         VentanaItemsPanelGeneral.add(VentanaItems_PanelItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 120));

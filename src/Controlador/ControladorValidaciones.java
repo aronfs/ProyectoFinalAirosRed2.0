@@ -34,7 +34,7 @@ public class ControladorValidaciones implements KeyListener{
        if(ke.getSource() == formularioContribuyentes.getTxtRuc()){
           // Ojo NUmeros COntrolar por favor!!!!!!!!!
            char letra = ke.getKeyChar();
-           if(!Character.isAlphabetic(letra) ||formularioContribuyentes.getTxtRuc().getText().length() == 13){
+           if(!Character.isAlphabetic(letra) ||formularioContribuyentes.getTxtRuc().getText().length() == 13 ){
                ke.consume();
            }   
        }

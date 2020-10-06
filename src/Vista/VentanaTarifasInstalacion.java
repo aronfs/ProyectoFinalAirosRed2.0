@@ -12,7 +12,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaTarifasInstalacion extends javax.swing.JFrame {
+public class VentanaTarifasInstalacion extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaTarifasInstalacion
@@ -37,7 +37,6 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         this.VentanaTarifasInstalacion_TablaGeneral = VentanaTarifasInstalacion_TablaGeneral;
     }
 
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -54,13 +53,13 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaTarifasInstalacion_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -106,7 +105,7 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(VentanaTarifasInstalacion_TablaGeneral);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 970, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 970, 320));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -116,7 +115,7 @@ public class VentanaTarifasInstalacion extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE)
         );
 
         pack();

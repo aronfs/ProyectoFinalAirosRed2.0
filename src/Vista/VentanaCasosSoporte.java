@@ -16,7 +16,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaCasosSoporte extends javax.swing.JFrame {
+public class VentanaCasosSoporte extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaCasosSoporte
@@ -185,9 +185,6 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         this.VentanaCasosSoporte_txtcliente = VentanaCasosSoporte_txtcliente;
     }
 
-    
-    
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -214,14 +211,14 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         VentanaCasosSoporte_JDateDesde = new com.toedter.calendar.JDateChooser();
         VentanaCasosSoporte_JDateHasta = new com.toedter.calendar.JDateChooser();
         VentanaCasosSoporte_txtcliente = new javax.swing.JTextField();
-        VentanaCasosSoporte_ComboEstado = new javax.swing.JComboBox<String>();
+        VentanaCasosSoporte_ComboEstado = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         VentanaCasosSoporte_txtAsigadoA = new javax.swing.JTextField();
         VentanaCasosSoporte_txtEjecutadoPor = new javax.swing.JTextField();
         VentanaCasosSoporte_txtMotivo = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        VentanaCasosSoporte_ComboMedioContacto = new javax.swing.JComboBox<String>();
+        VentanaCasosSoporte_ComboMedioContacto = new javax.swing.JComboBox<>();
         VentanaCasosSoporte_PanelFiltro = new javax.swing.JPanel();
         VentanaCasosSoporte_BntAplicarFiltros = new javax.swing.JButton();
         VentanaCasosSoporte_BntActualizar = new javax.swing.JButton();
@@ -229,13 +226,12 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaCasosSoporte_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaCasosSoportePanel.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCasosSoportePanel.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaCasosSoporte_BntNuevo.setText("Nuevo");
 
@@ -312,7 +308,7 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 450, 100));
         VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_txtcliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
 
-        VentanaCasosSoporte_ComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "RECIBIDO SIN ASIGNAR", "ASIGNADO", "RESUELTO" }));
+        VentanaCasosSoporte_ComboEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "RECIBIDO SIN ASIGNAR", "ASIGNADO", "RESUELTO" }));
         VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_ComboEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 200, -1));
 
         jLabel2.setText("Ejecutada por:");
@@ -327,12 +323,12 @@ public class VentanaCasosSoporte extends javax.swing.JFrame {
         jLabel10.setText("Medio Contacto:");
         VentanaCasosSoporte_PanelCasosSoporte.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, -1, -1));
 
-        VentanaCasosSoporte_ComboMedioContacto.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "EMAIL", "TELÉFONO", "VISITA" }));
+        VentanaCasosSoporte_ComboMedioContacto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "EMAIL", "TELÉFONO", "VISITA" }));
         VentanaCasosSoporte_PanelCasosSoporte.add(VentanaCasosSoporte_ComboMedioContacto, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, 320, -1));
 
         jPanel1.add(VentanaCasosSoporte_PanelCasosSoporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
 
-        VentanaCasosSoporte_PanelFiltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCasosSoporte_PanelFiltro.setBackground(new java.awt.Color(255, 51, 51));
 
         VentanaCasosSoporte_BntAplicarFiltros.setText("Aplicar Filtros");
 

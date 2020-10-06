@@ -16,7 +16,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class OrdenesTrabajo extends javax.swing.JFrame {
+public class OrdenesTrabajo extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form OrdenesTrabajo
@@ -168,7 +168,6 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
     public void setOrdenesTrabajotxt_cliente(JTextField OrdenesTrabajotxt_cliente) {
         this.OrdenesTrabajotxt_cliente = OrdenesTrabajotxt_cliente;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -198,8 +197,8 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
         OrdenesTrabajoComboFechaDesde = new com.toedter.calendar.JDateChooser();
         OrdenesTrabajoComboFechaHasta = new com.toedter.calendar.JDateChooser();
         OrdenesTrabajotxt_cliente = new javax.swing.JTextField();
-        OrdenesTrabajoComboTipo = new javax.swing.JComboBox<String>();
-        OrdenesTrabajoComboEstado = new javax.swing.JComboBox<String>();
+        OrdenesTrabajoComboTipo = new javax.swing.JComboBox<>();
+        OrdenesTrabajoComboEstado = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         OrdenesTrabajotxt_asignadoA = new javax.swing.JTextField();
@@ -212,12 +211,11 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
         OrdenesTrabajoTabla_General = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
         OrdenesTrabajoBtnNuevo.setText("Nuevo");
 
@@ -289,21 +287,31 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
         OrdenesTrabajopanelfecha.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, -1));
 
         OrdenesTrabajocombofecha.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajocombofecha.setForeground(new java.awt.Color(0, 0, 0));
         OrdenesTrabajopanelfecha.add(OrdenesTrabajocombofecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 180, 20));
 
         OrdenesTrabajoComboFechaDesde.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajoComboFechaDesde.setForeground(new java.awt.Color(0, 0, 0));
         OrdenesTrabajopanelfecha.add(OrdenesTrabajoComboFechaDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 170, 20));
 
         OrdenesTrabajoComboFechaHasta.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajoComboFechaHasta.setForeground(new java.awt.Color(0, 0, 0));
         OrdenesTrabajopanelfecha.add(OrdenesTrabajoComboFechaHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 60, 130, 20));
 
         OrdenesTrabajoPanel.add(OrdenesTrabajopanelfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 450, 100));
+
+        OrdenesTrabajotxt_cliente.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajotxt_cliente.setForeground(new java.awt.Color(0, 0, 0));
         OrdenesTrabajoPanel.add(OrdenesTrabajotxt_cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
 
-        OrdenesTrabajoComboTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "INSTALACION", "SUSPENSION", "CANCELACION", "REACTIVACION", "CAMBIO DE DIRECCION", "VISITA TECNICA", "CANCELACION INICIADA POR EMPRESA" }));
+        OrdenesTrabajoComboTipo.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajoComboTipo.setForeground(new java.awt.Color(0, 0, 0));
+        OrdenesTrabajoComboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "INSTALACION", "SUSPENSION", "CANCELACION", "REACTIVACION", "CAMBIO DE DIRECCION", "VISITA TECNICA", "CANCELACION INICIADA POR EMPRESA" }));
         OrdenesTrabajoPanel.add(OrdenesTrabajoComboTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 30, 320, -1));
 
-        OrdenesTrabajoComboEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "EMITIDA", "INICIADA", "EJECUTADA", "FACTURADA" }));
+        OrdenesTrabajoComboEstado.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajoComboEstado.setForeground(new java.awt.Color(0, 0, 0));
+        OrdenesTrabajoComboEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "EMITIDA", "INICIADA", "EJECUTADA", "FACTURADA" }));
         OrdenesTrabajoPanel.add(OrdenesTrabajoComboEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, 320, -1));
 
         jLabel2.setText("Ejecutada por:");
@@ -311,12 +319,18 @@ public class OrdenesTrabajo extends javax.swing.JFrame {
 
         jLabel6.setText("Asignada a:");
         OrdenesTrabajoPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, -1, -1));
+
+        OrdenesTrabajotxt_asignadoA.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajotxt_asignadoA.setForeground(new java.awt.Color(0, 0, 0));
         OrdenesTrabajoPanel.add(OrdenesTrabajotxt_asignadoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 320, -1));
+
+        OrdenesTrabajotxt_Ejecutadopor.setBackground(new java.awt.Color(255, 255, 255));
+        OrdenesTrabajotxt_Ejecutadopor.setForeground(new java.awt.Color(0, 0, 0));
         OrdenesTrabajoPanel.add(OrdenesTrabajotxt_Ejecutadopor, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 320, -1));
 
         jPanel1.add(OrdenesTrabajoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel4.setBackground(new java.awt.Color(255, 51, 51));
 
         OrdenesTrabajoBtnAplicarFiltro.setText("Aplicar Filtros");
 

@@ -14,7 +14,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaOperarioSoporte extends javax.swing.JFrame {
+public class VentanaOperarioSoporte extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaOperarioSoporte
@@ -115,11 +115,13 @@ public class VentanaOperarioSoporte extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         VentanaOperarioSoporte_PanelNuevo = new javax.swing.JPanel();
         VentanaOperarioSoporte_BntNuevo = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         VentanaOperarioSoporte_PanelOperarios = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        VentanaOperarioSoporte_ComboTipo = new javax.swing.JComboBox<String>();
+        VentanaOperarioSoporte_ComboTipo = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
-        VentanaOperarioSoporte_Combo_Activo = new javax.swing.JComboBox<String>();
+        VentanaOperarioSoporte_Combo_Activo = new javax.swing.JComboBox<>();
         VentanaOperarioSoporte_PanelFltro = new javax.swing.JPanel();
         VentanaOperarioSoporte_BntAplicarFiltro = new javax.swing.JButton();
         VentanaOperarioSoporte_BntActualizar = new javax.swing.JButton();
@@ -127,17 +129,21 @@ public class VentanaOperarioSoporte extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaOperarioSoporte_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        VentanaOperarioSoporte_PanelNuevo.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaOperarioSoporte_PanelNuevo.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaOperarioSoporte_BntNuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaOperarioSoporte_BntNuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaOperarioSoporte_BntNuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaOperarioSoporte_BntNuevo.setText("Nuevo");
+
+        jButton1.setText("Editar");
+
+        jButton2.setText("Anular");
 
         javax.swing.GroupLayout VentanaOperarioSoporte_PanelNuevoLayout = new javax.swing.GroupLayout(VentanaOperarioSoporte_PanelNuevo);
         VentanaOperarioSoporte_PanelNuevo.setLayout(VentanaOperarioSoporte_PanelNuevoLayout);
@@ -146,13 +152,20 @@ public class VentanaOperarioSoporte extends javax.swing.JFrame {
             .addGroup(VentanaOperarioSoporte_PanelNuevoLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(VentanaOperarioSoporte_BntNuevo)
-                .addContainerGap(888, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addContainerGap(712, Short.MAX_VALUE))
         );
         VentanaOperarioSoporte_PanelNuevoLayout.setVerticalGroup(
             VentanaOperarioSoporte_PanelNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VentanaOperarioSoporte_PanelNuevoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(VentanaOperarioSoporte_BntNuevo)
+                .addGroup(VentanaOperarioSoporte_PanelNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VentanaOperarioSoporte_BntNuevo)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -163,11 +176,15 @@ public class VentanaOperarioSoporte extends javax.swing.JFrame {
 
         jLabel1.setText("Tipo:");
 
-        VentanaOperarioSoporte_ComboTipo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "OPERARIO", "SUPERVISOR" }));
+        VentanaOperarioSoporte_ComboTipo.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaOperarioSoporte_ComboTipo.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaOperarioSoporte_ComboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "OPERARIO", "SUPERVISOR" }));
 
         jLabel2.setText(" Activo(a): ");
 
-        VentanaOperarioSoporte_Combo_Activo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "SI", "NO" }));
+        VentanaOperarioSoporte_Combo_Activo.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaOperarioSoporte_Combo_Activo.setForeground(new java.awt.Color(0, 0, 0));
+        VentanaOperarioSoporte_Combo_Activo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "SI", "NO" }));
 
         javax.swing.GroupLayout VentanaOperarioSoporte_PanelOperariosLayout = new javax.swing.GroupLayout(VentanaOperarioSoporte_PanelOperarios);
         VentanaOperarioSoporte_PanelOperarios.setLayout(VentanaOperarioSoporte_PanelOperariosLayout);
@@ -200,17 +217,17 @@ public class VentanaOperarioSoporte extends javax.swing.JFrame {
 
         jPanel1.add(VentanaOperarioSoporte_PanelOperarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 980, 60));
 
-        VentanaOperarioSoporte_PanelFltro.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaOperarioSoporte_PanelFltro.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaOperarioSoporte_BntAplicarFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaOperarioSoporte_BntAplicarFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaOperarioSoporte_BntAplicarFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaOperarioSoporte_BntAplicarFiltro.setText("Aplicar Filtros");
 
-        VentanaOperarioSoporte_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaOperarioSoporte_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaOperarioSoporte_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaOperarioSoporte_BntActualizar.setText("Actualizar");
 
-        VentanaOperarioSoporte_BntRestablecerFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaOperarioSoporte_BntRestablecerFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaOperarioSoporte_BntRestablecerFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaOperarioSoporte_BntRestablecerFiltro.setText("Restablecer Filtros");
 
@@ -315,6 +332,8 @@ public class VentanaOperarioSoporte extends javax.swing.JFrame {
     private javax.swing.JPanel VentanaOperarioSoporte_PanelNuevo;
     private javax.swing.JPanel VentanaOperarioSoporte_PanelOperarios;
     private javax.swing.JTable VentanaOperarioSoporte_TablaGeneral;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

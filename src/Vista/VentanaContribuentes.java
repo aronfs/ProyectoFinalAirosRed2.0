@@ -14,7 +14,7 @@ import javax.swing.JTable;
  *
  * @author aaron
  */
-public class VentanaContribuentes extends javax.swing.JFrame {
+public class VentanaContribuentes extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaContribuentes
@@ -134,7 +134,6 @@ public class VentanaContribuentes extends javax.swing.JFrame {
     public void setVentanaContribuyentes_PanelBntNuevo(JPanel VentanaContribuyentes_PanelBntNuevo) {
         this.VentanaContribuyentes_PanelBntNuevo = VentanaContribuyentes_PanelBntNuevo;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -154,10 +153,10 @@ public class VentanaContribuentes extends javax.swing.JFrame {
         VentanaContribuyente_PanelContribuyente = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        VentanaContribuyente_ComboActivo = new javax.swing.JComboBox<String>();
+        VentanaContribuyente_ComboActivo = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        VentanaContribuyente_ComboComprovanteElectrinico = new javax.swing.JComboBox<String>();
+        VentanaContribuyente_ComboComprovanteElectrinico = new javax.swing.JComboBox<>();
         VentanaContribuyente_PanelAplicar = new javax.swing.JPanel();
         VentanaContribuyente_BntAplicarFiltros = new javax.swing.JButton();
         VentanaContribuyente_BntActualizar = new javax.swing.JButton();
@@ -165,8 +164,8 @@ public class VentanaContribuentes extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaContribuyente_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         VentanaContribuyente_PanelGeneral.setBackground(new java.awt.Color(255, 255, 255));
         VentanaContribuyente_PanelGeneral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -228,7 +227,7 @@ public class VentanaContribuentes extends javax.swing.JFrame {
         jLabel2.setText("¿Es emisor de");
         VentanaContribuyente_PanelContribuyente.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, -1, -1));
 
-        VentanaContribuyente_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "NO FILTRAR", "SI", "NO" }));
+        VentanaContribuyente_ComboActivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NO FILTRAR", "SI", "NO" }));
         VentanaContribuyente_PanelContribuyente.add(VentanaContribuyente_ComboActivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 159, -1));
 
         jLabel3.setText("comprobantes");
@@ -237,7 +236,7 @@ public class VentanaContribuentes extends javax.swing.JFrame {
         jLabel4.setText("eléctronicos?");
         VentanaContribuyente_PanelContribuyente.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, -1, -1));
 
-        VentanaContribuyente_ComboComprovanteElectrinico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "NO FILTRAR", "SI", "NO" }));
+        VentanaContribuyente_ComboComprovanteElectrinico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "NO FILTRAR", "SI", "NO" }));
         VentanaContribuyente_PanelContribuyente.add(VentanaContribuyente_ComboComprovanteElectrinico, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 140, -1));
 
         VentanaContribuyente_PanelGeneral.add(VentanaContribuyente_PanelContribuyente, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 980, 100));

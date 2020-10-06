@@ -16,7 +16,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaServicio extends javax.swing.JFrame {
+public class VentanaServicio extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaServicio
@@ -92,7 +92,7 @@ public class VentanaServicio extends javax.swing.JFrame {
     public void setVentanaServicio_JDateDesdeSoli(JDateChooser VentanaServicio_JDateDesdeSoli) {
         this.VentanaServicio_JDateDesdeSoli = VentanaServicio_JDateDesdeSoli;
     }
-     
+
     public void setVentanaServicio_BntSolicitudServicio(JButton VentanaServicio_BntSolicitudServicio) {
         this.VentanaServicio_BntSolicitudServicio = VentanaServicio_BntSolicitudServicio;
     }
@@ -200,7 +200,6 @@ public class VentanaServicio extends javax.swing.JFrame {
     public void setVentanaServicio_txtCliente(JTextField VentanaServicio_txtCliente) {
         this.VentanaServicio_txtCliente = VentanaServicio_txtCliente;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -238,8 +237,8 @@ public class VentanaServicio extends javax.swing.JFrame {
         VentanaServicio_JDateHastaIntalacion = new com.toedter.calendar.JDateChooser();
         VentanaServicio_JDateFechaInstalacion = new com.toedter.calendar.JDateChooser();
         VentanaServicio_txtCliente = new javax.swing.JTextField();
-        VentanaServicio_ControlFormaPago = new javax.swing.JComboBox<String>();
-        VentanaServicio_ComboPlanIntenet = new javax.swing.JComboBox<String>();
+        VentanaServicio_ControlFormaPago = new javax.swing.JComboBox<>();
+        VentanaServicio_ComboPlanIntenet = new javax.swing.JComboBox<>();
         VentanaServicio_PanelFiltro = new javax.swing.JPanel();
         VentanaServicio_BntAplicarFiltro = new javax.swing.JButton();
         VentanaServicio_BntActualizar = new javax.swing.JButton();
@@ -247,8 +246,8 @@ public class VentanaServicio extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaServicio_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -361,10 +360,10 @@ public class VentanaServicio extends javax.swing.JFrame {
         VentanaServicio_PanelSolicitud.add(VentanaServicio_PanelFechaInstalacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 110, 480, 100));
         VentanaServicio_PanelSolicitud.add(VentanaServicio_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, -1));
 
-        VentanaServicio_ControlFormaPago.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE", "CONTADO", "CREDITO" }));
+        VentanaServicio_ControlFormaPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE", "CONTADO", "CREDITO" }));
         VentanaServicio_PanelSolicitud.add(VentanaServicio_ControlFormaPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 200, -1));
 
-        VentanaServicio_ComboPlanIntenet.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SELECCIONE" }));
+        VentanaServicio_ComboPlanIntenet.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONE" }));
         VentanaServicio_PanelSolicitud.add(VentanaServicio_ComboPlanIntenet, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 220, -1));
 
         jPanel1.add(VentanaServicio_PanelSolicitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 970, 220));

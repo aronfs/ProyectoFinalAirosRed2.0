@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Vista;
 
 import com.toedter.calendar.JDateChooser;
@@ -24,22 +23,6 @@ public class FormularioReactivacion extends javax.swing.JFrame {
         initComponents();
     }
 
-    public JButton getFormularioReactivacion_BntActualizar() {
-        return FormularioReactivacion_BntActualizar;
-    }
-
-    public void setFormularioReactivacion_BntActualizar(JButton FormularioReactivacion_BntActualizar) {
-        this.FormularioReactivacion_BntActualizar = FormularioReactivacion_BntActualizar;
-    }
-
-    public JButton getFormularioReactivacion_BntAnular() {
-        return FormularioReactivacion_BntAnular;
-    }
-
-    public void setFormularioReactivacion_BntAnular(JButton FormularioReactivacion_BntAnular) {
-        this.FormularioReactivacion_BntAnular = FormularioReactivacion_BntAnular;
-    }
-
     public JButton getFormularioReactivacion_BntCancelar() {
         return FormularioReactivacion_BntCancelar;
     }
@@ -48,17 +31,6 @@ public class FormularioReactivacion extends javax.swing.JFrame {
         this.FormularioReactivacion_BntCancelar = FormularioReactivacion_BntCancelar;
     }
 
-    public JButton getFormularioReactivacion_BntEditar() {
-        return FormularioReactivacion_BntEditar;
-    }
-
-    public void setFormularioReactivacion_BntEditar(JButton FormularioReactivacion_BntEditar) {
-        this.FormularioReactivacion_BntEditar = FormularioReactivacion_BntEditar;
-    }
-
-    public JDateChooser getFormularioReactivacion_JDateFechaCreacion() {
-        return FormularioReactivacion_JDateFechaCreacion;
-    }
 
     public JButton getFormularioReactivacion_BntGuardar() {
         return FormularioReactivacion_BntGuardar;
@@ -67,35 +39,8 @@ public class FormularioReactivacion extends javax.swing.JFrame {
     public void setFormularioReactivacion_BntGuardar(JButton FormularioReactivacion_BntGuardar) {
         this.FormularioReactivacion_BntGuardar = FormularioReactivacion_BntGuardar;
     }
-    
 
-    public void setFormularioReactivacion_JDateFechaCreacion(JDateChooser FormularioReactivacion_JDateFechaCreacion) {
-        this.FormularioReactivacion_JDateFechaCreacion = FormularioReactivacion_JDateFechaCreacion;
-    }
-
-    public JTable getFormularioReactivacion_TablaGeneral() {
-        return FormularioReactivacion_TablaGeneral;
-    }
-
-    public void setFormularioReactivacion_TablaGeneral(JTable FormularioReactivacion_TablaGeneral) {
-        this.FormularioReactivacion_TablaGeneral = FormularioReactivacion_TablaGeneral;
-    }
-
-    public JTextField getFormularioReactivacion_txtCedula() {
-        return FormularioReactivacion_txtCedula;
-    }
-
-    public void setFormularioReactivacion_txtCedula(JTextField FormularioReactivacion_txtCedula) {
-        this.FormularioReactivacion_txtCedula = FormularioReactivacion_txtCedula;
-    }
-
-    public JTextField getFormularioReactivacion_txtCentroCostos() {
-        return FormularioReactivacion_txtCentroCostos;
-    }
-
-    public void setFormularioReactivacion_txtCentroCostos(JTextField FormularioReactivacion_txtCentroCostos) {
-        this.FormularioReactivacion_txtCentroCostos = FormularioReactivacion_txtCentroCostos;
-    }
+   
 
     public JTextField getFormularioReactivacion_txtCliente() {
         return FormularioReactivacion_txtCliente;
@@ -105,22 +50,7 @@ public class FormularioReactivacion extends javax.swing.JFrame {
         this.FormularioReactivacion_txtCliente = FormularioReactivacion_txtCliente;
     }
 
-    public JTextField getFormularioReactivacion_txtContrato() {
-        return FormularioReactivacion_txtContrato;
-    }
 
-    public void setFormularioReactivacion_txtContrato(JTextField FormularioReactivacion_txtContrato) {
-        this.FormularioReactivacion_txtContrato = FormularioReactivacion_txtContrato;
-    }
-
-    public JTextField getFormularioReactivacion_txtNumero() {
-        return FormularioReactivacion_txtNumero;
-    }
-
-    public void setFormularioReactivacion_txtNumero(JTextField FormularioReactivacion_txtNumero) {
-        this.FormularioReactivacion_txtNumero = FormularioReactivacion_txtNumero;
-    }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -132,146 +62,81 @@ public class FormularioReactivacion extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        Contrato = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        FormularioReactivacion_JDateFechaCreacion = new com.toedter.calendar.JDateChooser();
-        FormularioReactivacion_txtNumero = new javax.swing.JTextField();
-        FormularioReactivacion_txtCentroCostos = new javax.swing.JTextField();
-        FormularioReactivacion_txtCedula = new javax.swing.JTextField();
-        FormularioReactivacion_txtCliente = new javax.swing.JTextField();
-        FormularioReactivacion_txtContrato = new javax.swing.JTextField();
-        jPanel2 = new javax.swing.JPanel();
         FormularioReactivacion_BntGuardar = new javax.swing.JButton();
         FormularioReactivacion_BntCancelar = new javax.swing.JButton();
-        FormularioReactivacion_BntEditar = new javax.swing.JButton();
-        FormularioReactivacion_BntActualizar = new javax.swing.JButton();
-        FormularioReactivacion_BntAnular = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        Contrato = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        FormularioReactivacion_txtCliente = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
-        FormularioReactivacion_TablaGeneral = new javax.swing.JTable();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Numero:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 59, -1, -1));
-
-        jLabel2.setText("Centro de costos:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 97, -1, -1));
-
-        jLabel3.setText("Cedula:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
-
-        jLabel4.setText("Cliente:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, -1));
-
-        Contrato.setText("Contrato:");
-        jPanel1.add(Contrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
-
-        jLabel6.setText("Fecha Ceacion:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, -1, -1));
-        jPanel1.add(FormularioReactivacion_JDateFechaCreacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, 125, -1));
-        jPanel1.add(FormularioReactivacion_txtNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 56, 125, -1));
-        jPanel1.add(FormularioReactivacion_txtCentroCostos, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 94, 125, -1));
-        jPanel1.add(FormularioReactivacion_txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 125, -1));
-        jPanel1.add(FormularioReactivacion_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 125, -1));
-        jPanel1.add(FormularioReactivacion_txtContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 60, 125, -1));
-
-        jPanel2.setBackground(new java.awt.Color(51, 204, 0));
-
         FormularioReactivacion_BntGuardar.setText("Guardar");
+        jPanel1.add(FormularioReactivacion_BntGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
 
         FormularioReactivacion_BntCancelar.setText("Cancelar");
+        jPanel1.add(FormularioReactivacion_BntCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, -1, -1));
 
-        FormularioReactivacion_BntEditar.setText("Editar");
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Solicitud de Reacitivacion de servicio de Internet", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        FormularioReactivacion_BntActualizar.setText("Actualizar");
+        jLabel1.setText("Solicitud:*");
+        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
 
-        FormularioReactivacion_BntAnular.setText("Anular");
+        jLabel2.setText("Fecha:*");
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, -1, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(FormularioReactivacion_BntGuardar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(FormularioReactivacion_BntEditar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(FormularioReactivacion_BntActualizar)
-                .addGap(18, 18, 18)
-                .addComponent(FormularioReactivacion_BntAnular)
-                .addGap(18, 18, 18)
-                .addComponent(FormularioReactivacion_BntCancelar)
-                .addContainerGap(381, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FormularioReactivacion_BntGuardar)
-                    .addComponent(FormularioReactivacion_BntCancelar)
-                    .addComponent(FormularioReactivacion_BntEditar)
-                    .addComponent(FormularioReactivacion_BntActualizar)
-                    .addComponent(FormularioReactivacion_BntAnular))
-                .addContainerGap())
-        );
+        Contrato.setText("Observaciones:");
+        jPanel4.add(Contrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 810, 40));
+        jLabel4.setText("Cliente:*");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, -1, -1));
 
-        jPanel3.setBackground(new java.awt.Color(51, 204, 0));
+        FormularioReactivacion_txtCliente.setBackground(new java.awt.Color(255, 255, 255));
+        FormularioReactivacion_txtCliente.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel4.add(FormularioReactivacion_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 210, -1));
 
-        jLabel7.setText("Formulario de Reactivacion");
+        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
+        jPanel4.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, 210, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(323, 323, 323)
-                .addComponent(jLabel7)
-                .addContainerGap(358, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7)
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
+        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooser1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel4.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 210, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 40));
+        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setColumns(20);
+        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
 
-        FormularioReactivacion_TablaGeneral.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, -1, -1));
 
-            },
-            new String [] {
-                "Numero:", "Centro de Costos:", "Cedula:", "Cliente:", "Contrato:", "Fecha Creacion:"
-            }
-        ));
-        jScrollPane1.setViewportView(FormularioReactivacion_TablaGeneral);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 790, 240));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 670, 240));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -314,27 +179,17 @@ public class FormularioReactivacion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Contrato;
-    private javax.swing.JButton FormularioReactivacion_BntActualizar;
-    private javax.swing.JButton FormularioReactivacion_BntAnular;
     private javax.swing.JButton FormularioReactivacion_BntCancelar;
-    private javax.swing.JButton FormularioReactivacion_BntEditar;
     private javax.swing.JButton FormularioReactivacion_BntGuardar;
-    private com.toedter.calendar.JDateChooser FormularioReactivacion_JDateFechaCreacion;
-    private javax.swing.JTable FormularioReactivacion_TablaGeneral;
-    private javax.swing.JTextField FormularioReactivacion_txtCedula;
-    private javax.swing.JTextField FormularioReactivacion_txtCentroCostos;
     private javax.swing.JTextField FormularioReactivacion_txtCliente;
-    private javax.swing.JTextField FormularioReactivacion_txtContrato;
-    private javax.swing.JTextField FormularioReactivacion_txtNumero;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

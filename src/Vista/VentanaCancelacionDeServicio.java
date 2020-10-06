@@ -15,7 +15,7 @@ import javax.swing.JTextField;
  *
  * @author aaron
  */
-public class VentanaCancelacionDeServicio extends javax.swing.JFrame {
+public class VentanaCancelacionDeServicio extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form VentanaCancelacionDeServicio
@@ -135,7 +135,6 @@ public class VentanaCancelacionDeServicio extends javax.swing.JFrame {
     public void setVentanaCancelacionServicio_txtCliente(JTextField VentanaCancelacionServicio_txtCliente) {
         this.VentanaCancelacionServicio_txtCliente = VentanaCancelacionServicio_txtCliente;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -168,26 +167,26 @@ public class VentanaCancelacionDeServicio extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         VentanaCancelacionServicio_TablaGeneral = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setClosable(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 51));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaCancelacionServicio_BtnNuevo.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BtnNuevo.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BtnNuevo.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BtnNuevo.setText("Nuevo");
 
-        VentanaCancelacionServicio_BtnEditar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BtnEditar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BtnEditar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BtnEditar.setText("Editar");
 
-        VentanaCancelacionServicio_BtnAnular.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BtnAnular.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BtnAnular.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BtnAnular.setText("Anular");
 
-        VentanaCancelacionServicio_BtnImprimirSolicitud.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BtnImprimirSolicitud.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BtnImprimirSolicitud.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BtnImprimirSolicitud.setText("Imprimir Solicitud");
 
@@ -215,43 +214,52 @@ public class VentanaCancelacionDeServicio extends javax.swing.JFrame {
         );
 
         VentanaCancelacionServicio_PanelSolicitud.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCancelacionServicio_PanelSolicitud.setBorder(javax.swing.BorderFactory.createTitledBorder("Solicitudes de cancelacion de contrato"));
+        VentanaCancelacionServicio_PanelSolicitud.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Solicitudes de cancelacion de contrato", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
         VentanaCancelacionServicio_PanelSolicitud.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cliente:");
         VentanaCancelacionServicio_PanelSolicitud.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
         VentanaCancelacionServicio_PanelSolicitud.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
 
         VentanaCancelacionServicio_PanelFecha.setBackground(new java.awt.Color(255, 255, 255));
-        VentanaCancelacionServicio_PanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder("Fecha de Cambio"));
+        VentanaCancelacionServicio_PanelFecha.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Fecha de Cambio", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        VentanaCancelacionServicio_PanelFecha.setForeground(new java.awt.Color(0, 0, 0));
         VentanaCancelacionServicio_PanelFecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Desde:");
         VentanaCancelacionServicio_PanelFecha.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 24, -1, -1));
 
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Hasta:");
         VentanaCancelacionServicio_PanelFecha.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(119, 60, -1, -1));
 
         VentanaCancelacionServicio_JDateFechaDesde.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCancelacionServicio_JDateFechaDesde.setForeground(new java.awt.Color(0, 0, 0));
         VentanaCancelacionServicio_PanelFecha.add(VentanaCancelacionServicio_JDateFechaDesde, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 18, 260, 23));
 
         VentanaCancelacionServicio_JDateFechaHasta.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCancelacionServicio_JDateFechaHasta.setForeground(new java.awt.Color(0, 0, 0));
         VentanaCancelacionServicio_PanelFecha.add(VentanaCancelacionServicio_JDateFechaHasta, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 53, 261, 23));
 
         VentanaCancelacionServicio_PanelSolicitud.add(VentanaCancelacionServicio_PanelFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 18, 470, 90));
+
+        VentanaCancelacionServicio_txtCliente.setBackground(new java.awt.Color(255, 255, 255));
+        VentanaCancelacionServicio_txtCliente.setForeground(new java.awt.Color(0, 0, 0));
         VentanaCancelacionServicio_PanelSolicitud.add(VentanaCancelacionServicio_txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 250, -1));
 
-        VentanaCancelacionServicio_PanelAplicar.setBackground(new java.awt.Color(0, 153, 51));
+        VentanaCancelacionServicio_PanelAplicar.setBackground(new java.awt.Color(255, 51, 51));
 
-        VentanaCancelacionServicio_BntAplicar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BntAplicar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BntAplicar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BntAplicar.setText("Aplicar Filtros");
 
-        VentanaCancelacionServicio_BntActualizar.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BntActualizar.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BntActualizar.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BntActualizar.setText("Actualizar");
 
-        VentanaCancelacionServicio_BotonRestablecerFiltro.setBackground(new java.awt.Color(0, 204, 51));
+        VentanaCancelacionServicio_BotonRestablecerFiltro.setBackground(new java.awt.Color(102, 102, 102));
         VentanaCancelacionServicio_BotonRestablecerFiltro.setForeground(new java.awt.Color(255, 255, 255));
         VentanaCancelacionServicio_BotonRestablecerFiltro.setText("Restablecer Filtros");
 
